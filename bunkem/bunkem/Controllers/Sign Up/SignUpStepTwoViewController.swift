@@ -20,6 +20,8 @@ class SignUpStepTwoViewController: UIViewController, UITextFieldDelegate {
     var securityQuestion = ""
     
     var data = [String: String]()
+    
+    let passwordMinimumLength = 7
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,30 +61,39 @@ class SignUpStepTwoViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
 
-//        if let username = usernameTextField.text, let password = passwordTextField.text, let verifyPassword = verifyPasswordTextField.text, let answer = answerTextField.text, let phoneNumber = phoneNumberTextField.text, username != "", password != "", verifyPassword != "", answer != "", phoneNumber != "", securityQuestion != "" {
-//
-//            guard password == verifyPassword else {
-//                let alertController = UIAlertController(title: "Incorrect Passwords", message: "Passwords don't match", preferredStyle: .alert)
-//                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//                alertController.addAction(defaultAction)
-//                self.present(alertController, animated: true, completion: nil)
-//                
-//                return
-//            }
-//            
-//            data["username"] = username
-//            data["password"] = password
-//            data["securityQuestion"] = securityQuestion
-//            data["answer"] = answer
-//            data["phoneNumber"] = phoneNumber
+        if let username = usernameTextField.text, let password = passwordTextField.text, let verifyPassword = verifyPasswordTextField.text, let answer = answerTextField.text, let phoneNumber = phoneNumberTextField.text, username != "", password != "", verifyPassword != "", answer != "", phoneNumber != "", securityQuestion != "" {
+
+            guard password.characters.count >= passwordMinimumLength else {
+                let alertController = UIAlertController(title: "Incorrect Password Length", message: "Password must have at least 7 characters", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            guard password == verifyPassword else {
+                let alertController = UIAlertController(title: "Incorrect Passwords", message: "Passwords don't match", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            
+            data["username"] = username
+            data["password"] = password
+            data["securityQuestion"] = securityQuestion
+            data["securityQuestionAnswer"] = answer
+            data["phoneNumber"] = phoneNumber
 
             self.performSegue(withIdentifier: "stepThree", sender: nil)
-//        } else {
-//            let alertController = UIAlertController(title: "Misisng data", message: "Enter missing information", preferredStyle: .alert)
-//            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//            alertController.addAction(defaultAction)
-//            self.present(alertController, animated: true, completion: nil)
-//        }
+        } else {
+            let alertController = UIAlertController(title: "Misisng data", message: "Enter missing information", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     // MARK: - TextField Keyboard

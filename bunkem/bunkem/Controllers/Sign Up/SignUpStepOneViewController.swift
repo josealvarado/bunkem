@@ -81,20 +81,23 @@ class SignUpStepOneViewController: UIViewController {
     // MARK: - User Interactions
     
     @IBAction func continueButtonPressed(_ sender: UIButton) {
-//        if let firstName = firstNameTextField.text, let lastName = lastNameTextField.text, let dateOfBirth = dateOfBirthTextField.text, let email = emailTextField.text, firstName != "", lastName != "", dateOfBirth != "", email != "" {
-//            
-//            data["firstName"] = firstName
-//            data["lastName"] = lastName
-//            data["dateOfBirth"] = dateOfBirth
-//            data["email"] = email
+        if let firstName = firstNameTextField.text, let lastName = lastNameTextField.text, let dateOfBirth = dateOfBirthTextField.text, let email = emailTextField.text, firstName != "", lastName != "", dateOfBirth != "", email != "" {
+            
+            data["firstName"] = firstName
+            data["lastName"] = lastName
+            data["dateOfBirth"] = dateOfBirth
+            data["email"] = email
         
             self.performSegue(withIdentifier: "stepTwo", sender: nil)
-//        } else {
-//            let alertController = UIAlertController(title: "Misisng data", message: "Enter missing information", preferredStyle: .alert)
-//            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//            alertController.addAction(defaultAction)
-//            self.present(alertController, animated: true, completion: nil)
-//        }
+        } else {
+            let alertController = UIAlertController(title: "Misisng data", message: "Enter missing information", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

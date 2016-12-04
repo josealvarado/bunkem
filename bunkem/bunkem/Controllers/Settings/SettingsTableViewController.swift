@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsTableViewController: UITableViewController {
 
@@ -97,6 +98,12 @@ class SettingsTableViewController: UITableViewController {
         } else if indexPath.row == 4 {            
             CurrentUser.user.email = ""
             let _ = self.navigationController?.popViewController(animated: true)
+            
+            do {
+                try FIRAuth.auth()?.signOut()
+            } catch let error {
+                assertionFailure("Error signing out: \(error)")
+            }
         }
     }
 

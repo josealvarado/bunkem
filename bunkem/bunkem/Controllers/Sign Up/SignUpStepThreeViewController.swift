@@ -8,21 +8,28 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
 
 class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UITextViewDelegate {
 
     @IBOutlet weak var cityStateContainerView: UIView!
+    @IBOutlet weak var cityStateLabel: UITextField!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var aboutYouContainerView: UIView!
+    @IBOutlet weak var aboutYouTextView: UITextView!
     @IBOutlet weak var aboutLabelContainerView: UIView!
     @IBOutlet weak var visitContainerView: UIView!
     @IBOutlet weak var visitLabelContainerView: UIView!
+    @IBOutlet weak var visitTextView: UITextView!
     
     var images = [UIImage]()
     var data = [String: String]()
-
+    
+    var ref: FIRDatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +48,8 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
         visitContainerView.layer.borderWidth = 1
         visitLabelContainerView.layer.borderColor = UIColor.black.cgColor
         visitLabelContainerView.layer.borderWidth = 1
+        
+        ref = FIRDatabase.database().reference()
 }
 
     override func didReceiveMemoryWarning() {
@@ -72,10 +81,10 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
     }
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
-        let email = "josealvarado111+bunkem3@gmail.com"
-        let password = "12345678"
+//        let email = "josealvarado111+bunkem3@gmail.com"
+//        let password = "12345678"
         
-//        if let email = data["email"], let password = data["password"] {
+        if let email = data["email"], let password = data["password"] {
             FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                 if let error = error {
                     if let errCode = FIRAuthErrorCode(rawValue: error._code) {
@@ -92,9 +101,85 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                 }
                 
                 CurrentUser.user = User(userFirebase: user)
-                self.signIn()
+                
+                if let cityAndState = self.cityStateLabel.text {
+                    self.data["cityAndState"] = cityAndState
+                }
+                
+                if let aboutYou = self.aboutYouTextView.text {
+                    self.data["aboutYou"] = aboutYou
+                }
+                
+                if let placesLikeToVisit = self.visitTextView.text {
+                    self.data["placesLikeToVisit"] = placesLikeToVisit
+                }
+                
+                self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(self.data as [NSObject : AnyObject])
+
+                // Get a reference to the storage service, using the default Firebase App
+                let storage = FIRStorage.storage()
+                
+                // This is equivalent to creating the full reference
+                let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
+
+                // Create the file metadata
+                let metadata = FIRStorageMetadata()
+                metadata.contentType = "image/png"
+                
+                for (index, image) in self.images.enumerated() {
+                    // Upload file and metadata to the object 'images/mountains.jpg'
+                    let uploadTask = storageRef.child("images/profile/\(CurrentUser.user.user.uid)/pimg-\(index)").put(UIImagePNGRepresentation(image)!, metadata: metadata);
+                    
+                    // Listen for state changes, errors, and completion of the upload.
+                    uploadTask.observe(.pause) { snapshot in
+                        // Upload paused
+                    }
+                    
+                    uploadTask.observe(.resume) { snapshot in
+                        // Upload resumed, also fires when the upload starts
+                    }
+                    
+                    uploadTask.observe(.progress) { snapshot in
+                        // Upload reported progress
+                        if let progress = snapshot.progress {
+                            _ = 100.0 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+                        }
+                    }
+                    
+                    uploadTask.observe(.success) { snapshot in
+                        print("Upload completed successfully")
+                    }
+                    
+                    // Errors only occur in the "Failure" case
+                    uploadTask.observe(.failure) { snapshot in
+                        guard let storageError = snapshot.error else { return }
+                        
+                        print("Error \(storageError)")
+                        
+//                        guard let errorCode = FIRStorageErrorCode(rawValue: storageError.code) else { return }
+//                        switch errorCode {
+//                        case .ObjectNotFound:
+//                            // File doesn't exist
+//                            break
+//                        case .Unauthorized:
+//                            // User doesn't have permission to access file
+//                            break
+//                        case .Cancelled:
+//                            // User canceled the upload
+//                            break
+//                        case .Unknown:
+//                            break
+//                        default:
+//                            break
+//                        }
+                    }
+                    
+                }
+                
+                self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+
             })
-//        }
+        }
     }
     
     // MARK: - Alerts
@@ -169,16 +254,5 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
         }
         return true
     }
-    
-    // MARK: - Other
-    
-    func signIn() {
-        
-    
-        self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
-        
-//        let navCon = self.navigationController
-//        navCon?.dismiss(animated: true, completion: nil)
-//        self.dismiss(animated: true, completion: nil)
-    }
+
 }

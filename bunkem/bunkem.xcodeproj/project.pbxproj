@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CAF6E403B89959E91FF07C4C /* Pods_bunkem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD69FCE4C614DE0E8F56C087 /* Pods_bunkem.framework */; };
+		CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */; };
+		CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
+		CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */; };
+		CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */; };
+		CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */; };
+		CB59D3591DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */; };
 		CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB922D261DEB4F8F00FC85F6 /* Constants.swift */; };
 		CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB922D291DEB4FDD00FC85F6 /* User.swift */; };
 		CB94FF751DE01ADE009772EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB94FF741DE01ADE009772EA /* AppDelegate.swift */; };
@@ -31,9 +37,15 @@
 /* Begin PBXFileReference section */
 		83D6EE64514C089625A82B97 /* Pods-bunkem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bunkem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bunkem/Pods-bunkem.debug.xcconfig"; sourceTree = "<group>"; };
 		88C78B1286E78FD6BBE215FC /* Pods-bunkem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bunkem.release.xcconfig"; path = "Pods/Target Support Files/Pods-bunkem/Pods-bunkem.release.xcconfig"; sourceTree = "<group>"; };
+		CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
+		CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeNameViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeEmailViewController.swift; sourceTree = "<group>"; };
+		CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePasswordViewController.swift; sourceTree = "<group>"; };
+		CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMPrivacySettingsViewController.swift; sourceTree = "<group>"; };
+		CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMNotificationSettingsViewController.swift; sourceTree = "<group>"; };
 		CB922D261DEB4F8F00FC85F6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CB922D291DEB4FDD00FC85F6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB94FF711DE01ADE009772EA /* bunkem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bunkem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */,
+				CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */,
+				CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */,
+				CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */,
+				CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */,
+				CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */,
+				CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -312,13 +330,19 @@
 			files = (
 				CBA3D8E01DE03568001DACB7 /* LoginViewController.swift in Sources */,
 				CB94FF771DE01ADE009772EA /* ViewController.swift in Sources */,
+				CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */,
 				CB94FF751DE01ADE009772EA /* AppDelegate.swift in Sources */,
+				CB59D3591DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift in Sources */,
 				CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */,
 				CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */,
+				CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */,
 				CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */,
 				CBA3D8DE1DE03357001DACB7 /* ForgotPasswordViewController.swift in Sources */,
+				CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */,
+				CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */,
 				CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */,
 				CBA3D8E31DE0C514001DACB7 /* SignUpStepOneViewController.swift in Sources */,
+				CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */,
 				CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */,
 				CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */,
 			);

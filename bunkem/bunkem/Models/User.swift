@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class User: NSObject {
         
@@ -28,6 +29,9 @@ class User: NSObject {
     var imageFilePath: URL? = nil
     var imageId = ""
     
+    var ref: FIRDatabaseReference?
+    var user: FIRUser!
+
     override init() {
         super.init()
     }
@@ -37,10 +41,17 @@ class User: NSObject {
         update(userJSON: userJSON)
     }
     
+    init (snapshot: FIRDataSnapshot) {
+        ref = snapshot.ref
+        
+        let data = snapshot.value as! Dictionary<String, String>
+    }
+    
     init(userFirebase: FIRUser?) {
         super.init()
         
         guard let user = userFirebase else { return }
+        self.user = user
         
         if let email = user.email {
             self.email = email
