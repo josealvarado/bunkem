@@ -24,8 +24,8 @@ class BKMPrivacySettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
         ref = FIRDatabase.database().reference()
 
-        everyoneButton.layer.cornerRadius = 10
-        matchButton.layer.cornerRadius = 10
+        everyoneButton.layer.cornerRadius = 15
+        matchButton.layer.cornerRadius = 15
     }
 
     override func didReceiveMemoryWarning() {

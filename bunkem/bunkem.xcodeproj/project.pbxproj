@@ -13,6 +13,11 @@
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
+		CB59748F1DF6927D00359912 /* Menu-25.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59748E1DF6927D00359912 /* Menu-25.png */; };
+		CB5974911DF6944700359912 /* Texts.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974901DF6944700359912 /* Texts.png */; };
+		CB5974931DF6945000359912 /* Tell a Friend.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974921DF6945000359912 /* Tell a Friend.png */; };
+		CB5974961DF6948100359912 /* Account Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974951DF6948100359912 /* Account Settings.png */; };
+		CB5974981DF6948600359912 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974971DF6948600359912 /* About.png */; };
 		CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */; };
 		CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */; };
 		CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */; };
@@ -42,6 +47,11 @@
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		CB59748E1DF6927D00359912 /* Menu-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-25.png"; path = "../Menu-25.png"; sourceTree = "<group>"; };
+		CB5974901DF6944700359912 /* Texts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Texts.png; path = ../Texts.png; sourceTree = "<group>"; };
+		CB5974921DF6945000359912 /* Tell a Friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tell a Friend.png"; path = "../Tell a Friend.png"; sourceTree = "<group>"; };
+		CB5974951DF6948100359912 /* Account Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Account Settings.png"; sourceTree = "<group>"; };
+		CB5974971DF6948600359912 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
 		CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeEmailViewController.swift; sourceTree = "<group>"; };
 		CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePasswordViewController.swift; sourceTree = "<group>"; };
 		CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMPrivacySettingsViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +121,18 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		CB5974941DF6946000359912 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CB59748E1DF6927D00359912 /* Menu-25.png */,
+				CB5974901DF6944700359912 /* Texts.png */,
+				CB5974921DF6945000359912 /* Tell a Friend.png */,
+				CB5974951DF6948100359912 /* Account Settings.png */,
+				CB5974971DF6948600359912 /* About.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		CB922D281DEB4FBB00FC85F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +166,7 @@
 			children = (
 				CB94FF741DE01ADE009772EA /* AppDelegate.swift */,
 				CB94FF761DE01ADE009772EA /* ViewController.swift */,
+				CB5974941DF6946000359912 /* Images */,
 				CB94FF7B1DE01ADE009772EA /* Assets.xcassets */,
 				CB94FF7D1DE01ADE009772EA /* LaunchScreen.storyboard */,
 				CB94FF801DE01ADE009772EA /* Info.plist */,
@@ -224,8 +247,8 @@
 				TargetAttributes = {
 					CB94FF701DE01ADD009772EA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = GC7Z5R6UH5;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = BXX74E2NVF;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -252,11 +275,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5974961DF6948100359912 /* Account Settings.png in Resources */,
 				CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */,
 				CBFCEBD41DEEAD06008445C8 /* Main.storyboard in Resources */,
 				CB94FF7F1DE01ADE009772EA /* LaunchScreen.storyboard in Resources */,
+				CB5974911DF6944700359912 /* Texts.png in Resources */,
 				CB94FF7C1DE01ADE009772EA /* Assets.xcassets in Resources */,
 				CBA3D8D71DE01DA5001DACB7 /* GoogleService-Info.plist in Resources */,
+				CB5974981DF6948600359912 /* About.png in Resources */,
+				CB5974931DF6945000359912 /* Tell a Friend.png in Resources */,
+				CB59748F1DF6927D00359912 /* Menu-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +506,7 @@
 			baseConfigurationReference = 83D6EE64514C089625A82B97 /* Pods-bunkem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GC7Z5R6UH5;
+				DEVELOPMENT_TEAM = BXX74E2NVF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -487,6 +515,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bunkem.bunkem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "df6b8dd4-92e4-45e4-92a3-2d0db1d41f19";
+				PROVISIONING_PROFILE_SPECIFIER = "Bunk'Em Development Provisioning Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -496,7 +526,7 @@
 			baseConfigurationReference = 88C78B1286E78FD6BBE215FC /* Pods-bunkem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GC7Z5R6UH5;
+				DEVELOPMENT_TEAM = BXX74E2NVF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -505,6 +535,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bunkem.bunkem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "df6b8dd4-92e4-45e4-92a3-2d0db1d41f19";
+				PROVISIONING_PROFILE_SPECIFIER = "Bunk'Em Development Provisioning Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

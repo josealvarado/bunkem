@@ -23,12 +23,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bunk'Em" id="3W1-0N-EJV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="AQQ-i5-Azx">
+                        <barButtonItem key="leftBarButtonItem" image="Menu-25.png" id="AQQ-i5-Azx">
                             <connections>
                                 <segue destination="ibi-l7-ilo" kind="show" id="8ma-tU-PI5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="jfK-cq-krX"/>
+                        <barButtonItem key="rightBarButtonItem" title="..." style="plain" id="jfK-cq-krX"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,10 +50,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQz-wC-1Pd" id="HCQ-ud-FmB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-Ld-3mG">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Texts.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-Ld-3mG">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="It8-eP-Se2"/>
@@ -81,10 +81,10 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="od3-dO-2Kr" id="LSP-KZ-DTy">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-8N-4KL">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tell a Friend.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-8N-4KL">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="2Qp-Pl-dqd"/>
@@ -112,10 +112,10 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fph-C6-CAd" id="9Pj-4x-inl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JHv-Wc-Q7D">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Account Settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHv-Wc-Q7D">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="FVe-b7-CdL"/>
@@ -146,10 +146,10 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ya-fc-YJ3" id="2hx-HS-jn7">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-lC-URz">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About.png" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-lC-URz">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="N9g-rL-UFG"/>
@@ -180,11 +180,11 @@
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyq-xx-Rs2" id="Zoi-ZX-8Mv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uXw-YJ-61K">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -202,6 +202,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="W60-4H-HU9">
+                        <barButtonItem key="backBarButtonItem" title=" " id="JYn-5B-ZjU"/>
                         <barButtonItem key="leftBarButtonItem" id="1cp-bd-E21"/>
                     </navigationItem>
                 </tableViewController>
@@ -258,11 +259,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5jH-hu-PNS" id="TS6-6i-JJN">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TQ4-cD-fD6">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -278,11 +279,11 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u0l-5i-i4U" id="3TC-rP-FkB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4lL-ei-VSA">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -298,11 +299,11 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f8Y-jY-wHM" id="9AH-Vx-HJK">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7kW-Af-H26">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -318,11 +319,11 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZ5-R6-0vw" id="og9-3s-rAl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re4-ZX-fzW">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -331,18 +332,18 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="wP3-MV-Ljc" kind="show" id="Roh-am-CCy"/>
+                                            <segue destination="fMa-a0-vgL" kind="show" id="aXh-cy-AgS"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="BEr-FV-UbJ" style="IBUITableViewCellStyleDefault" id="hZm-PN-ZG5">
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hZm-PN-ZG5" id="hnr-KJ-SzF">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Blocking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BEr-FV-UbJ">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -355,11 +356,11 @@
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UbJ-DG-5wv" id="gr0-Gn-7Rh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Delete my account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PHL-0a-9GW">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -376,7 +377,9 @@
                             <outlet property="delegate" destination="S67-MC-frl" id="nnS-u9-VLG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Account Settings" id="EgE-PQ-aAQ"/>
+                    <navigationItem key="navigationItem" title="Account Settings" id="EgE-PQ-aAQ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Oyg-p3-WWd"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggv-KX-uii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -500,6 +503,193 @@
             </objects>
             <point key="canvasLocation" x="3248.8000000000002" y="-1928.1859070464768"/>
         </scene>
+        <!--Help-->
+        <scene sceneID="aYp-Lk-2o2">
+            <objects>
+                <tableViewController id="fMa-a0-vgL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="FsE-Ec-bDr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="m2P-sB-t6S">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="YIx-he-mfd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YIx-he-mfd" id="C1G-rO-k0N">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequently Asked Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frY-f4-Hhb">
+                                                    <rect key="frame" x="8" y="11" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="frY-f4-Hhb" firstAttribute="leading" secondItem="C1G-rO-k0N" secondAttribute="leading" constant="8" id="HKl-jA-JgY"/>
+                                                <constraint firstAttribute="bottom" secondItem="frY-f4-Hhb" secondAttribute="bottom" constant="11" id="WSq-Gs-mKC"/>
+                                                <constraint firstAttribute="trailing" secondItem="frY-f4-Hhb" secondAttribute="trailing" id="dL8-kP-t5m"/>
+                                                <constraint firstItem="frY-f4-Hhb" firstAttribute="top" secondItem="C1G-rO-k0N" secondAttribute="top" constant="11" id="jcy-nZ-wgs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hFi-cK-sdg">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hFi-cK-sdg" id="yng-SU-wOw">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckW-UY-BUT">
+                                                    <rect key="frame" x="8" y="11" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ckW-UY-BUT" firstAttribute="top" secondItem="yng-SU-wOw" secondAttribute="top" constant="11" id="GYb-he-m4k"/>
+                                                <constraint firstAttribute="bottom" secondItem="ckW-UY-BUT" secondAttribute="bottom" constant="11" id="VON-s2-ftq"/>
+                                                <constraint firstItem="ckW-UY-BUT" firstAttribute="leading" secondItem="yng-SU-wOw" secondAttribute="leading" constant="8" id="dUY-25-Pn2"/>
+                                                <constraint firstAttribute="trailing" secondItem="ckW-UY-BUT" secondAttribute="trailing" id="tTF-OQ-3d9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="us5-x0-EiB">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="us5-x0-EiB" id="nGF-4Z-4wY">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy &amp; Terms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-zE-Qgd">
+                                                    <rect key="frame" x="8" y="11" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="zrs-zE-Qgd" secondAttribute="trailing" id="2qH-zI-WR4"/>
+                                                <constraint firstItem="zrs-zE-Qgd" firstAttribute="top" secondItem="nGF-4Z-4wY" secondAttribute="top" constant="11" id="H7i-Ke-7E2"/>
+                                                <constraint firstAttribute="bottom" secondItem="zrs-zE-Qgd" secondAttribute="bottom" constant="11" id="J6c-kD-P6l"/>
+                                                <constraint firstItem="zrs-zE-Qgd" firstAttribute="leading" secondItem="nGF-4Z-4wY" secondAttribute="leading" constant="8" id="mkx-FM-5Bc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xMC-lx-YAO" kind="show" id="R6M-Nw-QvK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="fMa-a0-vgL" id="U7R-Bv-Git"/>
+                            <outlet property="delegate" destination="fMa-a0-vgL" id="8NC-er-ALr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Help" id="pEg-kq-Y6f">
+                        <barButtonItem key="backBarButtonItem" title=" " id="N2E-bh-RjY"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BP3-Hf-Ai4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3248.8000000000002" y="-1211.2443778110946"/>
+        </scene>
+        <!--Privacy Policy & Terms-->
+        <scene sceneID="C2x-OV-yHf">
+            <objects>
+                <viewController id="xMC-lx-YAO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u0L-eD-zl4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7w0-Jg-mcw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lul-mN-388">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F16-4W-ywD">
+                                <rect key="frame" x="15" y="79" width="345" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Privacy Policy of Bunk’em
+Last Modified: November 27, 2016 
+
+Bunk’em is revolutionizing how people meet by creating a safe friendly environment through a push of a button. By a single swipe you can choose to touch base with the future roommate or not. Bunk’em gives you the choice to meet in person or keep it social through a phone conversation. Whether you are taking a break from work or on the go Bunk’em can find a roommate within minutes. You can also filter out what you seek in a potential roommate so both members can happily find their perfect match. 
+Our privacy policy is short and direct in that we do not want to give you a bunch of excessive information as other programs. We did our best to clear up as much information as we could. If you have any questions or concerns about our privacy policy please contact us as bunkemapp@gmail.com. 
+This Application collects some Personal Data from its Users.
+Types of Information collected 
+The types of Personal Data that this Application collects, by itself or through third parties include but not limited: first name, last name, gender, date of birth, phone number, state, email address, city, geographic position, username, password, picture and language. Essentially, most of our services require you to set up a basic Bunk’em account that is why we ask details about you. This is also needed for others to find you by your profile picture, city, and state you provide to Bunk’em. 
+Other Personal information collected may be described in other sections of this privacy policy. The User may freely provide the Personal Data. Personal data may be collected automatically when using this Application. Any use of Cookies or other tracking tools by this Application or by the owners of third party services used by this Application, unless stated otherwise, serves to identify Users and remember their preferences, for the sole purpose of providing the service required by the User. If you do not provide all data then this application will not be able to provide it’s best services. If you contact us about concerns we are happy to assist. The information you provide to use is at your discretion and you are volunteering to provide us with that information.  
+Users are responsible for any Personal Data of third parties obtained, published or shared through this Application. You must confirm that they have the third party's consent. 
+Data Controller contact bunkemapp@gmail.com
+Processing the Information
+
+Methods of processing
+We process the information of Users in a proper manner and shall take appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the. Our data processing is supported out by computers or IT aided tools. To be noted that in some cases the information may be accessible to certain individuals or persons in charge. For example: system administration, administration, legal council, marketing and/or external parties (e.g., third party IT services, hosting providers, IT companies, or technical service) appointed if only it is deemed necessary by the data owner. The updated list of these parties may be requested from the Data Controller at any moment.
+Location Information
+When you are using Bunk’em services we may collect information about your location. With your consent we may seek where you are when you are using our application through cell towers, Wi-Fi access points and/or other sensors. 
+Preservation time
+Information is kept for the time necessary to provide the service requested by the User, or stated by the purposes outlined in this document. At any time the User can request that the data suspend or remove the data if stated so. Please allow some time for this request to be made since their may be many request at once and the data will be processed in the order at which it was requested. 
+Usage of the collected Data
+The Data concerning the User is collected to allow the Owner to provide its services without any restraints. This allows for the following to be perpetrated: contacting the user, location-based interactions and registration and authentication. 
+Additional information 
+Photos and Camera roll
+Since we ask our users to provide a few pictures for the users profile we may require to collect images and other information pertaining from your device’s camera and photos taken. For instance, you will not be able to upload pictures from your camera roll unless we can access your camera or photos. You must grant us permission to access your camera roll so that any picture can be uploaded on the application. 
+Legal action
+The User's Personal Data may be used for legal purposes. If we reasonable believe that some if not all information is needed to comply with court orders, governmental requests, rule, and, investigation We want to comply with city, state, and federal regulations to protect the rights and property of others and users. Information may also be disclosed to a judge or Court leading to possible legal action arising from improper use of this Application or the related services. The User declares to be aware that the we may be required to reveal personal data upon request of public authorities. This is to resolve any security concerns. We want everyone to have a great experience using our application with a peace of mind. 
+
+Information Shared
+We may share information to other roommate finders such as:
+Your name and the city and/or state you live in. This is usually asked during the first pages of the application of Bunk’em when you are creating an account. 
+Information about your likes or dislikes if you provide that information
+Information about places you’ve lived and places you would like to visit
+Information Shared to the general public
+We may share the following information to the general public as stated below.
+Your profile picture(s)
+Your name
+Information about your likes or dislikes if you provide that information
+With third parties
+We may share some pertinent information with some third party parties. Such as service providers and partners. This would allow service providers who might perform services on our behalf and allow partners to provide their services. 
+With our associates
+We may share information with entities within the Bunk’em personal. 
+Logs and maintenance
+For operation and maintenance purposes, this Application and any third party services may collect documents that record interaction with this Application. Or the uses for this purpose other Personal Data (such as IP Address). It’s solely purpose is for operation and maintenance purposes. 
+Additional information for the User 
+Your rights as the Users
+Users have the right, at any time, to know whether their Personal Data has been stored and can consult the data controller to learn about their contents. Users may verify their accuracy or ask for them to be cancelled, updated or corrected. Users may request to block a particular individual or block certain information at their request. Requests should be sent to the Data Controller (email) at the contact information set out above of this privacy policy.  
+
+Access
+We want everyone to feel comfortable with the information you provide to us. There are limits, however; we will accommodate. For example, legal requests if there is concerns about improper use of the application. You can access your information at any time you are using the application. You can change or alter once you have created your account with Bunk’em. Everything can be found in profile or settings page. Your privacy is important to us and that is why we want to see everyone have access to their account. Updates needed might come to this application in which we will do our best to update you information for free unless if it would require an unbalanced effort on our part, we may charge a fee. We will disclose the fee before we move forward with anything. 
+Age Requirements
+Our services are intended for anyone over the age of 18+. If you are below the age requirement of 18 then that is outside of our services and a guardian must approve of that action to be taken. We do not have any control over that action. That is why we do not knowingly collect personal information from anyone under 18 years of age.
+Cookies
+When you are interacting with our services, we want you to have the best experience you possibly can. Cookies are used on many applications and are essentially needed because they can be used to remember when you return to the platform or track information about your use of the application. We provided some cookies and some were set by third parties. Typically most mobile device browsers automatically accept cookies. If you have questions about cookies please visit http://www.allaboutcookies.org. This site provides you with useful information on cookies and how they are placed and needed. Please note that in some cases if you block cookies used on this application, you may not be able to take full benefit of the services that can be provided.  
+Changes/ Revisions to the privacy policy
+We reserve the right to make changes to this privacy policy at any time. We will absolutely be giving you notice about the changes we produce in a form by which you will have access to. Bunk’em reserves the right to update or modify this privacy policy. We will either notify you by a notification with an in-app notification. This privacy policy will also notify it’s users on the website if the user is using the website feature. If at any time you disagree with our revisions to the privacy policy, you the User must discontinue the use of our services at Bunk’em. At any time you can request to be deleted or removed from our services. The current and ever changing privacy policy applies to all of its users. Thank you for staying committed to our services. This privacy policy was created in the United States, however if the user is using this application in a different country then this privacy policy would still apply with some possible changes if needed to follow the countries laws and rules. 
+Gratitude
+We thank you for using our services and your continued interactions with our applications. We strive to give you the best possible services we offer and our continued excellence. Thank you again we appreciate your business with Bunk’em.
+© Bunk'em 2016 All Rights ReservedLatest update: November 27, 2016 </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7w0-Jg-mcw" firstAttribute="top" secondItem="F16-4W-ywD" secondAttribute="bottom" constant="15" id="LH7-1h-nNV"/>
+                            <constraint firstAttribute="trailing" secondItem="F16-4W-ywD" secondAttribute="trailing" constant="15" id="gmi-Gx-NOE"/>
+                            <constraint firstItem="F16-4W-ywD" firstAttribute="top" secondItem="u0L-eD-zl4" secondAttribute="bottom" constant="15" id="w2e-7C-p6x"/>
+                            <constraint firstItem="F16-4W-ywD" firstAttribute="leading" secondItem="lul-mN-388" secondAttribute="leading" constant="15" id="y8v-On-Poj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Privacy Policy &amp; Terms" id="wEI-P5-5rk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et8-lr-GhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4199" y="-1211"/>
+        </scene>
         <!--Security-->
         <scene sceneID="fp3-vK-z5O">
             <objects>
@@ -544,14 +734,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjI-os-9rn">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sjI-os-9rn">
                                         <rect key="frame" x="243" y="53" width="51" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="49" id="7RL-Wf-HH5"/>
                                             <constraint firstAttribute="height" constant="31" id="hrs-9G-0Kp"/>
                                         </constraints>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9uk-P0-8Yi">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9uk-P0-8Yi">
                                         <rect key="frame" x="243" y="9" width="51" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="KIy-HD-3qT"/>
@@ -642,7 +832,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfh-ve-niG" id="rIL-OS-zTw">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9W-kq-pBU">
@@ -681,7 +871,7 @@
                                         <rect key="frame" x="0.0" y="73" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zhu-CT-soa" id="6z7-zb-zVR">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-5T-2tg">
@@ -720,7 +910,7 @@
                                         <rect key="frame" x="0.0" y="146" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mml-L1-gXE" id="6uo-Kh-2DA">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mez-aH-e0V">
@@ -775,7 +965,9 @@
                             <outlet property="delegate" destination="vUn-5j-Kve" id="wTn-ta-OuN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="General" id="7jG-47-hx2"/>
+                    <navigationItem key="navigationItem" title="General" id="7jG-47-hx2">
+                        <barButtonItem key="backBarButtonItem" title=" " id="pt1-wv-h2f"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailLabel" destination="rYJ-En-liT" id="lvB-JX-nvh"/>
                         <outlet property="fullNameLabel" destination="YdM-h1-iJr" id="8la-KI-PMm"/>
@@ -1132,4 +1324,11 @@
             <point key="canvasLocation" x="225" y="92"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="About.png" width="128" height="128"/>
+        <image name="Account Settings.png" width="128" height="128"/>
+        <image name="Menu-25.png" width="25" height="25"/>
+        <image name="Tell a Friend.png" width="128" height="128"/>
+        <image name="Texts.png" width="128" height="128"/>
+    </resources>
 </document>

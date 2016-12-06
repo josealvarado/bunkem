@@ -68,8 +68,8 @@ class BKMNotificationSettingsViewController: UIViewController {
 
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         
-        let userInfo = ["notifications": notifications,
-                        "emailNotifications": emailNotifications]
+        let userInfo = ["notifications": notificationsSwitch.isOn,
+                        "emailNotifications": emailNotificationsSwitch.isOn]
         ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(userInfo as [NSObject : AnyObject])
     }
 }
