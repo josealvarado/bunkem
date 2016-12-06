@@ -18,6 +18,7 @@
 		CB5974931DF6945000359912 /* Tell a Friend.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974921DF6945000359912 /* Tell a Friend.png */; };
 		CB5974961DF6948100359912 /* Account Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974951DF6948100359912 /* Account Settings.png */; };
 		CB5974981DF6948600359912 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974971DF6948600359912 /* About.png */; };
+		CB59749A1DF6999100359912 /* Back Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974991DF6999100359912 /* Back Arrow.png */; };
 		CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */; };
 		CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */; };
 		CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */; };
@@ -52,6 +53,7 @@
 		CB5974921DF6945000359912 /* Tell a Friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tell a Friend.png"; path = "../Tell a Friend.png"; sourceTree = "<group>"; };
 		CB5974951DF6948100359912 /* Account Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Account Settings.png"; sourceTree = "<group>"; };
 		CB5974971DF6948600359912 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
+		CB5974991DF6999100359912 /* Back Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back Arrow.png"; sourceTree = "<group>"; };
 		CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeEmailViewController.swift; sourceTree = "<group>"; };
 		CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePasswordViewController.swift; sourceTree = "<group>"; };
 		CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMPrivacySettingsViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				CB5974921DF6945000359912 /* Tell a Friend.png */,
 				CB5974951DF6948100359912 /* Account Settings.png */,
 				CB5974971DF6948600359912 /* About.png */,
+				CB5974991DF6999100359912 /* Back Arrow.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB59749A1DF6999100359912 /* Back Arrow.png in Resources */,
 				CB5974961DF6948100359912 /* Account Settings.png in Resources */,
 				CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */,
 				CBFCEBD41DEEAD06008445C8 /* Main.storyboard in Resources */,

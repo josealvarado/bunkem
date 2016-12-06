@@ -41,7 +41,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-NI-mPc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <color key="backgroundColor" red="0.19376173620000001" green="0.27589693669999998" blue="0.34534209970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16985991597175598" green="0.47769773006439209" blue="0.93440479040145874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ijz-uI-o4n"/>
                                 </constraints>
@@ -90,7 +90,7 @@
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uG-dM-uVw">
                                 <rect key="frame" x="16" y="423" width="343" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="AnL-CM-Vv2"/>
                                 </constraints>
@@ -106,7 +106,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-kC-1dM">
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="97"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -135,7 +135,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="237-5o-4a6">
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="97"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58359420299530029" blue="0.26596388220787048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -160,7 +160,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.60215407609939575" green="0.80816614627838135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4yK-Pe-3NW" firstAttribute="top" secondItem="cs6-d0-UL0" secondAttribute="bottom" constant="70" id="1G1-IL-TwZ"/>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="top" secondItem="dVd-No-ACm" secondAttribute="bottom" constant="8" id="1bL-TN-YKh"/>
@@ -234,7 +234,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.19376173620000001" green="0.27589693669999998" blue="0.34534209970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.016171038150787354" green="0.34562641382217407" blue="0.98161977529525757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Wbh-Fd-iLl" firstAttribute="top" secondItem="97m-ag-iOW" secondAttribute="top" constant="25" id="6nI-5B-sYU"/>
                                     <constraint firstAttribute="height" constant="100" id="Pmd-Sc-psI"/>
