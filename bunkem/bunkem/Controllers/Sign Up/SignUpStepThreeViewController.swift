@@ -70,6 +70,10 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
     
     // MARK: - User Interactions
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func pictureButtonPressed(_ sender: UIButton) {
         print("Take picture")
         
@@ -178,6 +182,7 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                 
                 self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
 
+                self.showAlert("By choosing to continue, I certify that I am at least 18 years old and have read & agreed to the Bunk'Em privacy policy & terms of use.")
             })
         }
     }

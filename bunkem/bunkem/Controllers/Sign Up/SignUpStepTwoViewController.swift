@@ -59,9 +59,13 @@ class SignUpStepTwoViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - User Interactions
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func nextButtonPressed(_ sender: UIButton) {
 
-        if let username = usernameTextField.text, let password = passwordTextField.text, let verifyPassword = verifyPasswordTextField.text, let answer = answerTextField.text, let phoneNumber = phoneNumberTextField.text, username != "", password != "", verifyPassword != "", answer != "", phoneNumber != "", securityQuestion != "" {
+        if let username = usernameTextField.text, let password = passwordTextField.text, let verifyPassword = verifyPasswordTextField.text, let answer = answerTextField.text, let phoneNumber = phoneNumberTextField.text, username != "", password != "", verifyPassword != "", answer != "", securityQuestion != "" {
 
             guard password.characters.count >= passwordMinimumLength else {
                 let alertController = UIAlertController(title: "Incorrect Password Length", message: "Password must have at least 7 characters", preferredStyle: .alert)

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +19,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bunk'Em" id="3W1-0N-EJV">
                         <barButtonItem key="leftBarButtonItem" image="Menu-25.png" id="AQQ-i5-Azx">
@@ -42,7 +41,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="g9c-hU-eao">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection id="JJv-VS-Egy">
                                 <cells>
@@ -76,6 +75,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="0pJ-LX-Fpl" secondAttribute="trailing" constant="8" id="tXb-0J-OrL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="od3-dO-2Kr">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -107,6 +107,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="BEA-uy-vb7" secondAttribute="trailing" constant="8" id="sO8-cd-m6l"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="fph-C6-CAd">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
@@ -138,6 +139,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="8r4-am-T41" secondAttribute="trailing" constant="8" id="koY-h9-mIk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="S67-MC-frl" kind="show" id="hid-8i-pBO"/>
                                         </connections>
@@ -172,8 +174,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="M6H-oQ-ZbN" secondAttribute="trailing" constant="8" id="iV9-UH-kaR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="l08-5D-4B2" kind="show" id="dh6-QI-GMk"/>
+                                            <segue destination="l08-5D-4B2" kind="show" identifier="about" id="dh6-QI-GMk"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="uXw-YJ-61K" style="IBUITableViewCellStyleDefault" id="eyq-xx-Rs2">
@@ -192,6 +195,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -224,13 +228,13 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-eN-2Kf">
                                 <rect key="frame" x="15" y="79" width="345" height="573"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Ou-eN-2Kf" firstAttribute="top" secondItem="Mfl-Mv-b2g" secondAttribute="bottom" constant="15" id="9i0-dv-Zmt"/>
                             <constraint firstAttribute="trailing" secondItem="5Ou-eN-2Kf" secondAttribute="trailing" constant="15" id="HKv-mG-NoF"/>
@@ -251,7 +255,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2B7-Qa-aSW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection id="fxq-1V-4ZS">
                                 <cells>
@@ -271,6 +275,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="vUn-5j-Kve" kind="show" id="htB-rK-Tgw"/>
                                         </connections>
@@ -290,7 +295,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="V5q-d6-Q52" kind="show" id="XkA-PN-2Jn"/>
                                         </connections>
@@ -311,6 +318,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="NnW-rq-yHm" kind="show" id="XgY-hf-FMY"/>
                                         </connections>
@@ -331,6 +339,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="fMa-a0-vgL" kind="show" id="aXh-cy-AgS"/>
                                         </connections>
@@ -351,6 +360,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PHL-0a-9GW" style="IBUITableViewCellStyleDefault" id="UbJ-DG-5wv">
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
@@ -368,6 +378,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -399,7 +410,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who can contact me?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1o0-qJ-I8D">
                                 <rect key="frame" x="103" y="94" width="169" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="169" id="NbM-iL-vuf"/>
                                     <constraint firstAttribute="height" constant="30" id="eN8-la-X9s"/>
@@ -454,7 +465,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ql4-Dm-N54" firstAttribute="top" secondItem="OSf-6i-NAn" secondAttribute="top" constant="12" id="6Wv-kc-3Cr"/>
                                     <constraint firstAttribute="trailing" secondItem="ql4-Dm-N54" secondAttribute="trailing" constant="8" id="B7c-TF-umB"/>
@@ -469,21 +480,35 @@
                                     <constraint firstItem="RF9-wH-vvp" firstAttribute="leading" secondItem="OSf-6i-NAn" secondAttribute="leading" constant="8" id="qQo-49-jU3"/>
                                     <constraint firstAttribute="trailing" secondItem="6dl-7X-gbd" secondAttribute="trailing" constant="8" id="z2D-PC-OiO"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urd-A0-OX1">
                                 <rect key="frame" x="114" y="246" width="147" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="5le-14-C7E"/>
                                     <constraint firstAttribute="height" constant="30" id="wf2-av-Gix"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="V5q-d6-Q52" eventType="touchUpInside" id="Rp2-LA-Ncj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Urd-A0-OX1" firstAttribute="top" secondItem="OSf-6i-NAn" secondAttribute="bottom" constant="24" id="9xl-Vy-B86"/>
                             <constraint firstItem="Urd-A0-OX1" firstAttribute="centerX" secondItem="eZs-jZ-UVW" secondAttribute="centerX" id="Aw6-nf-dOm"/>
@@ -613,8 +638,8 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F16-4W-ywD">
                                 <rect key="frame" x="15" y="79" width="345" height="573"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Privacy Policy of Bunk’em
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Privacy Policy of Bunk’em
 Last Modified: November 27, 2016 
 
 Bunk’em is revolutionizing how people meet by creating a safe friendly environment through a push of a button. By a single swipe you can choose to touch base with the future roommate or not. Bunk’em gives you the choice to meet in person or keep it social through a phone conversation. Whether you are taking a break from work or on the go Bunk’em can find a roommate within minutes. You can also filter out what you seek in a potential roommate so both members can happily find their perfect match. 
@@ -671,12 +696,12 @@ Changes/ Revisions to the privacy policy
 We reserve the right to make changes to this privacy policy at any time. We will absolutely be giving you notice about the changes we produce in a form by which you will have access to. Bunk’em reserves the right to update or modify this privacy policy. We will either notify you by a notification with an in-app notification. This privacy policy will also notify it’s users on the website if the user is using the website feature. If at any time you disagree with our revisions to the privacy policy, you the User must discontinue the use of our services at Bunk’em. At any time you can request to be deleted or removed from our services. The current and ever changing privacy policy applies to all of its users. Thank you for staying committed to our services. This privacy policy was created in the United States, however if the user is using this application in a different country then this privacy policy would still apply with some possible changes if needed to follow the countries laws and rules. 
 Gratitude
 We thank you for using our services and your continued interactions with our applications. We strive to give you the best possible services we offer and our continued excellence. Thank you again we appreciate your business with Bunk’em.
-© Bunk'em 2016 All Rights ReservedLatest update: November 27, 2016 </mutableString>
+© Bunk'em 2016 All Rights ReservedLatest update: November 27, 2016 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7w0-Jg-mcw" firstAttribute="top" secondItem="F16-4W-ywD" secondAttribute="bottom" constant="15" id="LH7-1h-nNV"/>
                             <constraint firstAttribute="trailing" secondItem="F16-4W-ywD" secondAttribute="trailing" constant="15" id="gmi-Gx-NOE"/>
@@ -704,7 +729,7 @@ We thank you for using our services and your continued interactions with our app
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Alerts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq7-9k-cna">
                                 <rect key="frame" x="103" y="97" width="169" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8BF-7T-Ceq"/>
                                     <constraint firstAttribute="width" constant="169" id="gy1-Fm-olc"/>
@@ -749,7 +774,7 @@ We thank you for using our services and your continued interactions with our app
                                         </constraints>
                                     </switch>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="sjI-os-9rn" firstAttribute="leading" secondItem="2O9-Zt-dZc" secondAttribute="trailing" constant="18" id="BkW-TG-9C1"/>
                                     <constraint firstAttribute="trailing" secondItem="sjI-os-9rn" secondAttribute="trailing" constant="8" id="C1W-Qz-m1b"/>
@@ -764,21 +789,35 @@ We thank you for using our services and your continued interactions with our app
                                     <constraint firstItem="2O9-Zt-dZc" firstAttribute="top" secondItem="ZjA-1y-cfQ" secondAttribute="bottom" constant="20" id="xrc-fn-joe"/>
                                     <constraint firstAttribute="trailing" secondItem="9uk-P0-8Yi" secondAttribute="trailing" constant="8" id="zaj-OP-o8w"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-lw-B7O">
                                 <rect key="frame" x="114" y="249" width="147" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="DPL-qq-KHT"/>
                                     <constraint firstAttribute="height" constant="30" id="OGF-y8-EZT"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="NnW-rq-yHm" eventType="touchUpInside" id="lLl-IN-vSP"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uq7-9k-cna" firstAttribute="centerX" secondItem="idI-Lp-b5e" secondAttribute="centerX" id="30q-Qh-I1z"/>
                             <constraint firstItem="gkJ-sa-8oG" firstAttribute="centerX" secondItem="idI-Lp-b5e" secondAttribute="centerX" id="EzU-GK-Luk"/>
@@ -824,7 +863,7 @@ We thank you for using our services and your continued interactions with our app
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mkf-iX-9Hm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection id="oiE-0a-Zr4">
                                 <cells>
@@ -863,6 +902,7 @@ We thank you for using our services and your continued interactions with our app
                                                 <constraint firstItem="YdM-h1-iJr" firstAttribute="leading" secondItem="rIL-OS-zTw" secondAttribute="leading" constant="20" id="uQl-zl-OWg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="MWx-7V-eRb" kind="show" id="bk6-vn-ydR"/>
                                         </connections>
@@ -902,6 +942,7 @@ We thank you for using our services and your continued interactions with our app
                                                 <constraint firstAttribute="trailing" secondItem="rYJ-En-liT" secondAttribute="trailing" constant="8" id="q0X-FW-aq8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="ECA-jS-fqg" kind="show" id="Y9I-22-w2l"/>
                                         </connections>
@@ -953,6 +994,7 @@ We thank you for using our services and your continued interactions with our app
                                                 <constraint firstAttribute="trailing" secondItem="aG2-ud-iye" secondAttribute="trailing" constant="15" id="h3P-RI-prr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="7Ju-Eq-yoc" kind="show" id="lKy-6O-I7L"/>
                                         </connections>
@@ -1047,7 +1089,7 @@ We thank you for using our services and your continued interactions with our app
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="qIu-CP-hs6" firstAttribute="leading" secondItem="OKw-JG-PHD" secondAttribute="leading" constant="8" id="1kZ-Mb-uxP"/>
                                     <constraint firstItem="cw2-RI-d3j" firstAttribute="leading" secondItem="OKw-JG-PHD" secondAttribute="leading" constant="8" id="ACf-mY-KwP"/>
@@ -1069,20 +1111,34 @@ We thank you for using our services and your continued interactions with our app
                                     <constraint firstAttribute="trailing" secondItem="gAe-Yc-6yv" secondAttribute="trailing" constant="8" id="wze-xi-s9r"/>
                                     <constraint firstAttribute="trailing" secondItem="KT5-D4-rXj" secondAttribute="trailing" constant="8" id="yr2-Gj-A8F"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVa-un-2VO">
                                 <rect key="frame" x="16" y="270" width="343" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CKC-hv-3t3"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="MWx-7V-eRb" eventType="touchUpInside" id="WYo-hQ-Gwp"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DVa-un-2VO" secondAttribute="trailing" constant="16" id="8H0-gC-uLA"/>
                             <constraint firstAttribute="trailing" secondItem="OKw-JG-PHD" secondAttribute="trailing" constant="16" id="Fkt-pj-vu2"/>
@@ -1137,7 +1193,7 @@ We thank you for using our services and your continued interactions with our app
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="0Ya-Bb-bcu" firstAttribute="leading" secondItem="dJF-or-BOc" secondAttribute="leading" constant="8" id="Chk-SN-PLL"/>
                                     <constraint firstItem="0Ya-Bb-bcu" firstAttribute="top" secondItem="pQC-dd-ciw" secondAttribute="bottom" constant="1" id="HEK-P2-F7p"/>
@@ -1147,20 +1203,34 @@ We thank you for using our services and your continued interactions with our app
                                     <constraint firstItem="pQC-dd-ciw" firstAttribute="leading" secondItem="dJF-or-BOc" secondAttribute="leading" constant="8" id="thT-gK-oAz"/>
                                     <constraint firstItem="pQC-dd-ciw" firstAttribute="top" secondItem="dJF-or-BOc" secondAttribute="top" constant="8" id="x2A-GQ-ksk"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-lg-NYM">
                                 <rect key="frame" x="16" y="150" width="343" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GG5-xS-2RH"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="ECA-jS-fqg" eventType="touchUpInside" id="36y-oO-UQT"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aj9-lg-NYM" firstAttribute="leading" secondItem="KFw-8G-kdp" secondAttribute="leading" constant="16" id="7Gf-i6-ATX"/>
                             <constraint firstAttribute="trailing" secondItem="aj9-lg-NYM" secondAttribute="trailing" constant="16" id="CbT-HB-Iar"/>
@@ -1249,7 +1319,7 @@ We thank you for using our services and your continued interactions with our app
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="xce-Sf-fCP" firstAttribute="leading" secondItem="qVZ-bm-znj" secondAttribute="leading" constant="8" id="0ce-31-ZVv"/>
                                     <constraint firstItem="ypT-Mf-b80" firstAttribute="top" secondItem="xce-Sf-fCP" secondAttribute="bottom" constant="1" id="3sm-t7-yux"/>
@@ -1271,20 +1341,34 @@ We thank you for using our services and your continued interactions with our app
                                     <constraint firstItem="cYt-mz-uny" firstAttribute="leading" secondItem="qVZ-bm-znj" secondAttribute="leading" constant="8" id="xqN-aB-qrQ"/>
                                     <constraint firstItem="BmU-a3-KzF" firstAttribute="top" secondItem="62b-fi-nbW" secondAttribute="bottom" constant="1" id="ygl-14-wUg"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0g-LI-6pj">
                                 <rect key="frame" x="16" y="270" width="343" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="I46-70-sdX"/>
                                 </constraints>
-                                <state key="normal" title="Update"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="updateButtonPressed:" destination="7Ju-Eq-yoc" eventType="touchUpInside" id="WMe-Hk-QDw"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="J0g-LI-6pj" firstAttribute="top" secondItem="qVZ-bm-znj" secondAttribute="bottom" constant="8" id="9Bk-3M-6Lf"/>
                             <constraint firstItem="qVZ-bm-znj" firstAttribute="leading" secondItem="klM-h4-5Dy" secondAttribute="leading" constant="16" id="FYe-h9-Y8W"/>

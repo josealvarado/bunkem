@@ -94,8 +94,8 @@ class SettingsTableViewController: UITableViewController {
         } else if indexPath.row == 2 {
             
         } else if indexPath.row == 3 {
-            self.performSegue(withIdentifier: "about", sender: nil)
-        } else if indexPath.row == 4 {            
+            
+        } else if indexPath.row == 4 {
             CurrentUser.user.email = ""
             let _ = self.navigationController?.popViewController(animated: true)
             
