@@ -52,7 +52,7 @@ class SignUpStepTwoViewController: UIViewController, UITextFieldDelegate {
             }
         } else if let identifier = segue.identifier, identifier == "stepThree" {
             if let controller = segue.destination as? SignUpStepThreeViewController {
-                controller.data = self.data
+                controller.data = self.data as [String : AnyObject]
             }
         }
     }

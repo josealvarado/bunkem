@@ -29,6 +29,15 @@ class User: NSObject {
     var imageFilePath: URL? = nil
     var imageId = ""
     
+    var cityAndState = ""
+    var dateOfBirth = ""
+    var securityQuestion = ""
+    var securityQuestionAnswer = ""
+    var aboutYou = ""
+    var enjoy = ""
+    var lived = ""
+    var visit = ""
+    
     var ref: FIRDatabaseReference?
     var user: FIRUser!
 
@@ -119,6 +128,39 @@ class User: NSObject {
         if let imageId = userJSON["imageId"] as? String {
             self.imageId = imageId
         }
+        
+        if let cityAndState = userJSON["cityAndState"] as? String {
+            self.cityAndState = cityAndState
+        }
+    
+        if let dateOfBirth = userJSON["dateOfBirth"] as? String {
+            self.dateOfBirth = dateOfBirth
+        }
+        
+        if let securityQuestion = userJSON["securityQuestion"] as? String {
+            self.securityQuestion = securityQuestion
+        }
+        
+        if let securityQuestionAnswer = userJSON["securityQuestionAnswer"] as? String {
+            self.securityQuestionAnswer = securityQuestionAnswer
+        }
+        
+        if let aboutYou = userJSON["aboutYou"] as? String {
+            self.aboutYou = aboutYou
+        }
+        
+        if let enjoy = userJSON["enjoy"] as? String {
+            self.enjoy = enjoy
+        }
+        
+        if let lived = userJSON["lived"] as? String {
+            self.lived = lived
+        }
+        
+        if let visit = userJSON["visit"] as? String {
+            self.visit = visit
+        }
+        
     }
     
     func toJSON(optional: [String: AnyObject]? = nil) -> Data? {

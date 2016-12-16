@@ -12,5 +12,8 @@ target 'bunkem' do
   pod 'Firebase/Database'
   pod 'SVProgressHUD'
   pod 'Firebase/Storage'
+  pod 'ZLSwipeableViewSwift'
+  pod 'UIColor+FlatColors'
+  pod 'Cartography'
 
 end

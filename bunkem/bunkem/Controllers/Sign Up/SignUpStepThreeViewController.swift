@@ -21,12 +21,21 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
     @IBOutlet weak var aboutYouContainerView: UIView!
     @IBOutlet weak var aboutYouTextView: UITextView!
     @IBOutlet weak var aboutLabelContainerView: UIView!
+
+    @IBOutlet weak var enjoyContainerView: UIView!
+    @IBOutlet weak var enjoyLabelContainerView: UIView!
+    @IBOutlet weak var enjoyTextView: UITextView!
+    
+    @IBOutlet weak var livedContainerView: UIView!
+    @IBOutlet weak var livedLabelContainerView: UIView!
+    @IBOutlet weak var livedTextView: UITextView!
+    
     @IBOutlet weak var visitContainerView: UIView!
     @IBOutlet weak var visitLabelContainerView: UIView!
     @IBOutlet weak var visitTextView: UITextView!
     
     var images = [UIImage]()
-    var data = [String: String]()
+    var data = [String: AnyObject]()
     
     var ref: FIRDatabaseReference?
     
@@ -43,6 +52,16 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
         aboutYouContainerView.layer.borderWidth = 1
         aboutLabelContainerView.layer.borderColor = UIColor.black.cgColor
         aboutLabelContainerView.layer.borderWidth = 1
+        
+        enjoyContainerView.layer.borderColor = UIColor.black.cgColor
+        enjoyContainerView.layer.borderWidth = 1
+        enjoyLabelContainerView.layer.borderColor = UIColor.black.cgColor
+        enjoyLabelContainerView.layer.borderWidth = 1
+        
+        livedContainerView.layer.borderColor = UIColor.black.cgColor
+        livedContainerView.layer.borderWidth = 1
+        livedLabelContainerView.layer.borderColor = UIColor.black.cgColor
+        livedLabelContainerView.layer.borderWidth = 1
         
         visitContainerView.layer.borderColor = UIColor.black.cgColor
         visitContainerView.layer.borderWidth = 1
@@ -88,7 +107,7 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
 //        let email = "josealvarado111+bunkem3@gmail.com"
 //        let password = "12345678"
         
-        if let email = data["email"], let password = data["password"] {
+        if let email = data["email"] as? String, let password = data["password"] as? String {
             FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                 if let error = error {
                     if let errCode = FIRAuthErrorCode(rawValue: error._code) {
@@ -107,16 +126,26 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                 CurrentUser.user = User(userFirebase: user)
                 
                 if let cityAndState = self.cityStateLabel.text {
-                    self.data["cityAndState"] = cityAndState
+                    self.data["cityAndState"] = cityAndState as AnyObject?
                 }
                 
                 if let aboutYou = self.aboutYouTextView.text {
-                    self.data["aboutYou"] = aboutYou
+                    self.data["aboutYou"] = aboutYou as AnyObject?
                 }
                 
-                if let placesLikeToVisit = self.visitTextView.text {
-                    self.data["placesLikeToVisit"] = placesLikeToVisit
+                if let enjoy = self.enjoyTextView.text {
+                    self.data["enjoy"] = enjoy as AnyObject?
                 }
+                
+                if let lived = self.livedTextView.text {
+                    self.data["lived"] = lived as AnyObject?
+                }
+                
+                if let visit = self.visitTextView.text {
+                    self.data["visit"] = visit as AnyObject?
+                }
+                
+                self.data["numberOfImages"] = self.images.count as AnyObject?
                 
                 self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(self.data as [NSObject : AnyObject])
 
@@ -180,9 +209,11 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                     
                 }
                 
-                self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
-
                 self.showAlert("By choosing to continue, I certify that I am at least 18 years old and have read & agreed to the Bunk'Em privacy policy & terms of use.")
+                
+                self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
+                })
+
             })
         }
     }

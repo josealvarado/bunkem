@@ -15,6 +15,7 @@
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
+		CB480E3D1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB480E3C1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift */; };
 		CB59748F1DF6927D00359912 /* Menu-25.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59748E1DF6927D00359912 /* Menu-25.png */; };
 		CB5974911DF6944700359912 /* Texts.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974901DF6944700359912 /* Texts.png */; };
 		CB5974931DF6945000359912 /* Tell a Friend.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5974921DF6945000359912 /* Tell a Friend.png */; };
@@ -25,6 +26,8 @@
 		CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */; };
 		CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */; };
 		CB59D3591DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */; };
+		CB7961801E010D8400DB18E6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79617F1E010D8400DB18E6 /* Networking.swift */; };
+		CB8F67211E02705F00011EED /* BKMProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F67201E02705F00011EED /* BKMProfileDetailViewController.swift */; };
 		CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB922D261DEB4F8F00FC85F6 /* Constants.swift */; };
 		CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB922D291DEB4FDD00FC85F6 /* User.swift */; };
 		CB94FF751DE01ADE009772EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB94FF741DE01ADE009772EA /* AppDelegate.swift */; };
@@ -38,6 +41,8 @@
 		CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E41DE0C529001DACB7 /* SignUpStepTwoViewController.swift */; };
 		CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E61DE0C535001DACB7 /* SignUpStepThreeViewController.swift */; };
 		CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E81DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift */; };
+		CBF9B3E11DFFBCFC00AA8311 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B3DF1DFFBCFC00AA8311 /* CardView.swift */; };
+		CBF9B3E21DFFBCFC00AA8311 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF9B3E01DFFBCFC00AA8311 /* CardContentView.xib */; };
 		CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFCEBCF1DEEAD06008445C8 /* Login.storyboard */; };
 		CBFCEBD41DEEAD06008445C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFCEBD11DEEAD06008445C8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -52,6 +57,7 @@
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		CB480E3C1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDImageUploadDownloadService.swift; sourceTree = "<group>"; };
 		CB59748E1DF6927D00359912 /* Menu-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-25.png"; path = "../Menu-25.png"; sourceTree = "<group>"; };
 		CB5974901DF6944700359912 /* Texts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Texts.png; path = ../Texts.png; sourceTree = "<group>"; };
 		CB5974921DF6945000359912 /* Tell a Friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tell a Friend.png"; path = "../Tell a Friend.png"; sourceTree = "<group>"; };
@@ -62,11 +68,13 @@
 		CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePasswordViewController.swift; sourceTree = "<group>"; };
 		CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMPrivacySettingsViewController.swift; sourceTree = "<group>"; };
 		CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMNotificationSettingsViewController.swift; sourceTree = "<group>"; };
+		CB79617F1E010D8400DB18E6 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CB8F67201E02705F00011EED /* BKMProfileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMProfileDetailViewController.swift; sourceTree = "<group>"; };
 		CB922D261DEB4F8F00FC85F6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CB922D291DEB4FDD00FC85F6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB94FF711DE01ADE009772EA /* bunkem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bunkem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB94FF741DE01ADE009772EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB94FF761DE01ADE009772EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB94FF761DE01ADE009772EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		CB94FF7B1DE01ADE009772EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB94FF7E1DE01ADE009772EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB94FF801DE01ADE009772EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 		CBA3D8E41DE0C529001DACB7 /* SignUpStepTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStepTwoViewController.swift; sourceTree = "<group>"; };
 		CBA3D8E61DE0C535001DACB7 /* SignUpStepThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStepThreeViewController.swift; sourceTree = "<group>"; };
 		CBA3D8E81DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSecurityQuestionsViewController.swift; sourceTree = "<group>"; };
+		CBF9B3DF1DFFBCFC00AA8311 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CBF9B3E01DFFBCFC00AA8311 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
 		CBFCEBD01DEEAD06008445C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = bunkem/Base.lproj/Login.storyboard; sourceTree = SOURCE_ROOT; };
 		CBFCEBD21DEEAD06008445C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = bunkem/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		FD69FCE4C614DE0E8F56C087 /* Pods_bunkem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bunkem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +137,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		CB480E3B1E03BAD9006E16CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB480E3C1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift */,
+			);
+			name = Services;
+			path = services;
+			sourceTree = "<group>";
+		};
 		CB5974941DF6946000359912 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,13 +193,14 @@
 			isa = PBXGroup;
 			children = (
 				CB94FF741DE01ADE009772EA /* AppDelegate.swift */,
-				CB94FF761DE01ADE009772EA /* ViewController.swift */,
 				CB5974941DF6946000359912 /* Images */,
 				CB94FF7B1DE01ADE009772EA /* Assets.xcassets */,
 				CB94FF7D1DE01ADE009772EA /* LaunchScreen.storyboard */,
 				CB94FF801DE01ADE009772EA /* Info.plist */,
 				CBA3D8D61DE01DA5001DACB7 /* GoogleService-Info.plist */,
 				CB922D261DEB4F8F00FC85F6 /* Constants.swift */,
+				CB79617F1E010D8400DB18E6 /* Networking.swift */,
+				CB480E3B1E03BAD9006E16CD /* Services */,
 				CB922D281DEB4FBB00FC85F6 /* Models */,
 				CBA3D8DC1DE03320001DACB7 /* Controllers */,
 				CBFCEBCE1DEEAC95008445C8 /* Views */,
@@ -191,6 +211,8 @@
 		CBA3D8DC1DE03320001DACB7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB94FF761DE01ADE009772EA /* ViewController.swift */,
+				CB8F67201E02705F00011EED /* BKMProfileDetailViewController.swift */,
 				CBA3D8DD1DE03357001DACB7 /* ForgotPasswordViewController.swift */,
 				CBA3D8E11DE0C4E6001DACB7 /* Sign Up */,
 				CBA3D8DF1DE03568001DACB7 /* LoginViewController.swift */,
@@ -213,6 +235,8 @@
 		CBFCEBCE1DEEAC95008445C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CBF9B3DF1DFFBCFC00AA8311 /* CardView.swift */,
+				CBF9B3E01DFFBCFC00AA8311 /* CardContentView.xib */,
 				CBFCEBCF1DEEAD06008445C8 /* Login.storyboard */,
 				CBFCEBD11DEEAD06008445C8 /* Main.storyboard */,
 			);
@@ -257,6 +281,7 @@
 					CB94FF701DE01ADD009772EA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = BXX74E2NVF;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -286,6 +311,7 @@
 			files = (
 				CB59749A1DF6999100359912 /* Back Arrow.png in Resources */,
 				CB5974961DF6948100359912 /* Account Settings.png in Resources */,
+				CBF9B3E21DFFBCFC00AA8311 /* CardContentView.xib in Resources */,
 				CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */,
 				CBFCEBD41DEEAD06008445C8 /* Main.storyboard in Resources */,
 				CB103FCB1DF9413900DA032F /* whiteLeftArrow.png in Resources */,
@@ -368,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7961801E010D8400DB18E6 /* Networking.swift in Sources */,
 				CBA3D8E01DE03568001DACB7 /* LoginViewController.swift in Sources */,
 				CB94FF771DE01ADE009772EA /* ViewController.swift in Sources */,
 				CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */,
@@ -378,10 +405,13 @@
 				CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */,
 				CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */,
 				CBA3D8DE1DE03357001DACB7 /* ForgotPasswordViewController.swift in Sources */,
+				CBF9B3E11DFFBCFC00AA8311 /* CardView.swift in Sources */,
 				CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */,
+				CB480E3D1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift in Sources */,
 				CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */,
 				CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */,
 				CBA3D8E31DE0C514001DACB7 /* SignUpStepOneViewController.swift in Sources */,
+				CB8F67211E02705F00011EED /* BKMProfileDetailViewController.swift in Sources */,
 				CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */,
 				CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */,
 				CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */,
@@ -517,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83D6EE64514C089625A82B97 /* Pods-bunkem.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BXX74E2NVF;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -538,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88C78B1286E78FD6BBE215FC /* Pods-bunkem.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BXX74E2NVF;
 				FRAMEWORK_SEARCH_PATHS = (
