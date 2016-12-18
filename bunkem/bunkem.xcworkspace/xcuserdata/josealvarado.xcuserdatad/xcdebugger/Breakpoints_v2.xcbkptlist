@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "bunkem/Controllers/Sign Up/SignUpStepThreeViewController.swift"
-            timestampString = "503567339.871969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "createAccountButtonPressed(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
             timestampString = "502695985.069849"
             startingColumnNumber = "9223372036854775807"
@@ -154,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/ViewController.swift"
-            timestampString = "503566662.810327"
+            timestampString = "503791551.535998"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "275"
-            endingLineNumber = "275"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "nextCardView()"
             landmarkType = "7">
          </BreakpointContent>

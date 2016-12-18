@@ -153,7 +153,6 @@ class ViewController: UIViewController {
                 })
             }
         } else {
-            
             self.viewDidLayoutSubviews()
         }
     }

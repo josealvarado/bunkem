@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
+import SVProgressHUD
 
 class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UITextViewDelegate {
 
@@ -104,121 +105,142 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
     }
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
-//        let email = "josealvarado111+bunkem3@gmail.com"
-//        let password = "12345678"
-        
-        if let email = data["email"] as? String, let password = data["password"] as? String {
-            FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-                if let error = error {
-                    if let errCode = FIRAuthErrorCode(rawValue: error._code) {
-                        switch errCode {
-                        case .errorCodeInvalidEmail:
-                            self.showAlert("Enter a valid email.")
-                        case .errorCodeEmailAlreadyInUse:
-                            self.showAlert("Email already in use.")
-                        default:
-                            self.showAlert("Error: \(error.localizedDescription)")
-                        }
-                    }
-                    return
-                }
-                
-                CurrentUser.user = User(userFirebase: user)
-                
-                if let cityAndState = self.cityStateLabel.text {
-                    self.data["cityAndState"] = cityAndState as AnyObject?
-                }
-                
-                if let aboutYou = self.aboutYouTextView.text {
-                    self.data["aboutYou"] = aboutYou as AnyObject?
-                }
-                
-                if let enjoy = self.enjoyTextView.text {
-                    self.data["enjoy"] = enjoy as AnyObject?
-                }
-                
-                if let lived = self.livedTextView.text {
-                    self.data["lived"] = lived as AnyObject?
-                }
-                
-                if let visit = self.visitTextView.text {
-                    self.data["visit"] = visit as AnyObject?
-                }
-                
-                self.data["numberOfImages"] = self.images.count as AnyObject?
-                
-                self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(self.data as [NSObject : AnyObject])
-
-                // Get a reference to the storage service, using the default Firebase App
-                let storage = FIRStorage.storage()
-                
-                // This is equivalent to creating the full reference
-                let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
-
-                // Create the file metadata
-                let metadata = FIRStorageMetadata()
-                metadata.contentType = "image/png"
-                
-                for (index, image) in self.images.enumerated() {
-                    // Upload file and metadata to the object 'images/mountains.jpg'
-                    let uploadTask = storageRef.child("images/profile/\(CurrentUser.user.user.uid)/pimg-\(index)").put(UIImagePNGRepresentation(image)!, metadata: metadata);
-                    
-                    // Listen for state changes, errors, and completion of the upload.
-                    uploadTask.observe(.pause) { snapshot in
-                        // Upload paused
-                    }
-                    
-                    uploadTask.observe(.resume) { snapshot in
-                        // Upload resumed, also fires when the upload starts
-                    }
-                    
-                    uploadTask.observe(.progress) { snapshot in
-                        // Upload reported progress
-                        if let progress = snapshot.progress {
-                            _ = 100.0 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
-                        }
-                    }
-                    
-                    uploadTask.observe(.success) { snapshot in
-                        print("Upload completed successfully")
-                    }
-                    
-                    // Errors only occur in the "Failure" case
-                    uploadTask.observe(.failure) { snapshot in
-                        guard let storageError = snapshot.error else { return }
-                        
-                        print("Error \(storageError)")
-                        
-//                        guard let errorCode = FIRStorageErrorCode(rawValue: storageError.code) else { return }
-//                        switch errorCode {
-//                        case .ObjectNotFound:
-//                            // File doesn't exist
-//                            break
-//                        case .Unauthorized:
-//                            // User doesn't have permission to access file
-//                            break
-//                        case .Cancelled:
-//                            // User canceled the upload
-//                            break
-//                        case .Unknown:
-//                            break
-//                        default:
-//                            break
-//                        }
-                    }
-                    
-                }
-                
-                self.showAlert("By choosing to continue, I certify that I am at least 18 years old and have read & agreed to the Bunk'Em privacy policy & terms of use.")
-                
-                self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
-                })
-
-            })
+        guard let _ = data["email"] as? String, let _ = data["password"] as? String else {
+            self.showAlert("Enter a valid email and password")
+            return
         }
+        
+        showAlert2("By choosing to continue, I certify that I am at least 18 years old and have read & agreed to the Bunk'Em privacy policy & terms of use.")
+    }
+    
+    func createAccount() {
+        guard let email = data["email"] as? String, let password = data["password"] as? String else {
+            self.showAlert("Enter a valid email and password")
+            return
+        }
+        
+        SVProgressHUD.show()
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+            if let error = error {
+                SVProgressHUD.dismiss()
+                if let errCode = FIRAuthErrorCode(rawValue: error._code) {
+                    switch errCode {
+                    case .errorCodeInvalidEmail:
+                        self.showAlert("Enter a valid email.")
+                    case .errorCodeEmailAlreadyInUse:
+                        self.showAlert("Email already in use.")
+                    default:
+                        self.showAlert("Error: \(error.localizedDescription)")
+                    }
+                }
+                return
+            }
+            
+            CurrentUser.user = User(userFirebase: user)
+            
+            if let cityAndState = self.cityStateLabel.text {
+                self.data["cityAndState"] = cityAndState as AnyObject?
+            }
+            
+            if let aboutYou = self.aboutYouTextView.text {
+                self.data["aboutYou"] = aboutYou as AnyObject?
+            }
+            
+            if let enjoy = self.enjoyTextView.text {
+                self.data["enjoy"] = enjoy as AnyObject?
+            }
+            
+            if let lived = self.livedTextView.text {
+                self.data["lived"] = lived as AnyObject?
+            }
+            
+            if let visit = self.visitTextView.text {
+                self.data["visit"] = visit as AnyObject?
+            }
+            
+            self.data["numberOfImages"] = self.images.count as AnyObject?
+            
+            self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(self.data as [NSObject : AnyObject])
+            
+            // Get a reference to the storage service, using the default Firebase App
+            let storage = FIRStorage.storage()
+            
+            // This is equivalent to creating the full reference
+            let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
+            
+            // Create the file metadata
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/png"
+            
+            for (index, image) in self.images.enumerated() {
+                // Upload file and metadata to the object 'images/mountains.jpg'
+                let uploadTask = storageRef.child("images/profile/\(CurrentUser.user.user.uid)/pimg-\(index)").put(UIImagePNGRepresentation(image)!, metadata: metadata);
+                
+                // Listen for state changes, errors, and completion of the upload.
+                uploadTask.observe(.pause) { snapshot in
+                    // Upload paused
+                }
+                
+                uploadTask.observe(.resume) { snapshot in
+                    // Upload resumed, also fires when the upload starts
+                }
+                
+                uploadTask.observe(.progress) { snapshot in
+                    // Upload reported progress
+                    if let progress = snapshot.progress {
+                        _ = 100.0 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+                    }
+                }
+                
+                uploadTask.observe(.success) { snapshot in
+                    print("Upload completed successfully")
+                }
+                
+                // Errors only occur in the "Failure" case
+                uploadTask.observe(.failure) { snapshot in
+                    guard let storageError = snapshot.error else { return }
+                    
+                    print("Error \(storageError)")
+                    
+                    //                        guard let errorCode = FIRStorageErrorCode(rawValue: storageError.code) else { return }
+                    //                        switch errorCode {
+                    //                        case .ObjectNotFound:
+                    //                            // File doesn't exist
+                    //                            break
+                    //                        case .Unauthorized:
+                    //                            // User doesn't have permission to access file
+                    //                            break
+                    //                        case .Cancelled:
+                    //                            // User canceled the upload
+                    //                            break
+                    //                        case .Unknown:
+                    //                            break
+                    //                        default:
+                    //                            break
+                    //                        }
+                    
+                }
+                
+            }
+            
+            SVProgressHUD.dismiss()
+            self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
+            })
+            
+        })
     }
     
     // MARK: - Alerts
+    
+    func showAlert2(_ message: String) {
+        let alertController = UIAlertController(title: "Bunk'Em App", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default,handler: nil))
+        alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { (alertAction) in
+            self.createAccount()
+        }))
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
     
     func showAlert(_ message: String) {
         let alertController = UIAlertController(title: "Bunk'Em App", message: message, preferredStyle: UIAlertControllerStyle.alert)
