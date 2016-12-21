@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		CAF6E403B89959E91FF07C4C /* Pods_bunkem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD69FCE4C614DE0E8F56C087 /* Pods_bunkem.framework */; };
 		CB103FCB1DF9413900DA032F /* whiteLeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */; };
-		CB103FCD1DFA836200DA032F /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = CB103FCC1DFA836200DA032F /* camera.png */; };
 		CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */; };
 		CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */; };
+		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
@@ -41,6 +41,16 @@
 		CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E41DE0C529001DACB7 /* SignUpStepTwoViewController.swift */; };
 		CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E61DE0C535001DACB7 /* SignUpStepThreeViewController.swift */; };
 		CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E81DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift */; };
+		CBB484011E0A5B48008A90A3 /* hand swimping right.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB483FF1E0A5B48008A90A3 /* hand swimping right.png */; };
+		CBB484021E0A5B48008A90A3 /* hand swiping left.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB484001E0A5B48008A90A3 /* hand swiping left.png */; };
+		CBB484041E0A5D6F008A90A3 /* Three Dots.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB484031E0A5D6F008A90A3 /* Three Dots.png */; };
+		CBBA452A1E07465800CB9CC8 /* BKMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA45291E07465800CB9CC8 /* BKMMessageViewController.swift */; };
+		CBBA452C1E07479300CB9CC8 /* BKMFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA452B1E07479300CB9CC8 /* BKMFilterTableViewController.swift */; };
+		CBBA45321E0748D400CB9CC8 /* housingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBA452D1E0748D400CB9CC8 /* housingIcon.png */; };
+		CBBA45331E0748D400CB9CC8 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBA452E1E0748D400CB9CC8 /* locationIcon.png */; };
+		CBBA45341E0748D400CB9CC8 /* filterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBA452F1E0748D400CB9CC8 /* filterIcon.png */; };
+		CBBA45351E0748D400CB9CC8 /* cancelIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBA45301E0748D400CB9CC8 /* cancelIcon.png */; };
+		CBBA45361E0748D400CB9CC8 /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBA45311E0748D400CB9CC8 /* cameraIcon.png */; };
 		CBF9B3E11DFFBCFC00AA8311 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9B3DF1DFFBCFC00AA8311 /* CardView.swift */; };
 		CBF9B3E21DFFBCFC00AA8311 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF9B3E01DFFBCFC00AA8311 /* CardContentView.xib */; };
 		CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFCEBCF1DEEAD06008445C8 /* Login.storyboard */; };
@@ -51,9 +61,9 @@
 		83D6EE64514C089625A82B97 /* Pods-bunkem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bunkem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bunkem/Pods-bunkem.debug.xcconfig"; sourceTree = "<group>"; };
 		88C78B1286E78FD6BBE215FC /* Pods-bunkem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bunkem.release.xcconfig"; path = "Pods/Target Support Files/Pods-bunkem/Pods-bunkem.release.xcconfig"; sourceTree = "<group>"; };
 		CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteLeftArrow.png; sourceTree = "<group>"; };
-		CB103FCC1DFA836200DA032F /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeNameViewController.swift; sourceTree = "<group>"; };
+		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -85,6 +95,16 @@
 		CBA3D8E41DE0C529001DACB7 /* SignUpStepTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStepTwoViewController.swift; sourceTree = "<group>"; };
 		CBA3D8E61DE0C535001DACB7 /* SignUpStepThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStepThreeViewController.swift; sourceTree = "<group>"; };
 		CBA3D8E81DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSecurityQuestionsViewController.swift; sourceTree = "<group>"; };
+		CBB483FF1E0A5B48008A90A3 /* hand swimping right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand swimping right.png"; sourceTree = "<group>"; };
+		CBB484001E0A5B48008A90A3 /* hand swiping left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand swiping left.png"; sourceTree = "<group>"; };
+		CBB484031E0A5D6F008A90A3 /* Three Dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Three Dots.png"; sourceTree = "<group>"; };
+		CBBA45291E07465800CB9CC8 /* BKMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMMessageViewController.swift; sourceTree = "<group>"; };
+		CBBA452B1E07479300CB9CC8 /* BKMFilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMFilterTableViewController.swift; sourceTree = "<group>"; };
+		CBBA452D1E0748D400CB9CC8 /* housingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = housingIcon.png; sourceTree = "<group>"; };
+		CBBA452E1E0748D400CB9CC8 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationIcon.png; sourceTree = "<group>"; };
+		CBBA452F1E0748D400CB9CC8 /* filterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterIcon.png; sourceTree = "<group>"; };
+		CBBA45301E0748D400CB9CC8 /* cancelIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelIcon.png; sourceTree = "<group>"; };
+		CBBA45311E0748D400CB9CC8 /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
 		CBF9B3DF1DFFBCFC00AA8311 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CBF9B3E01DFFBCFC00AA8311 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
 		CBFCEBD01DEEAD06008445C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = bunkem/Base.lproj/Login.storyboard; sourceTree = SOURCE_ROOT; };
@@ -132,6 +152,7 @@
 				CB59D3521DF376F70053A2F4 /* BKMChangeEmailViewController.swift */,
 				CB59D3541DF37E890053A2F4 /* BKMChangePasswordViewController.swift */,
 				CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */,
+				CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */,
 				CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */,
 			);
 			path = Settings;
@@ -156,7 +177,14 @@
 				CB5974971DF6948600359912 /* About.png */,
 				CB5974991DF6999100359912 /* Back Arrow.png */,
 				CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */,
-				CB103FCC1DFA836200DA032F /* camera.png */,
+				CBBA452D1E0748D400CB9CC8 /* housingIcon.png */,
+				CBBA452E1E0748D400CB9CC8 /* locationIcon.png */,
+				CBBA452F1E0748D400CB9CC8 /* filterIcon.png */,
+				CBBA45301E0748D400CB9CC8 /* cancelIcon.png */,
+				CBBA45311E0748D400CB9CC8 /* cameraIcon.png */,
+				CBB483FF1E0A5B48008A90A3 /* hand swimping right.png */,
+				CBB484001E0A5B48008A90A3 /* hand swiping left.png */,
+				CBB484031E0A5D6F008A90A3 /* Three Dots.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -214,6 +242,8 @@
 				CB94FF761DE01ADE009772EA /* ViewController.swift */,
 				CB8F67201E02705F00011EED /* BKMProfileDetailViewController.swift */,
 				CBA3D8DD1DE03357001DACB7 /* ForgotPasswordViewController.swift */,
+				CBBA45291E07465800CB9CC8 /* BKMMessageViewController.swift */,
+				CBBA452B1E07479300CB9CC8 /* BKMFilterTableViewController.swift */,
 				CBA3D8E11DE0C4E6001DACB7 /* Sign Up */,
 				CBA3D8DF1DE03568001DACB7 /* LoginViewController.swift */,
 				CB479FCD1DED0CB400C73B83 /* Settings */,
@@ -275,7 +305,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = BunkEm;
 				TargetAttributes = {
 					CB94FF701DE01ADD009772EA = {
@@ -310,15 +340,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB59749A1DF6999100359912 /* Back Arrow.png in Resources */,
+				CBBA45341E0748D400CB9CC8 /* filterIcon.png in Resources */,
+				CBBA45351E0748D400CB9CC8 /* cancelIcon.png in Resources */,
+				CBB484021E0A5B48008A90A3 /* hand swiping left.png in Resources */,
 				CB5974961DF6948100359912 /* Account Settings.png in Resources */,
 				CBF9B3E21DFFBCFC00AA8311 /* CardContentView.xib in Resources */,
+				CBBA45361E0748D400CB9CC8 /* cameraIcon.png in Resources */,
 				CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */,
 				CBFCEBD41DEEAD06008445C8 /* Main.storyboard in Resources */,
+				CBBA45331E0748D400CB9CC8 /* locationIcon.png in Resources */,
+				CBBA45321E0748D400CB9CC8 /* housingIcon.png in Resources */,
 				CB103FCB1DF9413900DA032F /* whiteLeftArrow.png in Resources */,
+				CBB484011E0A5B48008A90A3 /* hand swimping right.png in Resources */,
 				CB94FF7F1DE01ADE009772EA /* LaunchScreen.storyboard in Resources */,
-				CB103FCD1DFA836200DA032F /* camera.png in Resources */,
 				CB5974911DF6944700359912 /* Texts.png in Resources */,
 				CB94FF7C1DE01ADE009772EA /* Assets.xcassets in Resources */,
+				CBB484041E0A5D6F008A90A3 /* Three Dots.png in Resources */,
 				CBA3D8D71DE01DA5001DACB7 /* GoogleService-Info.plist in Resources */,
 				CB5974981DF6948600359912 /* About.png in Resources */,
 				CB5974931DF6945000359912 /* Tell a Friend.png in Resources */,
@@ -395,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7961801E010D8400DB18E6 /* Networking.swift in Sources */,
+				CBBA452C1E07479300CB9CC8 /* BKMFilterTableViewController.swift in Sources */,
 				CBA3D8E01DE03568001DACB7 /* LoginViewController.swift in Sources */,
 				CB94FF771DE01ADE009772EA /* ViewController.swift in Sources */,
 				CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */,
@@ -408,6 +446,7 @@
 				CBF9B3E11DFFBCFC00AA8311 /* CardView.swift in Sources */,
 				CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */,
 				CB480E3D1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift in Sources */,
+				CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */,
 				CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */,
 				CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */,
 				CBA3D8E31DE0C514001DACB7 /* SignUpStepOneViewController.swift in Sources */,
@@ -415,6 +454,7 @@
 				CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */,
 				CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */,
 				CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */,
+				CBBA452A1E07465800CB9CC8 /* BKMMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

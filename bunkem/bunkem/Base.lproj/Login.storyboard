@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iZB-4U-tDN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iZB-4U-tDN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,19 +40,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-NI-mPc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <color key="backgroundColor" red="0.16985991597175598" green="0.47769773006439209" blue="0.93440479040145874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-wT-WoY">
+                                        <rect key="frame" x="67.5" y="3.5" width="240" height="93"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="93" id="KZI-zu-gXg"/>
+                                            <constraint firstAttribute="width" constant="240" id="Pcv-PX-vBF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1031506285071373" green="0.34049034118652344" blue="0.54961556196212769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="ESi-wT-WoY" firstAttribute="centerX" secondItem="FSU-NI-mPc" secondAttribute="centerX" id="d2d-ok-qkL"/>
                                     <constraint firstAttribute="height" constant="100" id="ijz-uI-o4n"/>
+                                    <constraint firstItem="ESi-wT-WoY" firstAttribute="centerY" secondItem="FSU-NI-mPc" secondAttribute="centerY" id="wGh-60-kE4"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bunk'em" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs6-d0-UL0">
-                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="IW6-H0-fQB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Remember me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVd-No-ACm">
                                 <rect key="frame" x="0.0" y="223" width="126" height="21"/>
                                 <constraints>
@@ -245,19 +248,16 @@
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="30" id="5je-Pq-cM3"/>
                             <constraint firstItem="9tJ-Em-ebP" firstAttribute="top" secondItem="KtG-sC-sAD" secondAttribute="bottom" constant="33" id="6zf-0f-RhN"/>
                             <constraint firstAttribute="trailing" secondItem="Zt2-k5-K28" secondAttribute="trailing" constant="43" id="Cst-6D-eFI"/>
-                            <constraint firstAttribute="trailing" secondItem="cs6-d0-UL0" secondAttribute="trailing" id="Hgh-cz-tid"/>
                             <constraint firstItem="Zt2-k5-K28" firstAttribute="top" secondItem="BwK-fu-qF1" secondAttribute="bottom" constant="113" id="JF2-JV-6mK"/>
                             <constraint firstAttribute="trailing" secondItem="BwK-fu-qF1" secondAttribute="trailing" constant="15" id="Sh0-KK-LZY"/>
                             <constraint firstItem="BwK-fu-qF1" firstAttribute="top" secondItem="FSU-NI-mPc" secondAttribute="bottom" constant="15" id="TAh-8N-YfL"/>
                             <constraint firstItem="dVd-No-ACm" firstAttribute="top" secondItem="BwK-fu-qF1" secondAttribute="bottom" constant="20" id="TpP-0X-Aqp"/>
                             <constraint firstAttribute="trailing" secondItem="0uG-dM-uVw" secondAttribute="trailing" constant="16" id="WKJ-7B-XJU"/>
                             <constraint firstItem="Zt2-k5-K28" firstAttribute="width" secondItem="9tJ-Em-ebP" secondAttribute="width" id="Wbe-dY-aAt"/>
-                            <constraint firstItem="cs6-d0-UL0" firstAttribute="top" secondItem="hzW-c3-CuP" secondAttribute="bottom" id="ZyI-Te-FOs"/>
                             <constraint firstItem="BwK-fu-qF1" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="15" id="caN-S2-6l2"/>
                             <constraint firstAttribute="trailing" secondItem="FSU-NI-mPc" secondAttribute="trailing" id="eYm-F8-4wp"/>
                             <constraint firstItem="Zt2-k5-K28" firstAttribute="leading" secondItem="9tJ-Em-ebP" secondAttribute="trailing" constant="10" id="gaY-4B-vj9"/>
                             <constraint firstItem="0uG-dM-uVw" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="16" id="j4z-oF-X1J"/>
-                            <constraint firstItem="cs6-d0-UL0" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" id="jAG-fZ-S1d"/>
                             <constraint firstItem="9tJ-Em-ebP" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="45" id="p7L-7h-P8v"/>
                             <constraint firstItem="dVd-No-ACm" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" id="qeG-V0-lGA"/>
                             <constraint firstItem="FSU-NI-mPc" firstAttribute="top" secondItem="sNh-5X-apf" secondAttribute="top" id="zN0-cM-Qmd"/>
@@ -309,7 +309,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.169859916" green="0.4776977301" blue="0.93440479040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Wbh-Fd-iLl" firstAttribute="top" secondItem="97m-ag-iOW" secondAttribute="top" constant="25" id="6nI-5B-sYU"/>
                                     <constraint firstAttribute="height" constant="100" id="Pmd-Sc-psI"/>
@@ -526,7 +526,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.169859916" green="0.4776977301" blue="0.93440479040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="o1u-05-Xlr" firstAttribute="leading" secondItem="deu-g3-HGT" secondAttribute="leading" id="2y2-M8-Khd"/>
                                     <constraint firstItem="UPh-6M-Lww" firstAttribute="leading" secondItem="deu-g3-HGT" secondAttribute="leading" id="M2K-fO-DZO"/>
@@ -1086,7 +1086,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.169859916" green="0.4776977301" blue="0.93440479040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="dUN-hs-szn" firstAttribute="leading" secondItem="Bq1-86-k5p" secondAttribute="leading" id="CxE-rb-bBp"/>
                                     <constraint firstAttribute="trailing" secondItem="dUN-hs-szn" secondAttribute="trailing" id="Hbk-H2-xee"/>
@@ -1147,7 +1147,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="BAA-gB-a79"/>
                                                             <constraint firstAttribute="height" constant="30" id="d9V-Fa-NhM"/>
                                                         </constraints>
-                                                        <state key="normal" title="Pic" image="camera.png"/>
+                                                        <state key="normal" title="Pic" image="cameraIcon.png"/>
                                                         <connections>
                                                             <action selector="pictureButtonPressed:" destination="Rgq-qN-mL9" eventType="touchUpInside" id="elz-a9-wAE"/>
                                                         </connections>
@@ -1486,7 +1486,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOe-Wt-JYI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <color key="backgroundColor" red="0.169859916" green="0.4776977301" blue="0.93440479040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ZLi-EF-mV3"/>
                                 </constraints>
@@ -1589,7 +1589,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera.png" width="512" height="512"/>
+        <image name="ItunesArtwork" width="228" height="228"/>
+        <image name="cameraIcon.png" width="128" height="128"/>
         <image name="whiteLeftArrow.png" width="256" height="256"/>
     </resources>
 </document>

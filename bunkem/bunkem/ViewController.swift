@@ -210,7 +210,7 @@ class ViewController: UIViewController {
         }
         
         let cardView = CardView(frame: swipeableView.bounds)
-        cardView.backgroundColor = colorForName(colors[colorIndex])
+//        cardView.backgroundColor = colorForName(colors[colorIndex])
         colorIndex += 1
         
         if loadCardsFromXib {
@@ -321,11 +321,25 @@ class ViewController: UIViewController {
         return UIColor.perform(Selector(selector)).takeUnretainedValue() as! UIColor
     }
     
+    @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMFilterTableViewController") as? BKMFilterTableViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     @IBAction func notInterestedButtonPressed(_ sender: UIButton) {
         swipeableView.swipeTopView(inDirection: .Left)
     }
     
     @IBAction func messageButtonPressed(_ sender: UIButton) {
+        guard self.userIndex < self.userList.count else {
+            return
+        }
+        
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMMessageViewController") as? BKMMessageViewController {
+            vc.activeUser = self.userList[self.userIndex]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     @IBAction func interestedButtonPressed(_ sender: UIButton) {

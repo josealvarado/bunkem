@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -40,11 +40,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XdV-q2-djt">
-                    <rect key="frame" x="63" y="173.5" width="250" height="320"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="250" id="4zj-m6-br2"/>
-                        <constraint firstAttribute="height" constant="320" id="hGV-9p-ftP"/>
-                    </constraints>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,13 +49,15 @@
                 <constraint firstAttribute="trailing" secondItem="VHT-G1-PmB" secondAttribute="trailing" constant="15" id="JkV-CN-3Hg"/>
                 <constraint firstItem="5Cp-uB-nV4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LaU-Ot-Cgz"/>
                 <constraint firstAttribute="bottom" secondItem="VHT-G1-PmB" secondAttribute="bottom" constant="20" id="ODB-2y-63b"/>
-                <constraint firstItem="XdV-q2-djt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OZM-Jw-WMP"/>
+                <constraint firstItem="XdV-q2-djt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SRn-4E-M21"/>
                 <constraint firstItem="R8b-fg-uGH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yes-8U-qh1"/>
                 <constraint firstAttribute="bottom" secondItem="R8b-fg-uGH" secondAttribute="bottom" id="dmz-fE-Mvp"/>
+                <constraint firstItem="VHT-G1-PmB" firstAttribute="top" secondItem="XdV-q2-djt" secondAttribute="bottom" constant="10" id="fDz-7l-ikL"/>
                 <constraint firstItem="VHT-G1-PmB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="hnj-v2-dMj"/>
-                <constraint firstItem="XdV-q2-djt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jem-jR-drn"/>
                 <constraint firstItem="R8b-fg-uGH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mMA-aY-1FI"/>
                 <constraint firstItem="5Cp-uB-nV4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mjX-zd-RWL"/>
+                <constraint firstAttribute="trailing" secondItem="XdV-q2-djt" secondAttribute="trailing" id="no6-OF-7be"/>
+                <constraint firstItem="XdV-q2-djt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uvQ-WG-uJb"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="78.5"/>
         </view>

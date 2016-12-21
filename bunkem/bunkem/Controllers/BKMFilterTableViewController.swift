@@ -1,20 +1,14 @@
 //
-//  GeneralSettingsTableViewController.swift
+//  BKMFilterTableViewController.swift
 //  bunkem
 //
-//  Created by Jose Alvarado on 12/2/16.
+//  Created by Jose Alvarado on 12/18/16.
 //  Copyright © 2016 BunkEm. All rights reserved.
 //
 
 import UIKit
-import FirebaseDatabase
 
-class GeneralSettingsTableViewController: UITableViewController {
-
-    @IBOutlet weak var fullNameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    
-    var ref: FIRDatabaseReference?
+class BKMFilterTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,46 +18,22 @@ class GeneralSettingsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        ref = FIRDatabase.database().reference()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        ref?.child("users").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { snapshot in
-            if let userInfo = snapshot.value as? Dictionary<String, AnyObject> {
-                
-                var fullName = ""
-                print("userInfo \(userInfo)")
-                if let firstName = userInfo["firstName"] as? String {
-                    fullName = "\(firstName)"
-                }
-                if let middleName = userInfo["middleName"] as? String {
-                    fullName = "\(fullName) \(middleName)"
-                }
-                if let lastName = userInfo["lastName"] as? String {
-                    fullName = "\(fullName) \(lastName)"
-                }
-                self.fullNameLabel.text = fullName
-                
-                if let email = userInfo["email"] as? String {
-                    self.emailLabel.text = email
-                }
-            }
-        })
-    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
         return 4
     }
 
@@ -121,5 +91,19 @@ class GeneralSettingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(" \(indexPath.row)")
+        
+        if indexPath.row == 0 {
+            
+        } else if indexPath.row == 1 {
+        } else if indexPath.row == 2 {
+        } else if indexPath.row == 3 {
+            let _ = self.navigationController?.popViewController(animated: true)
+        }
+    }
+
 
 }
