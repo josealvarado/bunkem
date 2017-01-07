@@ -15,6 +15,11 @@ class GeneralSettingsTableViewController: UITableViewController {
     @IBOutlet weak var emailLabel: UILabel!
     
     var ref: FIRDatabaseReference?
+    
+    var keyRows = ["aboutYou", "thingsEnjoy", "placesLived", "placesVisit"]
+    
+    var keyDict = ["aboutYou": "", "thingsEnjoy": "", "placesLived": "", "placesVisit": ""]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +41,8 @@ class GeneralSettingsTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         ref?.child("users").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { snapshot in
             if let userInfo = snapshot.value as? Dictionary<String, AnyObject> {
+                
+                CurrentUser.user.update(userJSON: userInfo)
                 
                 var fullName = ""
                 print("userInfo \(userInfo)")
@@ -64,7 +71,7 @@ class GeneralSettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 8
     }
 
     /*
@@ -111,15 +118,41 @@ class GeneralSettingsTableViewController: UITableViewController {
         return true
     }
     */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(" \(indexPath.row)")
+        
+        if indexPath.row == 4 {
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
+        } else if indexPath.row == 5 {
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
 
-    /*
+        } else if indexPath.row == 6 {
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
+
+        } else if indexPath.row == 7 {
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
+
+        }
+    }
+
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "bio" {
+            guard let vc = segue.destination as? BKMChangeBioViewController else { return }
+            
+            guard let key = sender as? String else { return }
+            
+            vc.key = key
+        }
     }
-    */
+    
 
 }

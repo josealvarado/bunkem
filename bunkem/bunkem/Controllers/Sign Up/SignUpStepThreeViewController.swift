@@ -248,7 +248,7 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
         self.present(alertController, animated: true, completion: nil)
     }
     
-    // MARK: UIImagePickerControllerDelegate
+    // MARK: - UIImagePickerControllerDelegate
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [AnyHashable: Any]!) {
         self.dismiss(animated: true, completion: {
@@ -313,4 +313,5 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
         return true
     }
 
+    
 }

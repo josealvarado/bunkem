@@ -26,7 +26,7 @@ class SFDImageUploadDownloadService: NSObject {
     class func saveImageLocally(image: UIImage, fileName: String) -> URL?{
         do {
             let documentsURL = getDownloadDocumentsDirectory()
-            let fileURL = documentsURL.appendingPathComponent("\(fileName)")
+            let fileURL = documentsURL.appendingPathComponent(fileName)
             if let pngImageData = UIImagePNGRepresentation(image) {
                 try pngImageData.write(to: fileURL, options: .atomic)
                 
@@ -38,11 +38,15 @@ class SFDImageUploadDownloadService: NSObject {
         return nil
     }
     
-    class func initiateDownloadImage(fileName: String) -> URL? {
+    class func initiateDownloadImage(fileName: String, downloadedFilePath: String? = nil) -> URL? {
         let documentsURL = getDownloadDocumentsDirectory()
         let downloadingFileURL = documentsURL.appendingPathComponent(fileName)
         
-        if FileManager.default.fileExists(atPath: downloadingFileURL.path) {
+        if let downloadedFilePath = downloadedFilePath, FileManager.default.fileExists(atPath: documentsURL.appendingPathComponent(downloadedFilePath).path) {
+            print("File is already saved locally")
+            return documentsURL.appendingPathComponent(downloadedFilePath)
+        }
+        else if FileManager.default.fileExists(atPath: downloadingFileURL.path) {
             print("File is already saved locally")
             return downloadingFileURL
         } else {

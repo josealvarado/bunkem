@@ -11,6 +11,7 @@
 		CB103FCB1DF9413900DA032F /* whiteLeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */; };
 		CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */; };
 		CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */; };
+		CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */; };
 		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
@@ -41,6 +42,7 @@
 		CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E41DE0C529001DACB7 /* SignUpStepTwoViewController.swift */; };
 		CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E61DE0C535001DACB7 /* SignUpStepThreeViewController.swift */; };
 		CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3D8E81DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift */; };
+		CBAB769F1E1EC84C00DE832A /* BKMChangeBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB769E1E1EC84C00DE832A /* BKMChangeBioViewController.swift */; };
 		CBB484011E0A5B48008A90A3 /* hand swimping right.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB483FF1E0A5B48008A90A3 /* hand swimping right.png */; };
 		CBB484021E0A5B48008A90A3 /* hand swiping left.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB484001E0A5B48008A90A3 /* hand swiping left.png */; };
 		CBB484041E0A5D6F008A90A3 /* Three Dots.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB484031E0A5D6F008A90A3 /* Three Dots.png */; };
@@ -63,6 +65,7 @@
 		CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteLeftArrow.png; sourceTree = "<group>"; };
 		CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeNameViewController.swift; sourceTree = "<group>"; };
+		CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultProfileImage.jpeg; sourceTree = "<group>"; };
 		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		CBA3D8E41DE0C529001DACB7 /* SignUpStepTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStepTwoViewController.swift; sourceTree = "<group>"; };
 		CBA3D8E61DE0C535001DACB7 /* SignUpStepThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStepThreeViewController.swift; sourceTree = "<group>"; };
 		CBA3D8E81DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSecurityQuestionsViewController.swift; sourceTree = "<group>"; };
+		CBAB769E1E1EC84C00DE832A /* BKMChangeBioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeBioViewController.swift; sourceTree = "<group>"; };
 		CBB483FF1E0A5B48008A90A3 /* hand swimping right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand swimping right.png"; sourceTree = "<group>"; };
 		CBB484001E0A5B48008A90A3 /* hand swiping left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand swiping left.png"; sourceTree = "<group>"; };
 		CBB484031E0A5D6F008A90A3 /* Three Dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Three Dots.png"; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				CB59D3561DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift */,
 				CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */,
 				CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */,
+				CBAB769E1E1EC84C00DE832A /* BKMChangeBioViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				CBB483FF1E0A5B48008A90A3 /* hand swimping right.png */,
 				CBB484001E0A5B48008A90A3 /* hand swiping left.png */,
 				CBB484031E0A5D6F008A90A3 /* Three Dots.png */,
+				CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				CB5974981DF6948600359912 /* About.png in Resources */,
 				CB5974931DF6945000359912 /* Tell a Friend.png in Resources */,
 				CB59748F1DF6927D00359912 /* Menu-25.png in Resources */,
+				CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +460,7 @@
 				CB8F67211E02705F00011EED /* BKMProfileDetailViewController.swift in Sources */,
 				CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */,
 				CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */,
+				CBAB769F1E1EC84C00DE832A /* BKMChangeBioViewController.swift in Sources */,
 				CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */,
 				CBBA452A1E07465800CB9CC8 /* BKMMessageViewController.swift in Sources */,
 			);
