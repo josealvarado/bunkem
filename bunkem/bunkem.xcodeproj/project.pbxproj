@@ -11,6 +11,9 @@
 		CB103FCB1DF9413900DA032F /* whiteLeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */; };
 		CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */; };
 		CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */; };
+		CB3D66AE1E25EBA60031571E /* BKMMatchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */; };
+		CB3D66B11E25FF3F0031571E /* BKMProfileMatchedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */; };
+		CB3D66B21E25FF3F0031571E /* BKMProfileMatchedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */; };
 		CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */; };
 		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
@@ -65,6 +68,9 @@
 		CB103FCA1DF9413900DA032F /* whiteLeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteLeftArrow.png; sourceTree = "<group>"; };
 		CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeNameViewController.swift; sourceTree = "<group>"; };
+		CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMMatchingService.swift; sourceTree = "<group>"; };
+		CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BKMProfileMatchedViewController.swift; path = bunkem/Views/BKMProfileMatchedViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKMProfileMatchedViewController.xib; path = bunkem/Views/BKMProfileMatchedViewController.xib; sourceTree = SOURCE_ROOT; };
 		CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultProfileImage.jpeg; sourceTree = "<group>"; };
 		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +153,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CB3D66B31E25FF540031571E /* ProfileMatched */ = {
+			isa = PBXGroup;
+			children = (
+				CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */,
+				CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */,
+			);
+			name = ProfileMatched;
+			sourceTree = "<group>";
+		};
 		CB479FCD1DED0CB400C73B83 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				CB480E3C1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift */,
+				CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */,
 			);
 			name = Services;
 			path = services;
@@ -272,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				CBF9B3DF1DFFBCFC00AA8311 /* CardView.swift */,
+				CB3D66B31E25FF540031571E /* ProfileMatched */,
 				CBF9B3E01DFFBCFC00AA8311 /* CardContentView.xib */,
 				CBFCEBCF1DEEAD06008445C8 /* Login.storyboard */,
 				CBFCEBD11DEEAD06008445C8 /* Main.storyboard */,
@@ -365,6 +382,7 @@
 				CBA3D8D71DE01DA5001DACB7 /* GoogleService-Info.plist in Resources */,
 				CB5974981DF6948600359912 /* About.png in Resources */,
 				CB5974931DF6945000359912 /* Tell a Friend.png in Resources */,
+				CB3D66B21E25FF3F0031571E /* BKMProfileMatchedViewController.xib in Resources */,
 				CB59748F1DF6927D00359912 /* Menu-25.png in Resources */,
 				CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */,
 			);
@@ -457,10 +475,12 @@
 				CB59D3531DF376F70053A2F4 /* BKMChangeEmailViewController.swift in Sources */,
 				CBA3D8E91DE0F963001DACB7 /* SignUpSecurityQuestionsViewController.swift in Sources */,
 				CBA3D8E31DE0C514001DACB7 /* SignUpStepOneViewController.swift in Sources */,
+				CB3D66B11E25FF3F0031571E /* BKMProfileMatchedViewController.swift in Sources */,
 				CB8F67211E02705F00011EED /* BKMProfileDetailViewController.swift in Sources */,
 				CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */,
 				CB922D2A1DEB4FDD00FC85F6 /* User.swift in Sources */,
 				CBAB769F1E1EC84C00DE832A /* BKMChangeBioViewController.swift in Sources */,
+				CB3D66AE1E25EBA60031571E /* BKMMatchingService.swift in Sources */,
 				CB922D271DEB4F8F00FC85F6 /* Constants.swift in Sources */,
 				CBBA452A1E07465800CB9CC8 /* BKMMessageViewController.swift in Sources */,
 			);

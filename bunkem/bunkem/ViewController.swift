@@ -51,8 +51,40 @@ class ViewController: UIViewController {
         }
         swipeableView.didSwipe = {view, direction, vector in
             print("Did swipe view in direction: \(direction), vector: \(vector)")
+            let activeUser = self.userList[self.userIndex]
+
             self.userIndex += 1
             self.updateView()
+
+            if direction == .Right {
+                print("RIGHT")
+
+                BKMMatchingService.firstTimeRight(success: { (firstTimeRight) in
+                    if firstTimeRight {
+                        print("firstTimeRight")
+                        self.firstTimeRight()
+                    } else {
+                        
+                        BKMMatchingService.interested(activeUser, success: { (activeUser) in
+                            print("POP matched")
+                            
+                            self.profileMatched(matchedProfile: activeUser)
+                        }, failure: { (failureString) in
+                        })
+                        
+                    }
+                })
+            } else if direction == .Left {
+                print("LEFT")
+
+                BKMMatchingService.firstTimeLeft(success: { (firstTimeLeft) in
+                    if firstTimeLeft {
+                        print("firstTimeLeft")
+                        self.firstTimeLeft()
+                    }
+                    BKMMatchingService.notInterested(activeUser)
+                })
+            }
         }
         swipeableView.didCancel = {view in
             print("Did cancel swiping view")
@@ -357,6 +389,59 @@ class ViewController: UIViewController {
             }
         }
      }
+    
+    //MARK: - Matching functions
  
+    func profileMatched(matchedProfile: User) -> Void {
+        
+        let vc = BKMProfileMatchedViewController()
+        
+        vc.continueAction = { ()
+            print("continueAction")
+            vc.dismiss(animated: true, completion: nil)
+        }
+        
+        vc.messageAction = {
+            print("messageAction")
+            vc.dismiss(animated: true, completion: nil)
+        }
+        
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: false) { 
+            print("ere")
+        }
+    }
+    
+    func firstTimeRight() -> Void {
+        let alertController = UIAlertController(title: "Interested", message: "Dragging a picture to the right indicates you want \"name\" to be saved to \"people of interest\"", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (alertAction) in
+//            print("undo swipe right")
+//        }))
+//        alertController.addAction(UIAlertAction(title: "Interested", style: UIAlertActionStyle.default, handler: { (alertAction) in
+//            print("swip right")
+//        }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func firstTimeLeft() -> Void {
+        let alertController = UIAlertController(title: "Not Interested", message: "Dragging a picture to the left indicates you're not interested", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+        
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (alertAction) in
+//            print("undo swipe left")
+//        }))
+//        alertController.addAction(UIAlertAction(title: "Not Interested", style: UIAlertActionStyle.default, handler: { (alertAction) in
+//            print("swip left")
+//        }))
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
 }
 

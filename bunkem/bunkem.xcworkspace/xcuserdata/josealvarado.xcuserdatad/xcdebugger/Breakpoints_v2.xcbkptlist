@@ -17,38 +17,6 @@
             endingLineNumber = "40"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "bunkem.BKMPrivacySettingsViewController.(viewWillAppear (Swift.Bool) -&gt; ()).(closure #1)"
-                  moduleName = "bunkem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
-                  timestampString = "505362829.521961"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "568">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "bunkem.BKMPrivacySettingsViewController.(viewWillAppear (Swift.Bool) -&gt; ()).(closure #1)"
-                  moduleName = "bunkem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
-                  timestampString = "505362829.523404"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1019">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/ViewController.swift"
-            timestampString = "505333186.863635"
+            timestampString = "505809773.564559"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "273"
-            endingLineNumber = "273"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
             landmarkName = "nextCardView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -272,6 +240,38 @@
             startingLineNumber = "68"
             endingLineNumber = "68"
             landmarkName = "saveButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bunkem/ViewController.swift"
+            timestampString = "505809773.564559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
+            landmarkName = "profileMatched(matchedProfile:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bunkem/Views/BKMProfileMatchedViewController.swift"
+            timestampString = "505808876.491186"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "continueSearchingButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
