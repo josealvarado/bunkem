@@ -14,11 +14,13 @@ class BKMMatchingService: NSObject {
 
      class func interested(_ user: User, success:@escaping (_ matchedUser: User) -> Void, failure: @escaping (_ error: String) -> Void ) {
         
+        
+        
         let ref: FIRDatabaseReference = FIRDatabase.database().reference()
-        ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true])
+        ref.child("potentialMatch").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true])
         
         
-        ref.child("matches").child(user.identifier).child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("potentialMatch").child(user.identifier).child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
             guard let match = value?["match"] as? Bool, match else {
@@ -26,6 +28,11 @@ class BKMMatchingService: NSObject {
                 return
             }
             
+            ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true, "username": user.username, "identifier": user.identifier])
+            
+            ref.child("matches").child(user.identifier).child(CurrentUser.user.user.uid).updateChildValues(["match": true, "username": CurrentUser.user.username, "identifier": CurrentUser.user.user.uid])
+
+
             success(user)
             
         }) { (error) in
@@ -37,7 +44,7 @@ class BKMMatchingService: NSObject {
     class func notInterested(_ user: User) {
         
         let ref: FIRDatabaseReference = FIRDatabase.database().reference()
-        ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": false])
+        ref.child("potentialMatch").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": false])
     }
     
     class func firstTimeLeft(success:@escaping (_ firstTime: Bool) -> Void) -> Void {

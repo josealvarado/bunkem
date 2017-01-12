@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
-class BKMMessageViewController: UIViewController {
+class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     var activeUser: User!
+    
+    var matchedUsers = [[String: AnyObject]]()
+    var matchedUserIds = [Int]()
+    
+    lazy var ref: FIRDatabaseReference = FIRDatabase.database().reference()
+    var postRef: FIRDatabaseReference!
+    var commentsRef: FIRDatabaseReference!
+    var refHandle: FIRDatabaseHandle?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        postRef = ref.child("matches").child(CurrentUser.user.user.uid)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +37,36 @@ class BKMMessageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        // [START post_value_event_listener]
+        refHandle = postRef.observe(FIRDataEventType.value, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            
+//            let postKeys = postDict.keys
+            
+            for (_, post) in postDict {
+                
+                if let match = post["match"] as? Bool, match {
+                    
+                    
+                    
+                    self.matchedUsers.append(post as! [String : AnyObject])
+                }
+            }
+            
+            // [START_EXCLUDE]
+            self.tableView.reloadData()
+            // [END_EXCLUDE]
+        })
+        // [END post_value_event_listener]
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let refHandle = refHandle {
+            postRef.removeObserver(withHandle: refHandle)
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -33,5 +77,39 @@ class BKMMessageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Table view data source
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return matchedUsers.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath)
+     
+        // Configure the cell...
+        let user = matchedUsers[indexPath.row]
+        
+        print("user \(user)")
+        if let username = user["username"] as? String {
+            cell.textLabel?.text = username
+        }
+        
+        return cell
+     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(" \(indexPath.row)")
+        
+        let user = matchedUsers[indexPath.row]
+    }
 
 }

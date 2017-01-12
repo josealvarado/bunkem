@@ -14,6 +14,7 @@
 		CB3D66AE1E25EBA60031571E /* BKMMatchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */; };
 		CB3D66B11E25FF3F0031571E /* BKMProfileMatchedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */; };
 		CB3D66B21E25FF3F0031571E /* BKMProfileMatchedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */; };
+		CB3D66B51E275E6E0031571E /* BKMDetailMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */; };
 		CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */; };
 		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
@@ -71,6 +72,7 @@
 		CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMMatchingService.swift; sourceTree = "<group>"; };
 		CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BKMProfileMatchedViewController.swift; path = bunkem/Views/BKMProfileMatchedViewController.swift; sourceTree = SOURCE_ROOT; };
 		CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKMProfileMatchedViewController.xib; path = bunkem/Views/BKMProfileMatchedViewController.xib; sourceTree = SOURCE_ROOT; };
+		CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMDetailMessageViewController.swift; sourceTree = "<group>"; };
 		CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultProfileImage.jpeg; sourceTree = "<group>"; };
 		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				CBA3D8DD1DE03357001DACB7 /* ForgotPasswordViewController.swift */,
 				CBBA45291E07465800CB9CC8 /* BKMMessageViewController.swift */,
 				CBBA452B1E07479300CB9CC8 /* BKMFilterTableViewController.swift */,
+				CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */,
 				CBA3D8E11DE0C4E6001DACB7 /* Sign Up */,
 				CBA3D8DF1DE03568001DACB7 /* LoginViewController.swift */,
 				CB479FCD1DED0CB400C73B83 /* Settings */,
@@ -464,6 +467,7 @@
 				CB94FF751DE01ADE009772EA /* AppDelegate.swift in Sources */,
 				CB59D3591DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift in Sources */,
 				CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */,
+				CB3D66B51E275E6E0031571E /* BKMDetailMessageViewController.swift in Sources */,
 				CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */,
 				CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */,
 				CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */,

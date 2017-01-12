@@ -85,6 +85,7 @@ class SignUpStepTwoViewController: UIViewController, UITextFieldDelegate {
                 return
             }
             
+            data["displayName"] = username
             data["username"] = username
             data["password"] = password
             data["securityQuestion"] = securityQuestion

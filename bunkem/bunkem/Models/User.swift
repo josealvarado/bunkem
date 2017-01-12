@@ -66,8 +66,19 @@ class User: NSObject {
             self.email = email
         }
         
-        if let displayName = user.displayName {
+        if let displayName = user.displayName, displayName != "" {
             self.username = displayName
+        }
+       
+        let userID = FIRAuth.auth()?.currentUser?.uid
+        ref = FIRDatabase.database().reference()
+        ref?.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if let value = snapshot.value as? [String : AnyObject] {
+                self.update(userJSON: value)
+            }            
+        }) { (error) in
+            print(error.localizedDescription)
         }
 
     }
