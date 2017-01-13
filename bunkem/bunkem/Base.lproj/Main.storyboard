@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1032.8" y="92.203898050974516"/>
         </scene>
-        <!--Message-->
+        <!--Matches-->
         <scene sceneID="frm-sT-wpQ">
             <objects>
                 <viewController storyboardIdentifier="BKMMessageViewController" automaticallyAdjustsScrollViewInsets="NO" id="mit-zQ-j5K" customClass="BKMMessageViewController" customModule="bunkem" customModuleProvider="target" sceneMemberID="viewController">
@@ -190,20 +190,20 @@
                             <constraint firstItem="gv5-Kp-wvc" firstAttribute="leading" secondItem="Waz-bE-msI" secondAttribute="leading" id="skv-MJ-B6q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Message" id="8dX-Mw-dXd"/>
+                    <navigationItem key="navigationItem" title="Matches" id="8dX-Mw-dXd"/>
                     <connections>
                         <outlet property="tableView" destination="gv5-Kp-wvc" id="nbM-pr-MtO"/>
-                        <segue destination="q5c-Vr-tus" kind="show" action="showDetailViewController:sender:" id="h0j-r9-r0p"/>
+                        <segue destination="q5c-Vr-tus" kind="showDetail" identifier="ShowChannel" action="showViewController:sender:" id="h0j-r9-r0p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzk-VD-W11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="1098"/>
         </scene>
-        <!--Name-->
+        <!--Detail Message View Controller-->
         <scene sceneID="4ty-nh-Cf4">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="q5c-Vr-tus" customClass="BKMDetailMessageViewController" customModule="bunkem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q5c-Vr-tus" customClass="BKMDetailMessageViewController" customModule="bunkem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c8B-M4-7fx"/>
                         <viewControllerLayoutGuide type="bottom" id="GFl-b2-iQH"/>
@@ -211,55 +211,8 @@
                     <view key="view" contentMode="scaleToFill" id="oS8-3h-M0B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJx-0m-7x9">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGr-dn-Rbb">
-                                        <rect key="frame" x="8" y="10" width="305" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-ay-IDl">
-                                        <rect key="frame" x="321" y="10" width="46" height="30"/>
-                                        <color key="backgroundColor" red="0.169859916" green="0.4776977301" blue="0.93440479040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="s2J-m3-dRc"/>
-                                        </constraints>
-                                        <state key="normal" title="Send">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="bGr-dn-Rbb" firstAttribute="leading" secondItem="lJx-0m-7x9" secondAttribute="leading" constant="8" id="4Uw-bT-M7i"/>
-                                    <constraint firstAttribute="trailing" secondItem="CXW-ay-IDl" secondAttribute="trailing" constant="8" id="6Tc-0o-FYJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="bGr-dn-Rbb" secondAttribute="bottom" constant="10" id="DIx-B0-v99"/>
-                                    <constraint firstItem="bGr-dn-Rbb" firstAttribute="top" secondItem="lJx-0m-7x9" secondAttribute="top" constant="10" id="GTf-kr-pQr"/>
-                                    <constraint firstItem="CXW-ay-IDl" firstAttribute="top" secondItem="lJx-0m-7x9" secondAttribute="top" constant="10" id="R5S-EB-ZBb"/>
-                                    <constraint firstAttribute="height" constant="50" id="Udb-fJ-jgQ"/>
-                                    <constraint firstItem="CXW-ay-IDl" firstAttribute="leading" secondItem="bGr-dn-Rbb" secondAttribute="trailing" constant="8" id="s6D-15-b3c"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Qc-hj-Rn4">
-                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="lJx-0m-7x9" secondAttribute="trailing" id="7aO-F9-pRS"/>
-                            <constraint firstAttribute="trailing" secondItem="4Qc-hj-Rn4" secondAttribute="trailing" id="C7t-pC-nqo"/>
-                            <constraint firstItem="lJx-0m-7x9" firstAttribute="top" secondItem="4Qc-hj-Rn4" secondAttribute="bottom" id="Uas-5J-FHR"/>
-                            <constraint firstItem="GFl-b2-iQH" firstAttribute="top" secondItem="lJx-0m-7x9" secondAttribute="bottom" id="h78-Ol-dUC"/>
-                            <constraint firstItem="lJx-0m-7x9" firstAttribute="leading" secondItem="oS8-3h-M0B" secondAttribute="leading" id="oMd-ii-9kC"/>
-                            <constraint firstItem="4Qc-hj-Rn4" firstAttribute="leading" secondItem="oS8-3h-M0B" secondAttribute="leading" id="uld-N4-mia"/>
-                            <constraint firstItem="4Qc-hj-Rn4" firstAttribute="top" secondItem="c8B-M4-7fx" secondAttribute="bottom" id="yBx-8y-oSL"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Name" id="Bzw-AP-O4E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJL-aU-daO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,10 +10,11 @@ target 'bunkem' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth’
   pod 'Firebase/Database'
-  pod 'SVProgressHUD'
   pod 'Firebase/Storage'
+  pod 'SVProgressHUD'
   pod 'ZLSwipeableViewSwift'
   pod 'UIColor+FlatColors'
   pod 'Cartography'
+  pod 'JSQMessagesViewController'
 
 end

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E85A843AA01D70DE10A5ED6783E80EFF"
+               BlueprintIdentifier = "8FCB05802CDC47E1D0E0235CD47B6404"
                BuildableName = "UIColor_FlatColors.framework"
                BlueprintName = "UIColor+FlatColors"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E85A843AA01D70DE10A5ED6783E80EFF"
+            BlueprintIdentifier = "8FCB05802CDC47E1D0E0235CD47B6404"
             BuildableName = "UIColor_FlatColors.framework"
             BlueprintName = "UIColor+FlatColors"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -28,9 +28,21 @@ class BKMMatchingService: NSObject {
                 return
             }
             
-            ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true, "username": user.username, "identifier": user.identifier])
+            var channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("channels")
+            let newChannelRef = channelRef.childByAutoId() // 2
             
-            ref.child("matches").child(user.identifier).child(CurrentUser.user.user.uid).updateChildValues(["match": true, "username": CurrentUser.user.username, "identifier": CurrentUser.user.user.uid])
+            print("newChannelRef.j=key \(newChannelRef.key)")
+            print("newChannelRef \(newChannelRef)")
+            
+            let channelItem = [ // 3
+                "name": "channel"
+            ]
+            newChannelRef.setValue(channelItem) // 4
+            
+            
+            ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true, "username": user.username, "identifier": user.identifier, "channelId": newChannelRef.key])
+            
+            ref.child("matches").child(user.identifier).child(CurrentUser.user.user.uid).updateChildValues(["match": true, "username": CurrentUser.user.username, "identifier": CurrentUser.user.user.uid, "channelId": newChannelRef.key])
 
 
             success(user)

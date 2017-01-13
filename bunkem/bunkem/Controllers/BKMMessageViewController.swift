@@ -23,6 +23,8 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
     var commentsRef: FIRDatabaseReference!
     var refHandle: FIRDatabaseHandle?
 
+    private lazy var channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("channels")
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,20 +32,12 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
         
         postRef = ref.child("matches").child(CurrentUser.user.user.uid)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         
         // [START post_value_event_listener]
         refHandle = postRef.observe(FIRDataEventType.value, with: { (snapshot) in
             let postDict = snapshot.value as? [String : AnyObject] ?? [:]
             
-//            let postKeys = postDict.keys
+            //            let postKeys = postDict.keys
             
             for (_, post) in postDict {
                 
@@ -61,6 +55,16 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         })
         // [END post_value_event_listener]
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+
+    }
     
     override func viewWillDisappear(_ animated: Bool) {
         if let refHandle = refHandle {
@@ -68,15 +72,27 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "ShowChannel" {
+            if let chatVc = segue.destination as? BKMDetailMessageViewController, let matchObject = sender as? [String: AnyObject] {
+                chatVc.matchObject = matchObject
+                
+                if let channelId = matchObject["channelId"] as? String {
+                    chatVc.senderDisplayName = CurrentUser.user.username
+                    chatVc.channelRef = channelRef.child(channelId)
+
+                }
+            }
+        }
     }
-    */
+    
     
     // MARK: - Table view data source
     
@@ -109,7 +125,8 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         
         print(" \(indexPath.row)")
         
-        let user = matchedUsers[indexPath.row]
+        let matchObject = matchedUsers[indexPath.row]
+        self.performSegue(withIdentifier: "ShowChannel", sender: matchObject)        
     }
 
 }
