@@ -13,6 +13,7 @@ class GeneralSettingsTableViewController: UITableViewController {
 
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     
     var ref: FIRDatabaseReference?
     
@@ -60,6 +61,10 @@ class GeneralSettingsTableViewController: UITableViewController {
                 if let email = userInfo["email"] as? String {
                     self.emailLabel.text = email
                 }
+                
+                if let phoneNumber = userInfo["phoneNumber"] as? String {
+                    self.phoneLabel.text = phoneNumber
+                }
             }
         })
     }
@@ -71,7 +76,7 @@ class GeneralSettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 9
     }
 
     /*
@@ -123,17 +128,16 @@ class GeneralSettingsTableViewController: UITableViewController {
         
         print(" \(indexPath.row)")
         
-        if indexPath.row == 4 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
-        } else if indexPath.row == 5 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
-
+        let padding = 5
+        
+        if indexPath.row == 5 {
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
         } else if indexPath.row == 6 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
-
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
         } else if indexPath.row == 7 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - 4])
-
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
+        } else if indexPath.row == 8 {
+            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
         }
     }
 

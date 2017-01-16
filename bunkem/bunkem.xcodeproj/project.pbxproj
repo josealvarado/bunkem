@@ -17,6 +17,7 @@
 		CB3D66B51E275E6E0031571E /* BKMDetailMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */; };
 		CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */; };
 		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
+		CB4325741E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
@@ -75,6 +76,7 @@
 		CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMDetailMessageViewController.swift; sourceTree = "<group>"; };
 		CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultProfileImage.jpeg; sourceTree = "<group>"; };
 		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
+		CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePhoneNumberViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */,
 				CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */,
 				CBAB769E1E1EC84C00DE832A /* BKMChangeBioViewController.swift */,
+				CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				CB94FF751DE01ADE009772EA /* AppDelegate.swift in Sources */,
 				CB59D3591DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift in Sources */,
 				CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */,
+				CB4325741E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift in Sources */,
 				CB3D66B51E275E6E0031571E /* BKMDetailMessageViewController.swift in Sources */,
 				CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */,
 				CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */,

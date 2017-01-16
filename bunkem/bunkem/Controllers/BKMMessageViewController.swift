@@ -46,8 +46,20 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
                     
                     
                     self.matchedUsers.append(post as! [String : AnyObject])
+                    
+                    
+                    print("post \(post)")
+                    
+                    if let identifier = post["identifier"] as? String, identifier == self.activeUser.identifier{
+                        print("SHOW USER")
+                        
+                        self.performSegue(withIdentifier: "ShowChannel", sender: post)
+
+                    }
                 }
             }
+            
+            print("-------- \(self.activeUser.identifier)")
             
             // [START_EXCLUDE]
             self.tableView.reloadData()

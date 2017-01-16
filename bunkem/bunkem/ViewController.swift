@@ -404,6 +404,17 @@ class ViewController: UIViewController {
         vc.messageAction = {
             print("messageAction")
             vc.dismiss(animated: true, completion: nil)
+
+            print("userIndex \(self.userIndex)")
+            
+            guard self.userIndex - 1 < self.userList.count && self.userIndex - 1 >= 0 else {
+                return
+            }
+            
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMMessageViewController") as? BKMMessageViewController {
+                vc.activeUser = self.userList[self.userIndex - 1]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
         
         vc.modalPresentationStyle = .overFullScreen
