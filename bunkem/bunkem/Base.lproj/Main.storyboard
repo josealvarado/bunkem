@@ -873,6 +873,111 @@
             </objects>
             <point key="canvasLocation" x="2555" y="-620"/>
         </scene>
+        <!--Support-->
+        <scene sceneID="CSr-nG-Wnm">
+            <objects>
+                <viewController id="HBu-Yb-jdt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zCe-Vo-Unh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbW-sn-HxO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQB-81-MRE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I can't log in." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15T-EF-JYm">
+                                <rect key="frame" x="16" y="72" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oMU-vd-yZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.74551445245742798" green="0.10010728985071182" blue="0.083931811153888702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhx-i5-duz">
+                                <rect key="frame" x="16" y="101" width="343" height="101.5"/>
+                                <string key="text">This may be temporary so I would suggest trying again at a later time. If the issue persists, try logging out and logging back in. Please check your email for information regarding this issue or Bunk’em website.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App is crashing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-Iv-vwZ">
+                                <rect key="frame" x="16" y="210" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pdV-94-5D2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.74551445250000004" green="0.10010728989999999" blue="0.083931811149999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-TL-YWx">
+                                <rect key="frame" x="16" y="239" width="343" height="142.5"/>
+                                <string key="text">This may be temporary. We suggest trying again at a later time. In the meantime, make sure you have the latest version of Bunk’em and that your phone’s operating system are up-to-date. After that, then try force quitting the app. If the issue persists, try reinstalling the app.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Will I lose all my matches if I delete Bunk’em? " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCo-NY-bUs">
+                                <rect key="frame" x="16" y="389" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.74551445250000004" green="0.10010728989999999" blue="0.083931811149999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWy-jD-twg">
+                                <rect key="frame" x="16" y="438" width="343" height="61"/>
+                                <string key="text">As long as you do not actually delete your account then you will not lose your matches that you have previously matched before.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What if I get tired of swiping is there an alternative way? " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-QH-VPa">
+                                <rect key="frame" x="16" y="507" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.74551445250000004" green="0.10010728989999999" blue="0.083931811149999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQC-Gd-eTn">
+                                <rect key="frame" x="16" y="556" width="343" height="101.5"/>
+                                <string key="text">Yes, tap on the “Interested” button if you want the interface to swipe right for you or tap on “No interest” if you want the interface to swipe left for you. One tap will swipe for you. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zzg-TL-YWx" firstAttribute="top" secondItem="7l0-Iv-vwZ" secondAttribute="bottom" constant="8" id="2QT-9m-19O"/>
+                            <constraint firstItem="lhx-i5-duz" firstAttribute="top" secondItem="15T-EF-JYm" secondAttribute="bottom" constant="8" id="44Z-R2-ECu"/>
+                            <constraint firstItem="EQC-Gd-eTn" firstAttribute="top" secondItem="9U6-QH-VPa" secondAttribute="bottom" constant="8" id="6Wf-ni-XiT"/>
+                            <constraint firstItem="YCo-NY-bUs" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="AZV-m0-sPY"/>
+                            <constraint firstItem="YCo-NY-bUs" firstAttribute="top" secondItem="zzg-TL-YWx" secondAttribute="bottom" constant="7.5" id="DMM-yw-Wlw"/>
+                            <constraint firstAttribute="trailing" secondItem="lhx-i5-duz" secondAttribute="trailing" constant="16" id="DUt-wd-HlS"/>
+                            <constraint firstAttribute="trailing" secondItem="7l0-Iv-vwZ" secondAttribute="trailing" constant="138" id="Dta-uE-1EP"/>
+                            <constraint firstItem="7l0-Iv-vwZ" firstAttribute="top" secondItem="lhx-i5-duz" secondAttribute="bottom" constant="7.5" id="Ibd-9D-ATq"/>
+                            <constraint firstItem="9U6-QH-VPa" firstAttribute="top" secondItem="zWy-jD-twg" secondAttribute="bottom" constant="7.5" id="JtD-pv-CDH"/>
+                            <constraint firstItem="7l0-Iv-vwZ" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="RzP-FD-HCB"/>
+                            <constraint firstItem="9U6-QH-VPa" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="Tt2-gS-zXE"/>
+                            <constraint firstItem="EQC-Gd-eTn" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="UD8-Ae-nfv"/>
+                            <constraint firstAttribute="trailing" secondItem="YCo-NY-bUs" secondAttribute="trailing" constant="16" id="WVl-zo-9jg"/>
+                            <constraint firstItem="zWy-jD-twg" firstAttribute="top" secondItem="YCo-NY-bUs" secondAttribute="bottom" constant="8" id="ZGI-Y5-WlR"/>
+                            <constraint firstItem="lhx-i5-duz" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="ZLQ-we-Ay3"/>
+                            <constraint firstItem="zzg-TL-YWx" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="aRB-XS-o41"/>
+                            <constraint firstAttribute="trailing" secondItem="zWy-jD-twg" secondAttribute="trailing" constant="16" id="b3K-Jn-THy"/>
+                            <constraint firstAttribute="trailing" secondItem="9U6-QH-VPa" secondAttribute="trailing" constant="16" id="eR4-Ni-NVS"/>
+                            <constraint firstAttribute="trailing" secondItem="EQC-Gd-eTn" secondAttribute="trailing" constant="16" id="j9T-Sh-TmD"/>
+                            <constraint firstItem="15T-EF-JYm" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="jR3-XR-kAx"/>
+                            <constraint firstAttribute="trailing" secondItem="15T-EF-JYm" secondAttribute="trailing" constant="138" id="mSW-uB-nbA"/>
+                            <constraint firstItem="15T-EF-JYm" firstAttribute="top" secondItem="zCe-Vo-Unh" secondAttribute="bottom" constant="8" id="son-mP-XU2"/>
+                            <constraint firstItem="zWy-jD-twg" firstAttribute="leading" secondItem="RQB-81-MRE" secondAttribute="leading" constant="16" id="vXO-oX-b78"/>
+                            <constraint firstAttribute="trailing" secondItem="zzg-TL-YWx" secondAttribute="trailing" constant="16" id="ziF-a8-GcE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Support" id="DNg-u1-cND"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eao-Qg-N61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378.4000000000001" y="-1836.4317841079462"/>
+        </scene>
         <!--Account Settings-->
         <scene sceneID="03o-Pi-XpD">
             <objects>
@@ -955,7 +1060,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re4-ZX-fzW">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re4-ZX-fzW">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -966,7 +1071,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="fMa-a0-vgL" kind="show" id="aXh-cy-AgS"/>
+                                            <segue destination="HBu-Yb-jdt" kind="show" id="V6H-5P-Fk3"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="BEr-FV-UbJ" style="IBUITableViewCellStyleDefault" id="hZm-PN-ZG5">
@@ -1247,7 +1352,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BP3-Hf-Ai4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3248.8000000000002" y="-1211.2443778110946"/>
+            <point key="canvasLocation" x="3249" y="-1259"/>
         </scene>
         <!--Privacy Policy & Terms-->
         <scene sceneID="C2x-OV-yHf">
@@ -1262,7 +1367,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F16-4W-ywD">
-                                <rect key="frame" x="15" y="79" width="345" height="573"/>
+                                <rect key="frame" x="15" y="35" width="345" height="617"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Privacy Policy of Bunk’em
 Last Modified: November 27, 2016 
