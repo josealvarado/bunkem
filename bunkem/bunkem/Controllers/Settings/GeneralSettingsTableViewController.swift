@@ -17,20 +17,8 @@ class GeneralSettingsTableViewController: UITableViewController {
     
     var ref: FIRDatabaseReference?
     
-    var keyRows = ["aboutYou", "thingsEnjoy", "placesLived", "placesVisit"]
-    
-    var keyDict = ["aboutYou": "", "thingsEnjoy": "", "placesLived": "", "placesVisit": ""]
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
         ref = FIRDatabase.database().reference()
     }
 
@@ -76,7 +64,7 @@ class GeneralSettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 6
     }
 
     /*
@@ -125,20 +113,6 @@ class GeneralSettingsTableViewController: UITableViewController {
     */
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print(" \(indexPath.row)")
-        
-        let padding = 5
-        
-        if indexPath.row == 5 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
-        } else if indexPath.row == 6 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
-        } else if indexPath.row == 7 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
-        } else if indexPath.row == 8 {
-            self.performSegue(withIdentifier: "bio", sender: keyRows[indexPath.row - padding])
-        }
     }
 
     
@@ -148,14 +122,6 @@ class GeneralSettingsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "bio" {
-            guard let vc = segue.destination as? BKMChangeBioViewController else { return }
-            
-            guard let key = sender as? String else { return }
-            
-            vc.key = key
-        }
     }
     
 
