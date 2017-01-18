@@ -53,7 +53,7 @@ class User: NSObject {
     init (snapshot: FIRDataSnapshot) {
         ref = snapshot.ref
         
-        let data = snapshot.value as! Dictionary<String, String>
+        _ = snapshot.value as! Dictionary<String, String>
     }
     
     init(userFirebase: FIRUser?) {

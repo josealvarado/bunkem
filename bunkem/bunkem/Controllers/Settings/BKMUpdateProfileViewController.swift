@@ -88,7 +88,7 @@ class BKMUpdateProfileViewController: UIViewController {
         ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(userInfo as [NSObject : AnyObject])
         SVProgressHUD.dismiss()
         
-        self.navigationController?.popViewController(animated: true)
+        let _ = self.navigationController?.popViewController(animated: true)
 //        self.dismiss(animated: true, completion: nil)
     }
 }

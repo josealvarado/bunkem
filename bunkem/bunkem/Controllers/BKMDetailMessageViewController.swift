@@ -35,10 +35,11 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
     
     private var updatedMessageRefHandle: FIRDatabaseHandle?
 
+    var ref: FIRDatabaseReference!
+    var matchedUser: User?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        self.inputToolbar.contentView.leftBarButtonItem = nil
         
         // Do any additional setup after loading the view.
         
@@ -50,12 +51,33 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
         
         observeMessages()
         
-//        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage jsq_defaultTypingIndicatorImage]
-//            style:UIBarButtonItemStylePlain
-//            target:self
-//            action:@selector(receiveMessagePressed:)];
-//        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.jsq_defaultTypingIndicator(), style: .plain, target: self, action: #selector(BKMDetailMessageViewController.didPressRightBarButtonItem(button:)))
+
+        print("matchObject \(matchObject)")
+        
+        if let username = matchObject?["username"] as? String {
+            self.title = username
+        }
+        
+        guard let matchIdentifier = matchObject?["identifier"] as? String else { return }
+        
+        ref = FIRDatabase.database().reference()
+        
+        ref.child("users").child(matchIdentifier).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            // Get user value
+            guard let matchedUserJSON = snapshot.value as? [String: AnyObject] else {
+                print("NO USER FOUND")
+                return
+            }
+
+            self.matchedUser = User(userJSON: matchedUserJSON)
+            self.matchedUser?.identifier = matchIdentifier
+            
+            print("value \(matchedUserJSON)")
+        }) { (error) in
+            print(error.localizedDescription)
+        }
 
     }
     
@@ -129,15 +151,50 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
     }
     
     override func didPressAccessoryButton(_ sender: UIButton) {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)) {
-            picker.sourceType = UIImagePickerControllerSourceType.camera
-        } else {
-            picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+//        let picker = UIImagePickerController()
+//        picker.delegate = self
+//        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)) {
+//            picker.sourceType = UIImagePickerControllerSourceType.camera
+//        } else {
+//            picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+//        }
+//        
+//        present(picker, animated: true, completion:nil)
+        
+        self.inputToolbar.contentView.textView.resignFirstResponder()
+
+        let otherAlert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        if let matchedUser = matchedUser, let url = NSURL(string: "tel://\(matchedUser.phoneNumber)"), UIApplication.shared.canOpenURL(url as URL) {
+            let printSomething = UIAlertAction(title: "Make a call", style: UIAlertActionStyle.default) { _ in
+                UIApplication.shared.openURL(url as URL)
+            }
+            otherAlert.addAction(printSomething)
         }
         
-        present(picker, animated: true, completion:nil)
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)) {
+            let printSomething = UIAlertAction(title: "Take a picture with camera", style: UIAlertActionStyle.default) { _ in
+                let picker = UIImagePickerController()
+                picker.delegate = self
+                picker.sourceType = UIImagePickerControllerSourceType.camera
+                self.present(picker, animated: true, completion:nil)
+            }
+            otherAlert.addAction(printSomething)
+        }
+        
+        
+        let callFunction = UIAlertAction(title: "Send a picture from photos", style: UIAlertActionStyle.default) { _ in
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+            self.present(picker, animated: true, completion:nil)
+        }
+        otherAlert.addAction(callFunction)
+        
+        let dismiss = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
+        otherAlert.addAction(dismiss)
+        
+        present(otherAlert, animated: true, completion: nil)
     }
     
     private func setupOutgoingBubble() -> JSQMessagesBubbleImage {
@@ -304,6 +361,8 @@ extension BKMDetailMessageViewController: UIImagePickerControllerDelegate, UINav
         
         picker.dismiss(animated: true, completion:nil)
         
+        guard let channelId = matchObject?["channelId"] as? String else { return }
+        
         // 1
         if let photoReferenceUrl = info[UIImagePickerControllerReferenceURL] as? URL {
             // Handle picking a Photo from the Photo Library
@@ -318,7 +377,7 @@ extension BKMDetailMessageViewController: UIImagePickerControllerDelegate, UINav
                     let imageFileURL = contentEditingInput?.fullSizeImageURL
                     
                     // 5
-                    let path = "\(FIRAuth.auth()?.currentUser?.uid)/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/\(photoReferenceUrl.lastPathComponent)"
+                    let path = "channel/\(channelId)/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/\(photoReferenceUrl.lastPathComponent)"
                     
                     // 6
                     self.storageRef.child(path).putFile(imageFileURL!, metadata: nil) { (metadata, error) in
@@ -340,7 +399,7 @@ extension BKMDetailMessageViewController: UIImagePickerControllerDelegate, UINav
                 // 3
                 let imageData = UIImageJPEGRepresentation(image, 1.0)
                 // 4
-                let imagePath = FIRAuth.auth()!.currentUser!.uid + "/\(Int(Date.timeIntervalSinceReferenceDate * 1000)).jpg"
+                let imagePath = "channel/" + channelId + "/\(Int(Date.timeIntervalSinceReferenceDate * 1000)).jpg"
                 // 5
                 let metadata = FIRStorageMetadata()
                 metadata.contentType = "image/jpeg"

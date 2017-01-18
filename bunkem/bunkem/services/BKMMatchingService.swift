@@ -28,7 +28,7 @@ class BKMMatchingService: NSObject {
                 return
             }
             
-            var channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("channels")
+            let channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("channels")
             let newChannelRef = channelRef.childByAutoId() // 2
             
             print("newChannelRef.j=key \(newChannelRef.key)")
