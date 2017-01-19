@@ -38,6 +38,10 @@ class User: NSObject {
     var lived = ""
     var visit = ""
     
+    var photoURL = ""
+    var images = [[String: AnyObject]]()
+    
+    
     var ref: FIRDatabaseReference?
     var user: FIRUser!
 
@@ -172,6 +176,16 @@ class User: NSObject {
             self.visit = visit
         }
         
+        if let photoURL = userJSON["photoURL"] as? String {
+            self.photoURL = photoURL
+        }
+        
+        self.images.removeAll()
+        if let images = userJSON["images"] as? [String: AnyObject] {
+            for (_, dict) in images {
+                self.images.append(dict as! [String : AnyObject])
+            }
+        }
     }
     
     func toJSON(optional: [String: AnyObject]? = nil) -> Data? {

@@ -158,8 +158,6 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                 self.data["visit"] = visit as AnyObject?
             }
             
-            self.data["numberOfImages"] = self.images.count as AnyObject?
-            
             self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(self.data as [NSObject : AnyObject])
             
             // Get a reference to the storage service, using the default Firebase App
@@ -167,59 +165,106 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
             
             // This is equivalent to creating the full reference
             let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
-            
+
             // Create the file metadata
             let metadata = FIRStorageMetadata()
             metadata.contentType = "image/png"
             
-            for (index, image) in self.images.enumerated() {
-                // Upload file and metadata to the object 'images/mountains.jpg'
-                let uploadTask = storageRef.child("images/profile/\(CurrentUser.user.user.uid)/pimg-\(index)").put(UIImagePNGRepresentation(image)!, metadata: metadata);
+            var imagesSaved = 0
+            var imageCounter = 0
+            
+            for (_, image) in self.images.enumerated() {
                 
-                // Listen for state changes, errors, and completion of the upload.
-                uploadTask.observe(.pause) { snapshot in
-                    // Upload paused
-                }
-                
-                uploadTask.observe(.resume) { snapshot in
-                    // Upload resumed, also fires when the upload starts
-                }
-                
-                uploadTask.observe(.progress) { snapshot in
-                    // Upload reported progress
-                    if let progress = snapshot.progress {
-                        _ = 100.0 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+                let imageData = UIImageJPEGRepresentation(image, 1.0)
+                let imagePath = "profile/" + CurrentUser.user.user.uid + "/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/asset.jpg"
+
+                storageRef.child(imagePath).put(imageData!, metadata: metadata) { (metadata, error) in
+                    imageCounter += 1
+                    if let error = error {
+                        print("Error uploading photo: \(error)")
+                        
+                        if imageCounter == self.images.count {
+                            print("SET NUMBER OF IMAGES SAVED \(imagesSaved)")
+                            self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(["numberOfImages": imagesSaved as AnyObject])
+                        }
+                        
+                        return
+                    }
+                    
+                    
+                    
+                    print("IMAGE SAVED \(imageCounter) \(imagesSaved)")
+                    
+                    let imageRef = self.ref?.child("users").child(CurrentUser.user.user.uid).child("images").childByAutoId()
+                    
+                    let imageItem = [
+                        "photoURL": storageRef.child((metadata?.path)!).description,
+                        "order": imagesSaved
+                    ] as [String : Any]
+                    
+                    imageRef?.setValue(imageItem)
+                    
+                    if imagesSaved == 0 {
+                        print("SET DEFAULT IMAGE")
+                        self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(["photoURL": storageRef.child((metadata?.path)!).description as AnyObject])
+                    }
+                    
+                    imagesSaved += 1
+
+                    if imageCounter == self.images.count {
+                        print("SET NUMBER OF IMAGES SAVED \(imagesSaved)")
+                        self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(["numberOfImages": imagesSaved as AnyObject])
                     }
                 }
                 
-                uploadTask.observe(.success) { snapshot in
-                    print("Upload completed successfully")
-                }
                 
-                // Errors only occur in the "Failure" case
-                uploadTask.observe(.failure) { snapshot in
-                    guard let storageError = snapshot.error else { return }
-                    
-                    print("Error \(storageError)")
-                    
-                    //                        guard let errorCode = FIRStorageErrorCode(rawValue: storageError.code) else { return }
-                    //                        switch errorCode {
-                    //                        case .ObjectNotFound:
-                    //                            // File doesn't exist
-                    //                            break
-                    //                        case .Unauthorized:
-                    //                            // User doesn't have permission to access file
-                    //                            break
-                    //                        case .Cancelled:
-                    //                            // User canceled the upload
-                    //                            break
-                    //                        case .Unknown:
-                    //                            break
-                    //                        default:
-                    //                            break
-                    //                        }
-                    
-                }
+//                // Upload file and metadata to the object 'images/mountains.jpg'
+//                let uploadTask = storageRef.child("images/profile/\(CurrentUser.user.user.uid)/pimg-\(index)").put(UIImagePNGRepresentation(image)!, metadata: metadata);
+//                
+//                // Listen for state changes, errors, and completion of the upload.
+//                uploadTask.observe(.pause) { snapshot in
+//                    // Upload paused
+//                }
+//                
+//                uploadTask.observe(.resume) { snapshot in
+//                    // Upload resumed, also fires when the upload starts
+//                }
+//                
+//                uploadTask.observe(.progress) { snapshot in
+//                    // Upload reported progress
+//                    if let progress = snapshot.progress {
+//                        _ = 100.0 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+//                    }
+//                }
+//                
+//                uploadTask.observe(.success) { snapshot in
+//                    print("Upload completed successfully")
+//                }
+//                
+//                // Errors only occur in the "Failure" case
+//                uploadTask.observe(.failure) { snapshot in
+//                    guard let storageError = snapshot.error else { return }
+//                    
+//                    print("Error \(storageError)")
+//                    
+//                    //                        guard let errorCode = FIRStorageErrorCode(rawValue: storageError.code) else { return }
+//                    //                        switch errorCode {
+//                    //                        case .ObjectNotFound:
+//                    //                            // File doesn't exist
+//                    //                            break
+//                    //                        case .Unauthorized:
+//                    //                            // User doesn't have permission to access file
+//                    //                            break
+//                    //                        case .Cancelled:
+//                    //                            // User canceled the upload
+//                    //                            break
+//                    //                        case .Unknown:
+//                    //                            break
+//                    //                        default:
+//                    //                            break
+//                    //                        }
+//                    
+//                }
                 
             }
             

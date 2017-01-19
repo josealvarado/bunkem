@@ -43,40 +43,56 @@ class BKMProfileDetailViewController: UIViewController {
         livedTextView.text = activeUser.lived
         visitTextView.text = activeUser.visit
         
-        // Get a reference to the storage service, using the default Firebase App
-        let storage = FIRStorage.storage()
-        
-        // This is equivalent to creating the full reference
-        let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
-        
-        let downloadFilePath = "\(activeUser.identifier)-pimg-\(0)"
-        let filePath = "images/profile/\(activeUser.identifier)/pimg-\(0)"
-        let spaceRef = storageRef.child(filePath)
-        // d4jEUAaToFNmRvFnTXjXf4fDK612/
-        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-        
-        
-        if let imageFilePath = SFDImageUploadDownloadService.initiateDownloadImage(fileName: downloadFilePath) {
-            let downloadedImage = UIImage(contentsOfFile: imageFilePath.path)
-            profileImageView.image = downloadedImage
-        } else {
-            spaceRef.data(withMaxSize: 1024 * 1024 * 1024) { (data, error) -> Void in
-                if (error != nil) {
-                    // Uh-oh, an error occurred!
-                    
-                    print("error \(error)")
-                } else {
-                    print("Successful download \(filePath)")
-                    // Data for "images/island.jpg" is returned
-                    
-                    if let data = data, let downloadedImage = UIImage(data: data) {
-                        
-                        let _ = SFDImageUploadDownloadService.saveImageLocally(image: downloadedImage, fileName: downloadFilePath)
-                        self.profileImageView.image = downloadedImage
-                    }
+        if activeUser.photoURL != "" {
+            let storageRef = FIRStorage.storage().reference(forURL: activeUser.photoURL)
+            storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
+                if let error = error {
+                    print("Error downloading image data: \(error)")
+                    return
+                }
+                
+                if let photoImage = UIImage.init(data: data!) {
+                    self.profileImageView.image = photoImage
                 }
             }
         }
+        
+        
+        
+//        // Get a reference to the storage service, using the default Firebase App
+//        let storage = FIRStorage.storage()
+//        
+//        // This is equivalent to creating the full reference
+//        let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
+//        
+//        let downloadFilePath = "\(activeUser.identifier)-pimg-\(0)"
+//        let filePath = "images/profile/\(activeUser.identifier)/pimg-\(0)"
+//        let spaceRef = storageRef.child(filePath)
+//        // d4jEUAaToFNmRvFnTXjXf4fDK612/
+//        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+//        
+//        
+//        if let imageFilePath = SFDImageUploadDownloadService.initiateDownloadImage(fileName: downloadFilePath) {
+//            let downloadedImage = UIImage(contentsOfFile: imageFilePath.path)
+//            profileImageView.image = downloadedImage
+//        } else {
+//            spaceRef.data(withMaxSize: 1024 * 1024 * 1024) { (data, error) -> Void in
+//                if (error != nil) {
+//                    // Uh-oh, an error occurred!
+//                    
+//                    print("error \(error)")
+//                } else {
+//                    print("Successful download \(filePath)")
+//                    // Data for "images/island.jpg" is returned
+//                    
+//                    if let data = data, let downloadedImage = UIImage(data: data) {
+//                        
+//                        let _ = SFDImageUploadDownloadService.saveImageLocally(image: downloadedImage, fileName: downloadFilePath)
+//                        self.profileImageView.image = downloadedImage
+//                    }
+//                }
+//            }
+//        }
     }
     
 

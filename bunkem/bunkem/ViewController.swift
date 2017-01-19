@@ -265,52 +265,69 @@ class ViewController: UIViewController {
                     
                     label.text = loadedUser.lastName
                     
-                    // Get a reference to the storage service, using the default Firebase App
-                    let storage = FIRStorage.storage()
-                    
-                    // This is equivalent to creating the full reference
-                    let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
-                    
-                    let downloadFilePath = "\(loadedUser.identifier)-pimg-\(0)"
-                    let filePath = "images/profile/\(downloadFilePath)"
-                    let spaceRef = storageRef.child(filePath)
-                    // d4jEUAaToFNmRvFnTXjXf4fDK612/
-                    // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-                    
-                    if let imageFilePath = SFDImageUploadDownloadService.initiateDownloadImage(fileName: filePath, downloadedFilePath: downloadFilePath) {
-                        let downloadedImage = UIImage(contentsOfFile: imageFilePath.path)
-
-                        if let imageView = contentView.viewWithTag(200) as? UIImageView {
-                            imageView.image = downloadedImage
-                        }
-                    } else {
-                        spaceRef.data(withMaxSize: 1024 * 1024 * 1024) { (data, error) -> Void in
-                            if (error != nil) {
-                                // Uh-oh, an error occurred!
-                                
-                                print("error \(error)")
-                                
-                                if let loadingLabel = contentView.viewWithTag(60) as? UILabel {
-                                    loadingLabel.text = "No image found"
-                                }
-                            } else {
-                                
-                                
-                                
-                                print("Successful download \(filePath)")
-                                // Data for "images/island.jpg" is returned
-                                
-                                if let data = data, let downloadedImage = UIImage(data: data) {
-                                    
-                                    let _ = SFDImageUploadDownloadService.saveImageLocally(image: downloadedImage, fileName: filePath)
-
-                                    if let imageView = contentView.viewWithTag(200) as? UIImageView {
-                                        imageView.image = downloadedImage
-                                    }
+                    if loadedUser.photoURL != "" {
+                        let storageRef = FIRStorage.storage().reference(forURL: loadedUser.photoURL)
+                        storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
+                            if let error = error {
+                                print("Error downloading image data: \(error)")
+                                return
+                            }
+                            
+                            if let photoImage = UIImage.init(data: data!) {
+                                if let imageView = contentView.viewWithTag(200) as? UIImageView {
+                                    imageView.image = photoImage
                                 }
                             }
                         }
                     }
+                    
+                    
+//                    // Get a reference to the storage service, using the default Firebase App
+//                    let storage = FIRStorage.storage()
+//                    
+//                    // This is equivalent to creating the full reference
+//                    let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
+//                    
+//                    let downloadFilePath = "\(loadedUser.identifier)-pimg-\(0)"
+//                    let filePath = "images/profile/\(downloadFilePath)"
+//                    let spaceRef = storageRef.child(filePath)
+//                    // d4jEUAaToFNmRvFnTXjXf4fDK612/
+//                    // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+//                    
+//                    if let imageFilePath = SFDImageUploadDownloadService.initiateDownloadImage(fileName: filePath, downloadedFilePath: downloadFilePath) {
+//                        let downloadedImage = UIImage(contentsOfFile: imageFilePath.path)
+//
+//                        if let imageView = contentView.viewWithTag(200) as? UIImageView {
+//                            imageView.image = downloadedImage
+//                        }
+//                    } else {
+//                        spaceRef.data(withMaxSize: 1024 * 1024 * 1024) { (data, error) -> Void in
+//                            if (error != nil) {
+//                                // Uh-oh, an error occurred!
+//                                
+//                                print("error \(error)")
+//                                
+//                                if let loadingLabel = contentView.viewWithTag(60) as? UILabel {
+//                                    loadingLabel.text = "No image found"
+//                                }
+//                            } else {
+//                                
+//                                
+//                                
+//                                print("Successful download \(filePath)")
+//                                // Data for "images/island.jpg" is returned
+//                                
+//                                if let data = data, let downloadedImage = UIImage(data: data) {
+//                                    
+//                                    let _ = SFDImageUploadDownloadService.saveImageLocally(image: downloadedImage, fileName: filePath)
+//
+//                                    if let imageView = contentView.viewWithTag(200) as? UIImageView {
+//                                        imageView.image = downloadedImage
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
                     
                     
                 } else {

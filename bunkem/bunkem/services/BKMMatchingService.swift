@@ -40,9 +40,9 @@ class BKMMatchingService: NSObject {
             newChannelRef.setValue(channelItem) // 4
             
             
-            ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true, "username": user.username, "identifier": user.identifier, "channelId": newChannelRef.key])
+            ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": true, "username": user.username, "identifier": user.identifier, "photoURL": user.photoURL, "channelId": newChannelRef.key])
             
-            ref.child("matches").child(user.identifier).child(CurrentUser.user.user.uid).updateChildValues(["match": true, "username": CurrentUser.user.username, "identifier": CurrentUser.user.user.uid, "channelId": newChannelRef.key])
+            ref.child("matches").child(user.identifier).child(CurrentUser.user.user.uid).updateChildValues(["match": true, "username": CurrentUser.user.username, "identifier": CurrentUser.user.user.uid, "photoURL": CurrentUser.user.photoURL, "channelId": newChannelRef.key])
 
 
             success(user)

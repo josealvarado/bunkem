@@ -39,7 +39,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XdV-q2-djt">
+                <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="XdV-q2-djt">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                 </imageView>
             </subviews>
@@ -62,4 +62,7 @@
             <point key="canvasLocation" x="34.5" y="78.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="defaultProfileImage.jpeg" width="225" height="224"/>
+    </resources>
 </document>

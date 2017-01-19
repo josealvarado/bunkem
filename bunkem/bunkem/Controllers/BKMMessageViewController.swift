@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -118,7 +119,6 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         return matchedUsers.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath)
      
@@ -126,8 +126,30 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         let user = matchedUsers[indexPath.row]
         
         print("user \(user)")
-        if let username = user["username"] as? String {
-            cell.textLabel?.text = username
+        if let username = user["username"] as? String, let label = cell.viewWithTag(10) as? UILabel {
+            label.text = username
+        }
+        
+        if let photoURL = user["photoURL"] as? String{
+            print("photoURL \(photoURL)")
+            
+            let storageRef = FIRStorage.storage().reference(forURL: photoURL)
+            storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
+                guard let imageView = cell.viewWithTag(11) as? UIImageView else { return }
+                
+                if let error = error {
+                    print("Error downloading image data: \(error)")
+                    return
+                }
+                
+                print("data \(data)")
+                if let photoImage = UIImage.init(data: data!) {
+                    print("photoImage \(photoImage)")
+                    imageView.image = photoImage
+//                    cell.imageView?.image = photoImage
+//                    cell.accessoryView = UIImageView(image: photoImage)
+                }
+            }
         }
         
         return cell
