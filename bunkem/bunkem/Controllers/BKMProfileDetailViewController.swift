@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseStorage
 
-class BKMProfileDetailViewController: UIViewController {
+class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cityAndStateLabel: UILabel!
@@ -20,6 +20,8 @@ class BKMProfileDetailViewController: UIViewController {
     @IBOutlet weak var visitTextView: UITextView!
     
     var activeUser: User!
+    
+    var images = [1, 2, 3]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +57,14 @@ class BKMProfileDetailViewController: UIViewController {
                     self.profileImageView.image = photoImage
                 }
             }
+        }
+        
+        if activeUser.images.count > 0 {
+//            for imageObject in activeUser.images {
+//                guard let photoURL = imageObject["photoURL"] as? String else { return }
+//                
+//                
+//            }
         }
         
         
@@ -105,5 +115,66 @@ class BKMProfileDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: UICollectionView Delegate
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                                 numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profileImage",
+                                                      for: indexPath)
+        
+        print("indexPath.row \(indexPath.row)")
+        
+//        if indexPath.row % 2 == 0 {
+//            cell.backgroundColor = UIColor.red
+//        } else {
+//            cell.backgroundColor = UIColor.blue
+//        }
+        
+        let row = indexPath.row
+        
+        if row < activeUser.images.count {
+            let imageObject = activeUser.images[row]
+            if let photoURL = imageObject["photoURL"] as? String {
+                
+                
+                let storageRef = FIRStorage.storage().reference(forURL: photoURL)
+                storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
+                    if let error = error {
+                        print("Error downloading image data: \(error)")
+                        return
+                    }
+                    
+                    if let photoImage = UIImage.init(data: data!) {
+                        let imageView = UIImageView(image: photoImage)
+                        cell.backgroundView = imageView
+                    }
+                }
+            }
 
+        }
+
+
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+//        let availableWidth = view.frame.width - paddingSpace
+//        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: 330, height: 320)
+    }
+    
+    
    }

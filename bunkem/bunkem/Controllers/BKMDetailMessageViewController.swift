@@ -362,33 +362,69 @@ extension BKMDetailMessageViewController: UIImagePickerControllerDelegate, UINav
         picker.dismiss(animated: true, completion:nil)
         
         guard let channelId = matchObject?["channelId"] as? String else { return }
-        
+
         // 1
         if let photoReferenceUrl = info[UIImagePickerControllerReferenceURL] as? URL {
-            // Handle picking a Photo from the Photo Library
-            // 2
-            let assets = PHAsset.fetchAssets(withALAssetURLs: [photoReferenceUrl], options: nil)
-            let asset = assets.firstObject
+//            // Handle picking a Photo from the Photo Library
+//            // 2
+//            let assets = PHAsset.fetchAssets(withALAssetURLs: [photoReferenceUrl], options: nil)
+//            let asset = assets.firstObject
+//            
+//            // 3
+//            if let key = sendPhotoMessage() {
+//                // 4
+//                asset?.requestContentEditingInput(with: nil, completionHandler: { (contentEditingInput, info) in
+//                    let imageFileURL = contentEditingInput?.fullSizeImageURL
+//                    
+//                    // 5
+//                    let path = "channel/\(channelId)/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/\(photoReferenceUrl.lastPathComponent)"
+//                    
+//                    // 6
+//                    self.storageRef.child(path).putFile(imageFileURL!, metadata: nil) { (metadata, error) in
+//                        if let error = error {
+//                            print("Error uploading photo: \(error.localizedDescription)")
+//                            return
+//                        }
+//                        // 7
+//                        self.setImageURL(self.storageRef.child((metadata?.path)!).description, forPhotoMessageWithKey: key)
+//                    }
+//                })
+//            }
             
-            // 3
-            if let key = sendPhotoMessage() {
-                // 4
-                asset?.requestContentEditingInput(with: nil, completionHandler: { (contentEditingInput, info) in
-                    let imageFileURL = contentEditingInput?.fullSizeImageURL
+            do {
+                let _ = try FileManager.default.createDirectory(
+                    at: NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("download")!,
+                    withIntermediateDirectories: true,
+                    attributes: nil)
+                
+                let fileURL = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("fileName.jpg")
+                
+                let image = info[UIImagePickerControllerOriginalImage]
+                
+                try UIImageJPEGRepresentation(image as! UIImage,1.0)?.write(to: fileURL!, options: [])
+                
+                if let key = sendPhotoMessage() {
+                    // 4
+//                    asset?.requestContentEditingInput(with: nil, completionHandler: { (contentEditingInput, info) in
+//                        let imageFileURL = contentEditingInput?.fullSizeImageURL
                     
-                    // 5
-                    let path = "channel/\(channelId)/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/\(photoReferenceUrl.lastPathComponent)"
-                    
-                    // 6
-                    self.storageRef.child(path).putFile(imageFileURL!, metadata: nil) { (metadata, error) in
-                        if let error = error {
-                            print("Error uploading photo: \(error.localizedDescription)")
-                            return
+                        // 5
+                        let path = "channel/\(channelId)/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/\(photoReferenceUrl.lastPathComponent)"
+                        
+                        // 6
+                        self.storageRef.child(path).putFile(fileURL!, metadata: nil) { (metadata, error) in
+                            if let error = error {
+                                print("Error uploading photo: \(error.localizedDescription)")
+                                return
+                            }
+                            // 7
+                            self.setImageURL(self.storageRef.child((metadata?.path)!).description, forPhotoMessageWithKey: key)
                         }
-                        // 7
-                        self.setImageURL(self.storageRef.child((metadata?.path)!).description, forPhotoMessageWithKey: key)
-                    }
-                })
+//                    })
+                }
+            }
+            catch {
+                print("error is ", error)
             }
         } else {
             // Handle picking a Photo from the Camera
