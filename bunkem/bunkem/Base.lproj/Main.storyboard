@@ -250,6 +250,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="n6Y-6G-nfz" kind="show" identifier="detailProfile" id="sQW-qT-4Bd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJL-aU-daO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2725,4 +2728,7 @@ We thank you for using our services and your continued interactions with our app
         <image name="housingIcon.png" width="128" height="128"/>
         <image name="locationIcon.png" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sQW-qT-4Bd"/>
+    </inferredMetricsTieBreakers>
 </document>

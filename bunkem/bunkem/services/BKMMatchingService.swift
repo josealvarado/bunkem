@@ -59,6 +59,12 @@ class BKMMatchingService: NSObject {
         ref.child("potentialMatch").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": false])
     }
     
+    class func unMatch(_ user: User) {
+        let ref: FIRDatabaseReference = FIRDatabase.database().reference()
+    
+        ref.child("matches").child(CurrentUser.user.user.uid).child(user.identifier).updateChildValues(["match": false, "username": user.username, "identifier": user.identifier, "photoURL": user.photoURL])
+    }
+    
     class func firstTimeLeft(success:@escaping (_ firstTime: Bool) -> Void) -> Void {
         let ref: FIRDatabaseReference = FIRDatabase.database().reference()
         ref.child("settings").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in

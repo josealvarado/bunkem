@@ -21,6 +21,8 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var displayExtraNavBarButton = false
+    
     var activeUser: User!
     
     var images = [[String: AnyObject]]()
@@ -35,6 +37,8 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
         images = images.sorted { ($0["order"] as? Int)! < ($1["order"] as? Int)! }
         
         self.collectionView.reloadData()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -110,6 +114,10 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
 //                }
 //            }
 //        }
+        
+        if self.displayExtraNavBarButton {
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.jsq_defaultTypingIndicator(), style: .plain, target: self, action: #selector(BKMDetailMessageViewController.didPressRightBarButtonItem(button:)))
+        }
     }
     
 
@@ -208,5 +216,11 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
         return CGSize(width: 330, height: 320)
     }
     
+    func didPressRightBarButtonItem(button: UIBarButtonItem)  {
+        print("TOP RIGHT")
+        
+
+    }
+
     
-   }
+}

@@ -38,6 +38,8 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
     var ref: FIRDatabaseReference!
     var matchedUser: User?
     
+    var callback: ((String) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -99,6 +101,35 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
     
     func didPressRightBarButtonItem(button: UIBarButtonItem)  {
         print("TOP RIGHT")
+        
+        guard let activeUser = matchedUser else { return }
+        
+        let otherAlert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        let callFunction = UIAlertAction(title: "View Profile", style: UIAlertActionStyle.default) { _ in
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMProfileDetailViewController") as? BKMProfileDetailViewController {
+                vc.activeUser = activeUser
+//                vc.displayExtraNavBarButton = true
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        otherAlert.addAction(callFunction)
+        
+        let unMatchAction = UIAlertAction(title: "Unmatch/Block", style: UIAlertActionStyle.default) { _ in
+            
+            print("activeUser \(activeUser.identifier)")
+            
+            BKMMatchingService.unMatch(activeUser)
+            
+            self.callback!("refresh")
+            let _ = self.navigationController?.popViewController(animated: true)
+        }
+        otherAlert.addAction(unMatchAction)
+        
+        let dismiss = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
+        otherAlert.addAction(dismiss)
+        
+        present(otherAlert, animated: true, completion: nil)
     }
 
     /*

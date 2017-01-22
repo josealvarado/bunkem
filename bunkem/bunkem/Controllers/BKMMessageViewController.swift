@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseStorage
+import SVProgressHUD
 
 class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -38,16 +39,10 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         refHandle = postRef.observe(FIRDataEventType.value, with: { (snapshot) in
             let postDict = snapshot.value as? [String : AnyObject] ?? [:]
             
-            //            let postKeys = postDict.keys
-            
             for (_, post) in postDict {
                 
                 if let match = post["match"] as? Bool, match {
-                    
-                    
-                    
                     self.matchedUsers.append(post as! [String : AnyObject])
-                    
                     
                     print("post \(post)")
                     
@@ -59,8 +54,6 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
                     }
                 }
             }
-            
-            print("-------- \(self.activeUser.identifier)")
             
             // [START_EXCLUDE]
             self.tableView.reloadData()
@@ -75,8 +68,6 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -100,7 +91,13 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
                 if let channelId = matchObject["channelId"] as? String {
                     chatVc.senderDisplayName = CurrentUser.user.username
                     chatVc.channelRef = channelRef.child(channelId)
-
+                }
+                
+                chatVc.callback = { (value) in
+                    print("value \(value)")
+                    if value == "refresh" {
+                        self.refreshTable()
+                    }
                 }
             }
         }
@@ -161,6 +158,26 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         
         let matchObject = matchedUsers[indexPath.row]
         self.performSegue(withIdentifier: "ShowChannel", sender: matchObject)        
+    }
+    
+    func refreshTable() {
+        SVProgressHUD.show()
+        ref.child("matches").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            self.matchedUsers = [[String: AnyObject]]()
+            
+            for (_, post) in postDict {
+                if let match = post["match"] as? Bool, match {
+                    self.matchedUsers.append(post as! [String : AnyObject])
+                }
+            }
+            
+            SVProgressHUD.dismiss()
+            self.tableView.reloadData()
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
 
 }
