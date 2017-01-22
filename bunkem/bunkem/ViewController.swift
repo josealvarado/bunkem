@@ -51,6 +51,9 @@ class ViewController: UIViewController {
         }
         swipeableView.didSwipe = {view, direction, vector in
             print("Did swipe view in direction: \(direction), vector: \(vector)")
+            
+            guard self.userIndex < self.userList.count else { return }
+            
             let activeUser = self.userList[self.userIndex]
 
             self.userIndex += 1
@@ -237,7 +240,7 @@ class ViewController: UIViewController {
     // MARK: ()
     func nextCardView() -> UIView? {
         print("nextCardView \(self.userIndex) \(loadCardsFromXib)")
-        if colorIndex >= colors.count {
+        if colorIndex + 1 > colors.count {
             colorIndex = 0
         }
         

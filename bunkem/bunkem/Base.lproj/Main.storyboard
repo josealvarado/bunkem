@@ -2508,39 +2508,91 @@ We thank you for using our services and your continued interactions with our app
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-zh-Ixc">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-zh-Ixc">
                                 <rect key="frame" x="30" y="108.5" width="315" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="315" id="Xhb-Rl-htV"/>
                                     <constraint firstAttribute="height" constant="450" id="gon-Qg-aYi"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-Hp-tzn">
-                                <rect key="frame" x="30" y="94" width="315" height="543"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETJ-Sh-4Iu">
+                                <rect key="frame" x="8" y="173" width="359" height="320"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WsL-Vb-Sn4">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="320"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JND-Kb-4B3">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="profileImage" id="GVa-wi-uIm">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                                <size key="customSize" width="350" height="320"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="o3x-0k-D0Q" id="7HJ-rY-uw3"/>
+                                            <outlet property="delegate" destination="o3x-0k-D0Q" id="6Xn-rO-4Dq"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WsL-Vb-Sn4" secondAttribute="bottom" id="EU1-Hn-fkO"/>
+                                    <constraint firstAttribute="width" constant="359" id="bNg-Y7-aFD"/>
+                                    <constraint firstItem="WsL-Vb-Sn4" firstAttribute="top" secondItem="ETJ-Sh-4Iu" secondAttribute="top" id="gV9-rw-CSe"/>
+                                    <constraint firstAttribute="height" constant="320" id="lek-Dn-7c9"/>
+                                    <constraint firstAttribute="trailing" secondItem="WsL-Vb-Sn4" secondAttribute="trailing" id="qVl-aw-uTH"/>
+                                    <constraint firstItem="WsL-Vb-Sn4" firstAttribute="leading" secondItem="ETJ-Sh-4Iu" secondAttribute="leading" id="sXX-KN-sLJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFW-Vq-wFk">
+                                <rect key="frame" x="268" y="501" width="91" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5w0-gu-hBo"/>
+                                    <constraint firstAttribute="width" constant="91" id="rZm-cR-xZp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cameraIcon.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="changeImageButtonPressed:" destination="o3x-0k-D0Q" eventType="touchUpInside" id="W1C-Dc-NOP"/>
+                                    <action selector="changeImageButtonPressed:" destination="o3x-0k-D0Q" eventType="touchUpInside" id="iMg-hE-U5o"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ETJ-Sh-4Iu" firstAttribute="centerY" secondItem="Ird-tB-UU6" secondAttribute="centerY" id="F0w-tK-p8V"/>
+                            <constraint firstItem="ETJ-Sh-4Iu" firstAttribute="centerX" secondItem="Ird-tB-UU6" secondAttribute="centerX" id="UWN-gq-ml1"/>
                             <constraint firstItem="yIf-zh-Ixc" firstAttribute="centerY" secondItem="Ird-tB-UU6" secondAttribute="centerY" id="W3z-Wd-r2t"/>
-                            <constraint firstItem="Uem-Hp-tzn" firstAttribute="leading" secondItem="Ird-tB-UU6" secondAttribute="leading" constant="30" id="bbs-jN-OOW"/>
                             <constraint firstItem="yIf-zh-Ixc" firstAttribute="centerX" secondItem="Ird-tB-UU6" secondAttribute="centerX" id="bnY-iV-seY"/>
-                            <constraint firstAttribute="trailing" secondItem="Uem-Hp-tzn" secondAttribute="trailing" constant="30" id="lzk-vR-D11"/>
-                            <constraint firstItem="Uem-Hp-tzn" firstAttribute="top" secondItem="n0d-sD-pSm" secondAttribute="bottom" constant="30" id="q5p-ns-Kiy"/>
-                            <constraint firstItem="SGW-LF-l0E" firstAttribute="top" secondItem="Uem-Hp-tzn" secondAttribute="bottom" constant="30" id="rHT-0x-OQ6"/>
+                            <constraint firstItem="AFW-Vq-wFk" firstAttribute="top" secondItem="ETJ-Sh-4Iu" secondAttribute="bottom" constant="8" id="inK-y8-BNm"/>
+                            <constraint firstAttribute="trailing" secondItem="AFW-Vq-wFk" secondAttribute="trailing" constant="16" id="j9D-bq-aE0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile Image" id="9SB-TX-z8L">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="oet-ss-2GE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oet-ss-2GE">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="o3x-0k-D0Q" id="oqS-6O-ZGN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="WsL-Vb-Sn4" id="p3i-Di-1Js"/>
                         <outlet property="imageView" destination="yIf-zh-Ixc" id="klx-mX-aUe"/>
+                        <outlet property="pictureButton" destination="AFW-Vq-wFk" id="UnQ-0c-i1B"/>
                         <outlet property="saveBarButtonItem" destination="oet-ss-2GE" id="rfE-Q8-bPR"/>
                     </connections>
                 </viewController>
@@ -2663,6 +2715,7 @@ We thank you for using our services and your continued interactions with our app
         <image name="Menu-25.png" width="25" height="25"/>
         <image name="Tell a Friend.png" width="128" height="128"/>
         <image name="Texts.png" width="128" height="128"/>
+        <image name="cameraIcon.png" width="128" height="128"/>
         <image name="cancelIcon.png" width="128" height="128"/>
         <image name="defaultProfileImage.jpeg" width="225" height="224"/>
         <image name="filterIcon.png" width="128" height="106"/>

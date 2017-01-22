@@ -130,7 +130,7 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
             label.text = username
         }
         
-        if let photoURL = user["photoURL"] as? String{
+        if let photoURL = user["photoURL"] as? String, photoURL != "" {
             print("photoURL \(photoURL)")
             
             let storageRef = FIRStorage.storage().reference(forURL: photoURL)

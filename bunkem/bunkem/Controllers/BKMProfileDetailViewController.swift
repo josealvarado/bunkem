@@ -143,7 +143,7 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
         
         if row < activeUser.images.count {
             let imageObject = activeUser.images[row]
-            if let photoURL = imageObject["photoURL"] as? String {
+            if let photoURL = imageObject["photoURL"] as? String, photoURL != "" {
                 
                 
                 let storageRef = FIRStorage.storage().reference(forURL: photoURL)
