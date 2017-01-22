@@ -19,15 +19,22 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var livedTextView: UITextView!
     @IBOutlet weak var visitTextView: UITextView!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     var activeUser: User!
     
-    var images = [1, 2, 3]
+    var images = [[String: AnyObject]]()
+    var imageArray = [Int: UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        images = activeUser.images
+        images = images.sorted { ($0["order"] as? Int)! < ($1["order"] as? Int)! }
+        
+        self.collectionView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -131,35 +138,60 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profileImage",
                                                       for: indexPath)
         
-        print("indexPath.row \(indexPath.row)")
-        
-//        if indexPath.row % 2 == 0 {
-//            cell.backgroundColor = UIColor.red
-//        } else {
-//            cell.backgroundColor = UIColor.blue
+//        print("indexPath.row \(indexPath.row)")
+//        let row = indexPath.row
+//        
+//        if row < activeUser.images.count {
+//            let imageObject = activeUser.images[row]
+//            if let photoURL = imageObject["photoURL"] as? String, photoURL != "" {
+//                
+//                
+//                let storageRef = FIRStorage.storage().reference(forURL: photoURL)
+//                storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
+//                    if let error = error {
+//                        print("Error downloading image data: \(error)")
+//                        return
+//                    }
+//                    
+//                    if let photoImage = UIImage.init(data: data!) {
+//                        let imageView = UIImageView(image: photoImage)
+//                        cell.backgroundView = imageView
+//                    }
+//                }
+//            }
+//
 //        }
         
-        let row = indexPath.row
+        cell.backgroundView = nil
         
-        if row < activeUser.images.count {
-            let imageObject = activeUser.images[row]
-            if let photoURL = imageObject["photoURL"] as? String, photoURL != "" {
+        let row = indexPath.row
+        let imageObject = images[row]
+        
+        print("row \(row) \(imageObject)")
+        if let photoImage = imageArray[row] {
+            print("re-use image \(row)")
+            let imageView = UIImageView(image: photoImage)
+            cell.backgroundView = imageView
+            return cell
+        }
+        
+        if let photoURL = imageObject["photoURL"] as? String, photoURL != "" {
+            
+            let storageRef = FIRStorage.storage().reference(forURL: photoURL)
+            storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
+                if let error = error {
+                    print("Error downloading image data: \(error)")
+                    return
+                }
+                cell.backgroundView = nil
                 
-                
-                let storageRef = FIRStorage.storage().reference(forURL: photoURL)
-                storageRef.data(withMaxSize: INT64_MAX){ (data, error) in
-                    if let error = error {
-                        print("Error downloading image data: \(error)")
-                        return
-                    }
-                    
-                    if let photoImage = UIImage.init(data: data!) {
-                        let imageView = UIImageView(image: photoImage)
-                        cell.backgroundView = imageView
-                    }
+                if let photoImage = UIImage.init(data: data!) {
+                    let imageView = UIImageView(image: photoImage)
+                    cell.backgroundView = imageView
+                    print("index \(row) \(photoURL) \(self.imageArray.count)")
+                    self.imageArray[row] = photoImage
                 }
             }
-
         }
 
 

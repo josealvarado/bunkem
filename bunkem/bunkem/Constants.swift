@@ -19,3 +19,7 @@ struct CurrentUser {
     static var user = User()
     static var authToken = ""
 }
+
+struct Profile {
+    static var maximumImages = 7
+}

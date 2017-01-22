@@ -1162,10 +1162,10 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rtj-IN-vmx">
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rtj-IN-vmx">
                                                         <rect key="frame" x="8" y="64" width="343" height="143"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="US8-WB-6Or">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="US8-WB-6Or">
                                                             <size key="itemSize" width="50" height="50"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1173,12 +1173,13 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="signUpImage" id="eZz-ha-TGE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="0.0" y="22" width="100" height="100"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </view>
+                                                                <size key="customSize" width="100" height="100"/>
                                                             </collectionViewCell>
                                                         </cells>
                                                         <connections>
@@ -1454,6 +1455,7 @@
                         <outlet property="aboutLabelContainerView" destination="Tjs-5A-HNU" id="VCq-Kb-qWC"/>
                         <outlet property="aboutYouContainerView" destination="sFK-PJ-VJR" id="cfJ-9D-Xh8"/>
                         <outlet property="aboutYouTextView" destination="yKi-0c-GZA" id="vaM-u4-Hgj"/>
+                        <outlet property="cameraButton" destination="kiI-sd-gtl" id="xLK-wx-qok"/>
                         <outlet property="cityStateContainerView" destination="GED-YO-2Cc" id="Ffk-yV-OJx"/>
                         <outlet property="cityStateLabel" destination="OnN-HX-nHw" id="Qnr-tq-c5D"/>
                         <outlet property="collectionView" destination="Rtj-IN-vmx" id="tgv-ll-3fY"/>
@@ -1589,7 +1591,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ItunesArtwork" width="228" height="228"/>
+        <image name="ItunesArtwork" width="512" height="512"/>
         <image name="cameraIcon.png" width="128" height="128"/>
         <image name="whiteLeftArrow.png" width="256" height="256"/>
     </resources>

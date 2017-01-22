@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseStorage
 import SVProgressHUD
 
-class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UITextViewDelegate {
+class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UITextViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var cityStateContainerView: UIView!
     @IBOutlet weak var cityStateLabel: UITextField!
@@ -34,6 +34,8 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
     @IBOutlet weak var visitContainerView: UIView!
     @IBOutlet weak var visitLabelContainerView: UIView!
     @IBOutlet weak var visitTextView: UITextView!
+    
+    @IBOutlet weak var cameraButton: UIButton!
     
     var images = [UIImage]()
     var data = [String: AnyObject]()
@@ -301,6 +303,10 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
 //            let indexPath = IndexPath(row: self.images.count, section: 0)
             self.images.append(self.fixOrientation(image))
 
+            if self.images.count > Profile.maximumImages {
+                self.cameraButton.isHidden = true
+                
+            }
 //            self.collectionView.insertItems(at: [indexPath])
             
             self.collectionView.reloadData()
@@ -340,6 +346,13 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
         cell.backgroundView = UIImageView(image: image)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
+    }
+
     
     // MARK: - TextField Keyboard
     

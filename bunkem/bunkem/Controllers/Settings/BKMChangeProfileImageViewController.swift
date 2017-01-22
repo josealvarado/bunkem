@@ -359,7 +359,7 @@ class BKMChangeProfileImageViewController: UIViewController, UIImagePickerContro
                 self.imageArray[self.images.count] = self.fixOrientation(image)
                 self.images.append(newImage as [String : AnyObject])
                 
-                if self.images.count > 7 {
+                if self.images.count > Profile.maximumImages {
                     self.pictureButton.isHidden = true
                     
                 }

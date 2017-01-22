@@ -706,6 +706,7 @@
                     <connections>
                         <outlet property="aboutYouTextView" destination="R2g-va-CCI" id="cCN-m0-iKy"/>
                         <outlet property="cityAndStateLabel" destination="8lt-aT-VKy" id="AnG-Em-PH5"/>
+                        <outlet property="collectionView" destination="FJa-95-Pmh" id="PqO-lj-bpD"/>
                         <outlet property="livedTextView" destination="uyH-mx-g3E" id="rZQ-Tj-fO7"/>
                         <outlet property="nameLabel" destination="iq6-16-ik4" id="pig-6J-du7"/>
                         <outlet property="profileImageView" destination="07U-0A-eUo" id="Yeb-Qa-mIR"/>
