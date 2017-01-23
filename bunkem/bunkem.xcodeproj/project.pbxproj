@@ -81,6 +81,7 @@
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		CB480E3C1E03BB3D006E16CD /* SFDImageUploadDownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDImageUploadDownloadService.swift; sourceTree = "<group>"; };
+		CB497D3E1E3573E4006E7A4F /* bunkem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bunkem.entitlements; sourceTree = "<group>"; };
 		CB59748E1DF6927D00359912 /* Menu-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-25.png"; path = "../Menu-25.png"; sourceTree = "<group>"; };
 		CB5974901DF6944700359912 /* Texts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Texts.png; path = ../Texts.png; sourceTree = "<group>"; };
 		CB5974921DF6945000359912 /* Tell a Friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tell a Friend.png"; path = "../Tell a Friend.png"; sourceTree = "<group>"; };
@@ -247,6 +248,7 @@
 		CB94FF731DE01ADE009772EA /* bunkem */ = {
 			isa = PBXGroup;
 			children = (
+				CB497D3E1E3573E4006E7A4F /* bunkem.entitlements */,
 				CB94FF741DE01ADE009772EA /* AppDelegate.swift */,
 				CB5974941DF6946000359912 /* Images */,
 				CB94FF7B1DE01ADE009772EA /* Assets.xcassets */,
@@ -342,6 +344,11 @@
 						DevelopmentTeam = BXX74E2NVF;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -625,6 +632,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bunkem/bunkem.entitlements;
 				DEVELOPMENT_TEAM = BXX74E2NVF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,6 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bunkem/bunkem.entitlements;
 				DEVELOPMENT_TEAM = BXX74E2NVF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

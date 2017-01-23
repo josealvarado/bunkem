@@ -13,6 +13,7 @@ import Cartography
 import FirebaseDatabase
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseMessaging
 
 class ViewController: UIViewController {
 
@@ -446,7 +447,9 @@ class ViewController: UIViewController {
     func firstTimeRight() -> Void {
         let alertController = UIAlertController(title: "Interested", message: "Dragging a picture to the right indicates you want \"name\" to be saved to \"people of interest\"", preferredStyle: UIAlertControllerStyle.alert)
         
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alertAction) in
+            self.registerForPushNotifications()
+        }))
 
 //        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (alertAction) in
 //            print("undo swipe right")
@@ -460,7 +463,9 @@ class ViewController: UIViewController {
     func firstTimeLeft() -> Void {
         let alertController = UIAlertController(title: "Not Interested", message: "Dragging a picture to the left indicates you're not interested", preferredStyle: UIAlertControllerStyle.alert)
         
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alertAction) in
+            self.registerForPushNotifications()
+        }))
 
         
 //        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (alertAction) in
@@ -470,9 +475,14 @@ class ViewController: UIViewController {
 //            print("swip left")
 //        }))
         self.present(alertController, animated: true, completion: nil)
-        
     }
     
+    // MARK: - Push Notifications
     
+    func registerForPushNotifications() -> Void {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.registerForPushNotifications(application: UIApplication.shared)
+    }
 }
 
