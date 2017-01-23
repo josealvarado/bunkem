@@ -1,5 +1,8 @@
 PODS:
   - Cartography (1.0.1)
+  - Firebase/AdMob (3.7.1):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.12.1)
   - Firebase/Auth (3.7.1):
     - Firebase/Core
     - FirebaseAuth (= 3.0.5)
@@ -39,6 +42,7 @@ PODS:
   - FirebaseStorage (1.0.3):
     - FirebaseAnalytics (~> 3.3)
     - GoogleNetworkingUtilities (~> 1.2)
+  - Google-Mobile-Ads-SDK (7.12.1)
   - GoogleInterchangeUtilities (1.2.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GoogleIPhoneUtilities (1.2.1):
@@ -58,6 +62,7 @@ PODS:
 
 DEPENDENCIES:
   - Cartography
+  - Firebase/AdMob
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -78,6 +83,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   FirebaseMessaging: 789d23fd796594dfb55dcf36cd325541df887c22
   FirebaseStorage: 3992817bf405f5c1a4f8349678d22724cd0ef509
+  Google-Mobile-Ads-SDK: 542eb24c1ce6c8fd5084ee9572fd9dcd2d06065a
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleIPhoneUtilities: 63f25e93a3ddcb66884d182aab3a660d98f1479b
   GoogleNetworkingUtilities: 3edd3a8161347494f2da60ea0deddc8a472d94cb
@@ -89,6 +95,6 @@ SPEC CHECKSUMS:
   UIColor+FlatColors: 6c699df7a575281794c688c64cee6c44fd1f93b4
   ZLSwipeableViewSwift: f5ee94c2e4220f900f5a129118af2aef23062900
 
-PODFILE CHECKSUM: c58d4950a2f0515d6711941829075af11a6741ec
+PODFILE CHECKSUM: eed05f4c482e9771abf3b1fcf35e14b6ca999126
 
 COCOAPODS: 1.2.0.beta.3
