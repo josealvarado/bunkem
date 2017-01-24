@@ -1147,7 +1147,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="BAA-gB-a79"/>
                                                             <constraint firstAttribute="height" constant="30" id="d9V-Fa-NhM"/>
                                                         </constraints>
-                                                        <state key="normal" title="Pic" image="cameraIcon.png"/>
+                                                        <state key="normal" title="Pic" image="Camera.png"/>
                                                         <connections>
                                                             <action selector="pictureButtonPressed:" destination="Rgq-qN-mL9" eventType="touchUpInside" id="elz-a9-wAE"/>
                                                         </connections>
@@ -1591,8 +1591,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Camera.png" width="64" height="64"/>
         <image name="ItunesArtwork" width="512" height="512"/>
-        <image name="cameraIcon.png" width="128" height="128"/>
         <image name="whiteLeftArrow.png" width="256" height="256"/>
     </resources>
 </document>

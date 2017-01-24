@@ -102,7 +102,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Ga2-ko-BKM"/>
                                     <constraint firstAttribute="width" constant="30" id="Tz8-ei-jbi"/>
                                 </constraints>
-                                <state key="normal" image="hand swiping left.png"/>
+                                <state key="normal" image="Hand Swipe Left.png"/>
                                 <connections>
                                     <action selector="notInterestedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjK-ur-mIV"/>
                                 </connections>
@@ -113,7 +113,7 @@
                                     <constraint firstAttribute="height" constant="30" id="h6K-od-BWU"/>
                                     <constraint firstAttribute="width" constant="30" id="xHf-pb-uhk"/>
                                 </constraints>
-                                <state key="normal" image="hand swimping right.png"/>
+                                <state key="normal" image="Hand Swipe Right.png"/>
                                 <connections>
                                     <action selector="interestedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwK-sy-xAw"/>
                                 </connections>
@@ -276,7 +276,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nMq-p6-3zw">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nMq-p6-3zw">
                                                     <rect key="frame" x="15" y="6" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="NNw-4T-nuc"/>
@@ -304,7 +304,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-G3-grW">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter.png" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-G3-grW">
                                                     <rect key="frame" x="15" y="6" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="5KJ-yX-JNr"/>
@@ -332,7 +332,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="housingIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-cm-kuN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-cm-kuN">
                                                     <rect key="frame" x="15" y="6" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="3tp-8V-QUV"/>
@@ -360,7 +360,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-CO-jJA">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-CO-jJA">
                                                     <rect key="frame" x="15" y="6" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="3Nr-Sm-evE"/>
@@ -408,7 +408,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMI-dL-bDb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="953"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="997"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuC-9c-75S">
                                         <rect key="frame" x="0.0" y="-56" width="375" height="950"/>
@@ -739,7 +739,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Texts.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-Ld-3mG">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notifications.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-Ld-3mG">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="It8-eP-Se2"/>
@@ -838,7 +838,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About.png" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-lC-URz">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About Dashboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-lC-URz">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="N9g-rL-UFG"/>
@@ -866,21 +866,35 @@
                                             <segue destination="l08-5D-4B2" kind="show" identifier="about" id="dh6-QI-GMk"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="uXw-YJ-61K" style="IBUITableViewCellStyleDefault" id="eyq-xx-Rs2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eyq-xx-Rs2">
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyq-xx-Rs2" id="Zoi-ZX-8Mv">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uXw-YJ-61K">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logout.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuK-Pr-jwi">
+                                                    <rect key="frame" x="8" y="11" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="29b-sG-uA1"/>
+                                                        <constraint firstAttribute="height" constant="20" id="oUR-57-TQf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-ne-5Dn">
+                                                    <rect key="frame" x="36" y="11" width="298" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="PUJ-ne-5Dn" secondAttribute="bottom" constant="11" id="6WQ-Iq-Nsy"/>
+                                                <constraint firstAttribute="trailing" secondItem="PUJ-ne-5Dn" secondAttribute="trailing" constant="41" id="KNV-Kz-8kW"/>
+                                                <constraint firstItem="PUJ-ne-5Dn" firstAttribute="leading" secondItem="tuK-Pr-jwi" secondAttribute="trailing" constant="8" id="jXc-jJ-Ebu"/>
+                                                <constraint firstItem="PUJ-ne-5Dn" firstAttribute="top" secondItem="Zoi-ZX-8Mv" secondAttribute="top" constant="11" id="kGu-F3-yH3"/>
+                                                <constraint firstItem="tuK-Pr-jwi" firstAttribute="leading" secondItem="Zoi-ZX-8Mv" secondAttribute="leading" constant="8" id="n2K-KD-q2u"/>
+                                                <constraint firstItem="tuK-Pr-jwi" firstAttribute="centerY" secondItem="Zoi-ZX-8Mv" secondAttribute="centerY" id="xau-ha-WiS"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
@@ -2564,7 +2578,7 @@ We thank you for using our services and your continued interactions with our app
                                     <constraint firstAttribute="height" constant="64" id="5w0-gu-hBo"/>
                                     <constraint firstAttribute="width" constant="91" id="rZm-cR-xZp"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="cameraIcon.png"/>
+                                <state key="normal" title="Button" image="Camera.png"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2714,19 +2728,20 @@ We thank you for using our services and your continued interactions with our app
         </scene>
     </scenes>
     <resources>
-        <image name="About.png" width="128" height="128"/>
-        <image name="Account Settings.png" width="128" height="128"/>
+        <image name="About Dashboard.png" width="64" height="45"/>
+        <image name="Account Settings.png" width="64" height="64"/>
+        <image name="Camera.png" width="64" height="64"/>
+        <image name="Cancel Icon.png" width="64" height="64"/>
+        <image name="Filter.png" width="64" height="64"/>
+        <image name="Hand Swipe Left.png" width="64" height="64"/>
+        <image name="Hand Swipe Right.png" width="64" height="64"/>
+        <image name="House.png" width="64" height="64"/>
+        <image name="Location Icon.png" width="64" height="64"/>
+        <image name="Logout.png" width="64" height="64"/>
         <image name="Menu-25.png" width="25" height="25"/>
-        <image name="Tell a Friend.png" width="128" height="128"/>
-        <image name="Texts.png" width="128" height="128"/>
-        <image name="cameraIcon.png" width="128" height="128"/>
-        <image name="cancelIcon.png" width="128" height="128"/>
+        <image name="Notifications.png" width="64" height="64"/>
+        <image name="Tell a Friend.png" width="64" height="64"/>
         <image name="defaultProfileImage.jpeg" width="225" height="224"/>
-        <image name="filterIcon.png" width="128" height="106"/>
-        <image name="hand swimping right.png" width="128" height="128"/>
-        <image name="hand swiping left.png" width="128" height="128"/>
-        <image name="housingIcon.png" width="128" height="128"/>
-        <image name="locationIcon.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sQW-qT-4Bd"/>
