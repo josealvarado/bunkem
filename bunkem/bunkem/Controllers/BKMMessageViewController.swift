@@ -160,6 +160,10 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
         self.performSegue(withIdentifier: "ShowChannel", sender: matchObject)        
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
     func refreshTable() {
         SVProgressHUD.show()
         ref.child("matches").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
