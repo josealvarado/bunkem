@@ -389,7 +389,7 @@ class ViewController: UIViewController {
         }
         
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMMessageViewController") as? BKMMessageViewController {
-            vc.activeUser = self.userList[self.userIndex]
+//            vc.activeUser = self.userList[self.userIndex]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -433,7 +433,7 @@ class ViewController: UIViewController {
             }
             
             if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMMessageViewController") as? BKMMessageViewController {
-                vc.activeUser = self.userList[self.userIndex - 1]
+//                vc.activeUser = self.userList[self.userIndex - 1]
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }

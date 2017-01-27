@@ -12,11 +12,10 @@ import FirebaseDatabase
 class BKMPrivacySettingsViewController: UIViewController {
 
     @IBOutlet weak var everyoneButton: UIButton!
-    @IBOutlet weak var matchButton: UIButton!
     
     var ref: FIRDatabaseReference?
 
-    var privacySetting = ""
+    var privacySetting = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +24,6 @@ class BKMPrivacySettingsViewController: UIViewController {
         ref = FIRDatabase.database().reference()
 
         everyoneButton.layer.cornerRadius = 15
-        matchButton.layer.cornerRadius = 15
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,14 +35,13 @@ class BKMPrivacySettingsViewController: UIViewController {
         ref?.child("users").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { snapshot in
             if let userInfo = snapshot.value as? Dictionary<String, AnyObject> {
                 
-                if let privacySetting = userInfo["privacySetting"] as? String {
+                if let privacySetting = userInfo["sharePhoneNumber"] as? Bool {
                     self.privacySetting = privacySetting
-                    if privacySetting == "everyone" {
+                    
+                    if privacySetting {
                         self.everyoneButton.backgroundColor = UIColor.green
-                        self.matchButton.backgroundColor = UIColor.white
-                    } else if privacySetting == "match" {
+                    } else {
                         self.everyoneButton.backgroundColor = UIColor.white
-                        self.matchButton.backgroundColor = UIColor.green
                     }
                 }
             }
@@ -62,32 +59,18 @@ class BKMPrivacySettingsViewController: UIViewController {
     */
     
     @IBAction func everyoneButtonPressed(_ sender: UIButton) {
-        if privacySetting == "everyone" {
+        if privacySetting {
             self.everyoneButton.backgroundColor = UIColor.white
-            privacySetting = ""
+            privacySetting = false
         } else {
             self.everyoneButton.backgroundColor = UIColor.green
-            privacySetting = "everyone"
-            self.matchButton.backgroundColor = UIColor.white
+            privacySetting = true
         }
     }
-    
-    @IBAction func matchButtonPressed(_ sender: UIButton) {
-        if privacySetting == "match" {
-            self.matchButton.backgroundColor = UIColor.white
-            privacySetting = ""
-        } else {
-            self.matchButton.backgroundColor = UIColor.green
-            privacySetting = "match"
-            self.everyoneButton.backgroundColor = UIColor.white
-        }
-    }
-    
 
     @IBAction func saveButtonPressed(_ sender: UIButton) {
-        
-        guard privacySetting != "" else { return }
-        let userInfo = ["privacySetting": privacySetting]  
+        CurrentUser.user.sharePhoneNumber = privacySetting
+        let userInfo = ["sharePhoneNumber": privacySetting]
         ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(userInfo as [NSObject : AnyObject])
 
     }

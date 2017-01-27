@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
-            timestampString = "502695985.069849"
+            timestampString = "507145034.099732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
             <Locations>
@@ -26,11 +26,11 @@
                   moduleName = "bunkem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
-                  timestampString = "506821569.32077"
+                  timestampString = "507145721.62495"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
                   offsetFromSymbolStart = "568">
                </Location>
                <Location
@@ -41,30 +41,14 @@
                   moduleName = "bunkem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
-                  timestampString = "506821569.322053"
+                  timestampString = "507145721.626083"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1019">
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "842">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "bunkem/Controllers/Settings/BKMPrivacySettingsViewController.swift"
-            timestampString = "502696093.115374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "saveButtonPressed(_:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -378,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/BKMDetailMessageViewController.swift"
-            timestampString = "506760357.601932"
+            timestampString = "507145705.035319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "415"
-            endingLineNumber = "415"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/BKMDetailMessageViewController.swift"
-            timestampString = "506760357.601932"
+            timestampString = "507145705.035319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "393"
-            endingLineNumber = "393"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/BKMDetailMessageViewController.swift"
-            timestampString = "506760357.601932"
+            timestampString = "507145705.035319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "408"
-            endingLineNumber = "408"
+            startingLineNumber = "419"
+            endingLineNumber = "419"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/BKMDetailMessageViewController.swift"
-            timestampString = "506760357.601932"
+            timestampString = "507145705.035319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "444"
-            endingLineNumber = "444"
+            startingLineNumber = "455"
+            endingLineNumber = "455"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
             <Locations>
@@ -442,11 +426,11 @@
                   moduleName = "bunkem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/BKMDetailMessageViewController.swift"
-                  timestampString = "506821570.867592"
+                  timestampString = "507145721.676503"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "446"
-                  endingLineNumber = "446"
+                  startingLineNumber = "457"
+                  endingLineNumber = "457"
                   offsetFromSymbolStart = "4768">
                </Location>
                <Location
@@ -457,11 +441,11 @@
                   moduleName = "bunkem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/BKMDetailMessageViewController.swift"
-                  timestampString = "506821570.869391"
+                  timestampString = "507145721.677573"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "447"
-                  endingLineNumber = "447"
+                  startingLineNumber = "458"
+                  endingLineNumber = "458"
                   offsetFromSymbolStart = "35">
                </Location>
             </Locations>
@@ -474,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bunkem/Controllers/BKMDetailMessageViewController.swift"
-            timestampString = "506760357.601932"
+            timestampString = "507145705.035319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "453"
-            endingLineNumber = "453"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
             <Locations>
@@ -490,11 +474,11 @@
                   moduleName = "bunkem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/BKMDetailMessageViewController.swift"
-                  timestampString = "506821570.978822"
+                  timestampString = "507145721.680421"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "453"
-                  endingLineNumber = "453"
+                  startingLineNumber = "464"
+                  endingLineNumber = "464"
                   offsetFromSymbolStart = "5452">
                </Location>
                <Location
@@ -505,14 +489,78 @@
                   moduleName = "bunkem"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/BKMDetailMessageViewController.swift"
-                  timestampString = "506821570.980392"
+                  timestampString = "507145721.681498"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "453"
-                  endingLineNumber = "453"
+                  startingLineNumber = "464"
+                  endingLineNumber = "464"
                   offsetFromSymbolStart = "1189">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bunkem/Controllers/BKMDetailMessageViewController.swift"
+            timestampString = "507145705.035319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "didPressAccessoryButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bunkem.BKMDetailMessageViewController.didPressAccessoryButton (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "bunkem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/BKMDetailMessageViewController.swift"
+                  timestampString = "507145721.684338"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bunkem.BKMDetailMessageViewController.didPressAccessoryButton (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "bunkem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josealvarado/bunkem/bunkem/bunkem/Controllers/BKMDetailMessageViewController.swift"
+                  timestampString = "507145721.68542"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
+                  offsetFromSymbolStart = "1794">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bunkem/Models/User.swift"
+            timestampString = "507145821.962243"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "update(userJSON:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

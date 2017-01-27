@@ -39,12 +39,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-NI-mPc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-wT-WoY">
-                                        <rect key="frame" x="67.5" y="0.0" width="240" height="80"/>
+                                        <rect key="frame" x="67.5" y="0.0" width="240" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="KZI-zu-gXg"/>
+                                            <constraint firstAttribute="height" constant="100" id="KZI-zu-gXg"/>
                                             <constraint firstAttribute="width" constant="240" id="Pcv-PX-vBF"/>
                                         </constraints>
                                     </imageView>
@@ -53,11 +53,11 @@
                                 <constraints>
                                     <constraint firstItem="ESi-wT-WoY" firstAttribute="centerX" secondItem="FSU-NI-mPc" secondAttribute="centerX" id="3kJ-7z-9fe"/>
                                     <constraint firstItem="ESi-wT-WoY" firstAttribute="top" secondItem="FSU-NI-mPc" secondAttribute="top" id="8iT-rc-Svq"/>
-                                    <constraint firstAttribute="height" constant="75" id="ijz-uI-o4n"/>
+                                    <constraint firstAttribute="height" constant="100" id="ijz-uI-o4n"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Remember me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVd-No-ACm">
-                                <rect key="frame" x="0.0" y="198" width="126" height="21"/>
+                                <rect key="frame" x="0.0" y="223" width="126" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="SIO-ON-MV2"/>
                                     <constraint firstAttribute="width" constant="126" id="zET-im-4UO"/>
@@ -66,14 +66,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtG-sC-sAD">
-                                <rect key="frame" x="30" y="227" width="51" height="31"/>
+                                <rect key="frame" x="30" y="252" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="Jsa-3f-wBC"/>
                                     <constraint firstAttribute="width" constant="49" id="Uaa-79-vsM"/>
                                 </constraints>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uG-dM-uVw">
-                                <rect key="frame" x="16" y="373" width="343" height="50"/>
+                                <rect key="frame" x="16" y="398" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AnL-CM-Vv2"/>
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tJ-Em-ebP">
-                                <rect key="frame" x="16" y="308" width="343" height="50"/>
+                                <rect key="frame" x="16" y="333" width="343" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-kC-1dM">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -131,7 +131,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwK-fu-qF1">
-                                <rect key="frame" x="15" y="90" width="345" height="88"/>
+                                <rect key="frame" x="15" y="115" width="345" height="88"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4yK-Pe-3NW">
                                         <rect key="frame" x="113" y="8" width="224" height="30"/>
@@ -210,7 +210,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zt2-k5-K28">
-                                <rect key="frame" x="192" y="228" width="140" height="50"/>
+                                <rect key="frame" x="192" y="253" width="140" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="237-5o-4a6">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
@@ -246,7 +246,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.036519728600978851" green="0.47636699676513672" blue="0.53769087791442871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="top" secondItem="dVd-No-ACm" secondAttribute="bottom" constant="8" id="1bL-TN-YKh"/>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="30" id="5je-Pq-cM3"/>
@@ -1177,7 +1177,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="signUpImage" id="eZz-ha-TGE">
-                                                                <rect key="frame" x="0.0" y="22" width="100" height="100"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="100" height="100"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>

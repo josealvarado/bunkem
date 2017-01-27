@@ -23,6 +23,7 @@
 		CB2A952D1E373B1D00F11028 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = CB2A952C1E373B1D00F11028 /* Camera.png */; };
 		CB31F5121DF292B800223ACA /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */; };
 		CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */; };
+		CB3B6A4E1E3A65E100FECD14 /* BKMSupportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B6A4D1E3A65E100FECD14 /* BKMSupportTableViewController.swift */; };
 		CB3D66AE1E25EBA60031571E /* BKMMatchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */; };
 		CB3D66B11E25FF3F0031571E /* BKMProfileMatchedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */; };
 		CB3D66B21E25FF3F0031571E /* BKMProfileMatchedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */; };
@@ -30,6 +31,7 @@
 		CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */; };
 		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
 		CB4325741E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */; };
+		CB44BA651E3B208D005A9975 /* BKMFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
@@ -94,6 +96,7 @@
 		CB2A952C1E373B1D00F11028 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
 		CB31F5111DF292B800223ACA /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB31F5131DF2934600223ACA /* BKMChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeNameViewController.swift; sourceTree = "<group>"; };
+		CB3B6A4D1E3A65E100FECD14 /* BKMSupportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMSupportTableViewController.swift; sourceTree = "<group>"; };
 		CB3D66AD1E25EBA60031571E /* BKMMatchingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMMatchingService.swift; sourceTree = "<group>"; };
 		CB3D66AF1E25FF3F0031571E /* BKMProfileMatchedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BKMProfileMatchedViewController.swift; path = bunkem/Views/BKMProfileMatchedViewController.swift; sourceTree = SOURCE_ROOT; };
 		CB3D66B01E25FF3F0031571E /* BKMProfileMatchedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKMProfileMatchedViewController.xib; path = bunkem/Views/BKMProfileMatchedViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -101,6 +104,7 @@
 		CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultProfileImage.jpeg; sourceTree = "<group>"; };
 		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
 		CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePhoneNumberViewController.swift; sourceTree = "<group>"; };
+		CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMFAQViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 				CB59D3581DF3B9780053A2F4 /* BKMNotificationSettingsViewController.swift */,
 				CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */,
 				CBAE211F1E2DE9D900B2C371 /* BKMUpdateProfileViewController.swift */,
+				CB3B6A4D1E3A65E100FECD14 /* BKMSupportTableViewController.swift */,
+				CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -519,10 +525,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB44BA651E3B208D005A9975 /* BKMFAQViewController.swift in Sources */,
 				CB54EC8F1E39B15400A5D933 /* BKMPetPreferenceViewController.swift in Sources */,
 				CB7961801E010D8400DB18E6 /* Networking.swift in Sources */,
 				CBBA452C1E07479300CB9CC8 /* BKMFilterTableViewController.swift in Sources */,
 				CBAE21201E2DE9D900B2C371 /* BKMUpdateProfileViewController.swift in Sources */,
+				CB3B6A4E1E3A65E100FECD14 /* BKMSupportTableViewController.swift in Sources */,
 				CBA3D8E01DE03568001DACB7 /* LoginViewController.swift in Sources */,
 				CB94FF771DE01ADE009772EA /* ViewController.swift in Sources */,
 				CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */,

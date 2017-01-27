@@ -28,6 +28,7 @@ class User: NSObject {
     var image: UIImage? = nil
     var imageFilePath: URL? = nil
     var imageId = ""
+    var sharePhoneNumber = false
     
     var cityAndState = ""
     var dateOfBirth = ""
@@ -178,6 +179,10 @@ class User: NSObject {
         
         if let photoURL = userJSON["photoURL"] as? String {
             self.photoURL = photoURL
+        }
+        
+        if let sharePhoneNumber = userJSON["sharePhoneNumber"] as? Bool {
+            self.sharePhoneNumber = sharePhoneNumber
         }
         
         self.images.removeAll()

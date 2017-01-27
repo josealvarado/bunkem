@@ -46,12 +46,12 @@ class BKMMessageViewController: UIViewController, UITableViewDelegate, UITableVi
                     
                     print("post \(post)")
                     
-                    if let identifier = post["identifier"] as? String, identifier == self.activeUser.identifier{
-                        print("SHOW USER")
-                        
-                        self.performSegue(withIdentifier: "ShowChannel", sender: post)
-
-                    }
+//                    if let identifier = post["identifier"] as? String, identifier == self.activeUser.identifier{
+//                        print("SHOW USER")
+//                        
+//                        self.performSegue(withIdentifier: "ShowChannel", sender: post)
+//
+//                    }
                 }
             }
             

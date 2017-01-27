@@ -196,7 +196,12 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
 
         let otherAlert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         
-        if let matchedUser = matchedUser, let url = NSURL(string: "tel://\(matchedUser.phoneNumber)"), UIApplication.shared.canOpenURL(url as URL) {
+        if let matchedUser = matchedUser, matchedUser.sharePhoneNumber {
+            print("shared user lets me call them")
+            print("do I ? ", CurrentUser.user.sharePhoneNumber)
+        }
+        
+        if let matchedUser = matchedUser,  let url = NSURL(string: "tel://\(matchedUser.phoneNumber)"), UIApplication.shared.canOpenURL(url as URL) && matchedUser.sharePhoneNumber && CurrentUser.user.sharePhoneNumber {
             let printSomething = UIAlertAction(title: "Make a call", style: UIAlertActionStyle.default) { _ in
                 UIApplication.shared.openURL(url as URL)
             }
