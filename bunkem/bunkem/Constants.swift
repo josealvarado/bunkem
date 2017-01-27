@@ -21,5 +21,5 @@ struct CurrentUser {
 }
 
 struct Profile {
-    static var maximumImages = 7
+    static var maximumImages = 8
 }

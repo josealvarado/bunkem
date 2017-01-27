@@ -17,7 +17,7 @@ class BKMDistanceViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     var ref: FIRDatabaseReference?
     
-    var dataSource = [1, 2, 3, 5, 10, 100, 200]
+    var dataSource = [1, 2, 3, 5, 10, 50, 100, 200]
     var distance = 5
 
     override func viewDidLoad() {
