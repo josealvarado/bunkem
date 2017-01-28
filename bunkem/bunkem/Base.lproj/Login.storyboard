@@ -42,9 +42,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-wT-WoY">
-                                        <rect key="frame" x="67.5" y="0.0" width="240" height="100"/>
+                                        <rect key="frame" x="67.5" y="-60" width="240" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="KZI-zu-gXg"/>
+                                            <constraint firstAttribute="height" constant="200" id="KZI-zu-gXg"/>
                                             <constraint firstAttribute="width" constant="240" id="Pcv-PX-vBF"/>
                                         </constraints>
                                     </imageView>
@@ -52,7 +52,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ESi-wT-WoY" firstAttribute="centerX" secondItem="FSU-NI-mPc" secondAttribute="centerX" id="3kJ-7z-9fe"/>
-                                    <constraint firstItem="ESi-wT-WoY" firstAttribute="top" secondItem="FSU-NI-mPc" secondAttribute="top" id="8iT-rc-Svq"/>
+                                    <constraint firstItem="ESi-wT-WoY" firstAttribute="top" secondItem="FSU-NI-mPc" secondAttribute="top" constant="-60" id="8iT-rc-Svq"/>
                                     <constraint firstAttribute="height" constant="100" id="ijz-uI-o4n"/>
                                 </constraints>
                             </view>
@@ -63,6 +63,7 @@
                                     <constraint firstAttribute="width" constant="126" id="zET-im-4UO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtG-sC-sAD">
@@ -71,6 +72,7 @@
                                     <constraint firstAttribute="height" constant="31" id="Jsa-3f-wBC"/>
                                     <constraint firstAttribute="width" constant="49" id="Uaa-79-vsM"/>
                                 </constraints>
+                                <color key="onTintColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uG-dM-uVw">
                                 <rect key="frame" x="16" y="398" width="343" height="50"/>
@@ -214,7 +216,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="237-5o-4a6">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
-                                        <color key="backgroundColor" red="0.39085882902145386" green="0.57932287454605103" blue="0.8045991063117981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -246,7 +248,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.10315062849999999" green="0.34049034119999999" blue="0.54961556199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="top" secondItem="dVd-No-ACm" secondAttribute="bottom" constant="8" id="1bL-TN-YKh"/>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="30" id="5je-Pq-cM3"/>
