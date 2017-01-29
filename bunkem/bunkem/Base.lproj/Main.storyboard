@@ -842,7 +842,7 @@
         <!--Smokes/Drinks-->
         <scene sceneID="hxv-xJ-1kI">
             <objects>
-                <viewController id="3dB-nn-1Lg" sceneMemberID="viewController">
+                <viewController id="3dB-nn-1Lg" customClass="BKMSmokesDrinksViewController" customModule="bunkem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pAO-rA-Fkj"/>
                         <viewControllerLayoutGuide type="bottom" id="aoP-hU-BNG"/>
@@ -878,16 +878,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dzx-Lj-9xm">
-                                <rect key="frame" x="123" y="120" width="197" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NAx-BM-D19"/>
-                                    <constraint firstAttribute="width" constant="197" id="gu4-Qe-eOK"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smoke:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyR-GJ-g3H">
                                 <rect key="frame" x="62" y="197" width="57" height="21"/>
                                 <constraints>
@@ -898,16 +888,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o83-6s-4gb">
-                                <rect key="frame" x="126.5" y="192" width="197" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="197" id="061-qH-4li"/>
-                                    <constraint firstAttribute="height" constant="30" id="dFK-zb-qku"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf2-QF-uCp">
                                 <rect key="frame" x="87" y="276" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -922,32 +902,53 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="3dB-nn-1Lg" eventType="touchUpInside" id="Cep-6V-5pc"/>
+                                </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FM3-Cr-g5E">
+                                <rect key="frame" x="163" y="120" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="3ff-BC-zTT"/>
+                                    <constraint firstAttribute="height" constant="31" id="rMc-QZ-PX2"/>
+                                </constraints>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-DX-bwo">
+                                <rect key="frame" x="163" y="192" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="JT6-3i-E8c"/>
+                                    <constraint firstAttribute="height" constant="31" id="bNt-go-ncn"/>
+                                </constraints>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IGn-sf-7DD" firstAttribute="leading" secondItem="udg-4z-fTm" secondAttribute="leading" id="225-IZ-r98"/>
-                            <constraint firstItem="o83-6s-4gb" firstAttribute="leading" secondItem="TyR-GJ-g3H" secondAttribute="trailing" constant="7.5" id="5oo-vc-qHK"/>
+                            <constraint firstItem="FM3-Cr-g5E" firstAttribute="top" secondItem="IGn-sf-7DD" secondAttribute="bottom" constant="25" id="5rk-Qc-uqH"/>
                             <constraint firstItem="6qw-2y-fpo" firstAttribute="top" secondItem="VK6-EX-9sf" secondAttribute="bottom" constant="77" id="7UX-Il-5bc"/>
-                            <constraint firstItem="o83-6s-4gb" firstAttribute="top" secondItem="VK6-EX-9sf" secondAttribute="bottom" constant="19" id="9IA-fL-sw0"/>
                             <constraint firstItem="esa-Cq-W4M" firstAttribute="leading" secondItem="udg-4z-fTm" secondAttribute="leading" constant="62" id="B7e-uA-Dr9"/>
                             <constraint firstItem="Tf2-QF-uCp" firstAttribute="centerX" secondItem="udg-4z-fTm" secondAttribute="centerX" id="DVr-Od-Wfy"/>
                             <constraint firstItem="esa-Cq-W4M" firstAttribute="top" secondItem="IGn-sf-7DD" secondAttribute="bottom" constant="30" id="EEs-NQ-XOG"/>
-                            <constraint firstItem="dzx-Lj-9xm" firstAttribute="leading" secondItem="esa-Cq-W4M" secondAttribute="trailing" constant="7.5" id="FJN-dG-M3A"/>
-                            <constraint firstItem="dzx-Lj-9xm" firstAttribute="top" secondItem="IGn-sf-7DD" secondAttribute="bottom" constant="25" id="HAZ-vI-C5f"/>
                             <constraint firstItem="IGn-sf-7DD" firstAttribute="top" secondItem="pAO-rA-Fkj" secondAttribute="bottom" constant="30" id="K8D-20-CGO"/>
                             <constraint firstItem="6qw-2y-fpo" firstAttribute="leading" secondItem="udg-4z-fTm" secondAttribute="leading" id="L6x-cq-SvI"/>
                             <constraint firstAttribute="trailing" secondItem="VK6-EX-9sf" secondAttribute="trailing" id="O1u-C2-DJN"/>
                             <constraint firstItem="VK6-EX-9sf" firstAttribute="top" secondItem="IGn-sf-7DD" secondAttribute="bottom" constant="77" id="Vs7-ND-huI"/>
                             <constraint firstItem="VK6-EX-9sf" firstAttribute="leading" secondItem="udg-4z-fTm" secondAttribute="leading" id="XSu-fk-lxy"/>
                             <constraint firstAttribute="trailing" secondItem="6qw-2y-fpo" secondAttribute="trailing" id="XxM-GV-uvw"/>
+                            <constraint firstItem="FM3-Cr-g5E" firstAttribute="leading" secondItem="esa-Cq-W4M" secondAttribute="trailing" constant="47.5" id="Y9k-ju-6AG"/>
+                            <constraint firstItem="r6h-DX-bwo" firstAttribute="leading" secondItem="TyR-GJ-g3H" secondAttribute="trailing" constant="44" id="Zvf-K5-HmP"/>
                             <constraint firstItem="Tf2-QF-uCp" firstAttribute="top" secondItem="6qw-2y-fpo" secondAttribute="bottom" constant="25" id="epd-iR-eRu"/>
                             <constraint firstItem="TyR-GJ-g3H" firstAttribute="top" secondItem="VK6-EX-9sf" secondAttribute="bottom" constant="24" id="kFP-cQ-PoC"/>
                             <constraint firstItem="TyR-GJ-g3H" firstAttribute="leading" secondItem="udg-4z-fTm" secondAttribute="leading" constant="62" id="uAO-NF-9O9"/>
+                            <constraint firstItem="r6h-DX-bwo" firstAttribute="top" secondItem="VK6-EX-9sf" secondAttribute="bottom" constant="19" id="wN1-LS-aSM"/>
                             <constraint firstAttribute="trailing" secondItem="IGn-sf-7DD" secondAttribute="trailing" id="ypu-rk-H28"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Smokes/Drinks" id="ky5-du-PUJ"/>
+                    <connections>
+                        <outlet property="drinksSwitch" destination="FM3-Cr-g5E" id="TRh-Oy-XoS"/>
+                        <outlet property="smokesSwitch" destination="r6h-DX-bwo" id="UOf-Lm-sqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3Z-Pa-fxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1839,7 +1840,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-eN-2Kf">
                                 <rect key="frame" x="15" y="79" width="345" height="573"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Bunk’em Inc.
+
+The future is always bringing us closer together as people. Many of us are in pursuit of finding roommates, friends, or those who we can call family.
+
+Bunk’em believes in creating a cutting edge, simple, and reliable site where people can find a person whom they would like to share a home together. We like to dream of the future where any individual can share and live together.
+
+Our product brings us closer to what we cannot reach solely as individuals. We are transforming the way the world connects with each other. Join us on this journey and we will surely learn more about one another.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

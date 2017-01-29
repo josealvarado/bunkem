@@ -35,6 +35,35 @@ class ViewController: UIViewController {
     var usersLoaded = 0
     
     override func viewDidLoad() {
+        let defaults = UserDefaults.standard
+        let today = NSDate()
+        if let matchesTodayDate = defaults.value(forKey: "matchesTodayDate") as? NSDate {
+            print("matchesTodayDate \(matchesTodayDate)")
+            
+            let calendar = NSCalendar.current
+            let matchesDay = calendar.component(Calendar.Component.day, from: matchesTodayDate as Date)
+            let todaysDay = calendar.component(Calendar.Component.day, from: today as Date)
+
+            if let matchesToday = defaults.value(forKey: "matchesToday") as? Int {
+                if matchesToday >= Matching.maximumMatchesPerDay && matchesDay == todaysDay {
+                    self.swipeableView.isUserInteractionEnabled = false
+                } else {
+                    if self.swipeableView != nil {
+                        self.swipeableView.isUserInteractionEnabled = true
+                    }
+                    defaults.setValue(0, forKey: "matchesToday")
+                    defaults.setValue(NSDate(), forKey: "matchesTodayDate")
+                }
+            }
+            
+        } else {
+            self.swipeableView.isUserInteractionEnabled = true
+            defaults.setValue(0, forKey: "matchesToday")
+            defaults.setValue(NSDate(), forKey: "matchesTodayDate")
+        }
+        
+        print("viewDidLoadviewDidLoadviewDidLoadviewDidLoad")
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -52,6 +81,21 @@ class ViewController: UIViewController {
         }
         swipeableView.didSwipe = {view, direction, vector in
             print("Did swipe view in direction: \(direction), vector: \(vector)")
+            
+            
+            if let matchesToday = defaults.value(forKey: "matchesToday") as? Int {
+                defaults.setValue(matchesToday + 1, forKey: "matchesToday")
+
+                if matchesToday + 1 == Matching.maximumMatchesPerDay {
+                    self.swipeableView.isUserInteractionEnabled = false
+                    self.displayFailedUpdateAlert(title: "You've reached the maximum number of matches for the day. Please come again tomorrow")
+                }
+            }
+            else {
+                defaults.setValue(1, forKey: "matchesToday")
+                defaults.setValue(NSDate(), forKey: "matchesTodayDate")
+            }
+            
             
             guard self.userIndex < self.userList.count else { return }
             
@@ -483,6 +527,13 @@ class ViewController: UIViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.registerForPushNotifications(application: UIApplication.shared)
+    }
+    
+    func displayFailedUpdateAlert(title: String, message: String? = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 

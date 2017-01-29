@@ -23,3 +23,8 @@ struct CurrentUser {
 struct Profile {
     static var maximumImages = 8
 }
+
+struct Matching {
+    static var maximumMatchesPerDay = 3
+    static var addsAfterMatches = 5
+}

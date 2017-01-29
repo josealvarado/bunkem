@@ -26,6 +26,16 @@ class BKMAgePreferenceViewController: UIViewController, UIPickerViewDelegate, UI
         // Do any additional setup after loading the view.
         
         ref = FIRDatabase.database().reference()
+        
+        lowerBoundAge = [Int]()
+        topBoundAge = [Int]()
+        for index in 18...100 {
+            print("\(index) times 5 is \(index * 5)")
+            lowerBoundAge.append(index)
+            topBoundAge.append(index)
+        }
+        
+        self.pickerView.reloadAllComponents()
     }
 
     override func didReceiveMemoryWarning() {
