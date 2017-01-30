@@ -96,7 +96,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                     self.displayFailedUpdateAlert(title: "You've reached the maximum number of matches for the day. Please come again tomorrow")
                 } else {
                     
-                    if matchesToday > 1 && matchesToday % Matching.addsAfterMatches == 0 {
+                    if matchesToday > 2 && matchesToday + 1 % Matching.addsAfterMatches == 0 {
                         if self.interstitial.isReady {
                             self.interstitial.present(fromRootViewController: self)
                         } else {
