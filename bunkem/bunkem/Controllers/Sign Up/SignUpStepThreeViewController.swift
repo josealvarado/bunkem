@@ -152,8 +152,8 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                 self.data["enjoy"] = enjoy as AnyObject?
             }
             
-            if let lived = self.livedTextView.text {
-                self.data["lived"] = lived as AnyObject?
+            if let seekInARoommate = self.livedTextView.text {
+                self.data["seekInARoommate"] = seekInARoommate as AnyObject?
             }
             
             if let visit = self.visitTextView.text {

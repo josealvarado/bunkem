@@ -47,8 +47,8 @@ class BKMUpdateProfileViewController: UIViewController {
                     self.enjoyTextField.text = enjoy
                 }
                 
-                if let lived = userInfo["lived"] as? String {
-                    self.livedTextView.text = lived
+                if let seekInARoommate = userInfo["seekInARoommate"] as? String {
+                    self.livedTextView.text = seekInARoommate
                 }
                 
                 if let visit = userInfo["visit"] as? String {
@@ -79,7 +79,7 @@ class BKMUpdateProfileViewController: UIViewController {
             userInfo["enjoy"] = middleName
         }
         if let lastName = livedTextView.text {
-            userInfo["lived"] = lastName
+            userInfo["seekInARoommate"] = lastName
         }
         if let lastName = visitTextView.text {
             userInfo["visit"] = lastName

@@ -53,7 +53,7 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
         cityAndStateLabel.text = "\(activeUser.cityAndState)"
         aboutYouTextView.text = activeUser.aboutYou
         thingsYouEnjoyTextView.text = activeUser.enjoy
-        livedTextView.text = activeUser.lived
+        livedTextView.text = activeUser.seekInARoommate
         visitTextView.text = activeUser.visit
         
         if activeUser.photoURL != "" {

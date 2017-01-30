@@ -31,12 +31,14 @@ class User: NSObject {
     var sharePhoneNumber = false
     
     var cityAndState = ""
+    var city = ""
+    var state = ""
     var dateOfBirth = ""
     var securityQuestion = ""
     var securityQuestionAnswer = ""
     var aboutYou = ""
     var enjoy = ""
-    var lived = ""
+    var seekInARoommate = ""
     var visit = ""
     
     var photoURL = ""
@@ -147,6 +149,17 @@ class User: NSObject {
         
         if let cityAndState = userJSON["cityAndState"] as? String {
             self.cityAndState = cityAndState
+            
+            let CUList = cityAndState.components(separatedBy: ",")
+            
+            if CUList.count == 2 {
+                self.city = CUList.first ?? ""
+                self.state = CUList[1]
+            }
+            
+            if CUList.count == 1 {
+                self.city = CUList.first ?? ""
+            }
         }
     
         if let dateOfBirth = userJSON["dateOfBirth"] as? String {
@@ -169,8 +182,8 @@ class User: NSObject {
             self.enjoy = enjoy
         }
         
-        if let lived = userJSON["lived"] as? String {
-            self.lived = lived
+        if let seekInARoommate = userJSON["seekInARoommate"] as? String {
+            self.seekInARoommate = seekInARoommate
         }
         
         if let visit = userJSON["visit"] as? String {
@@ -222,4 +235,37 @@ class User: NSObject {
         }
     }
     
+    func reLoaduser(success:@escaping () -> Void) -> Void {
+        
+        var ref: FIRDatabaseReference?
+        ref = FIRDatabase.database().reference()
+
+        if CurrentUser.user.user != nil {
+            ref?.child("users").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+
+                if let value = snapshot.value as? [String : AnyObject] {
+                    self.update(userJSON: value)
+                }
+                success()
+            })
+        } else if FIRAuth.auth()?.currentUser != nil {
+            
+            let userID = FIRAuth.auth()?.currentUser?.uid
+            ref = FIRDatabase.database().reference()
+            ref?.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                if let value = snapshot.value as? [String : AnyObject] {
+                    self.update(userJSON: value)
+                }
+                success()
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+
+        }
+    }
+    
+    func updateME(userJSON: [String: AnyObject]) {
+        self.update(userJSON: userJSON)
+    }
 }

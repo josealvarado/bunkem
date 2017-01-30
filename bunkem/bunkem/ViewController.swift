@@ -110,9 +110,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                 defaults.setValue(NSDate(), forKey: "matchesTodayDate")
             }
             
-            
-            
-            
             guard self.userIndex < self.userList.count else { return }
             
             let activeUser = self.userList[self.userIndex]
@@ -177,49 +174,59 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             view1.bottom == view2.bottom - 100
         }
         
-        ref = FIRDatabase.database().reference()
         
-        userList = [User]()
-        ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
-            
-            self.loadCardsFromXib = true
-            self.userIndex = 0
-            self.usersLoaded = 0
-            self.swipeableView.reloadInputViews()
-            self.swipeableView.discardViews()
-//            self.viewDidLayoutSubviews()
-//            self.swipeableView.nextView = {
-//                return self.nextCardView()
-//            }
-            
-            // Get user value
-            guard let allUsers = snapshot.value as? NSDictionary else {
-                print("NO USERS FOUND")
-                return
-            }
-            
-            print("value \(allUsers)")
-            let allKeys = allUsers.allKeys
-            for userId in allKeys {
-                if let otherUser = allUsers[userId] as? [String: AnyObject] {
-                    print("email \(otherUser["email"])")
-                    
-                    let tempUser = User(userJSON: otherUser)
-                    tempUser.identifier = userId as! String
-                    
-                    if tempUser.identifier != CurrentUser.user.identifier {
-                        self.userList.append(tempUser)
-
+        CurrentUser.user.reLoaduser {
+            print("CurrentUser \(CurrentUser.user)")
+            self.ref = FIRDatabase.database().reference()
+            self.userList = [User]()
+            self.ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                self.loadCardsFromXib = true
+                self.userIndex = 0
+                self.usersLoaded = 0
+                self.swipeableView.reloadInputViews()
+                self.swipeableView.discardViews()
+                //            self.viewDidLayoutSubviews()
+                //            self.swipeableView.nextView = {
+                //                return self.nextCardView()
+                //            }
+                
+                // Get user value
+                guard let allUsers = snapshot.value as? NSDictionary else {
+                    print("NO USERS FOUND")
+                    return
+                }
+                
+                print("value \(allUsers)")
+                let allKeys = allUsers.allKeys
+                for userId in allKeys {
+                    if let otherUser = allUsers[userId] as? [String: AnyObject] {
+                        print("email \(otherUser["email"])")
+                        
+                        let tempUser = User(userJSON: otherUser)
+                        tempUser.identifier = userId as! String
+                        
+                        guard tempUser.identifier != CurrentUser.user.identifier else { continue }
+                        
+                        print("tempUser \(tempUser)")
+                        
+                        // CITY/STATE FILTER
+                        print("CU \(CurrentUser.user.cityAndState) TU \(tempUser.cityAndState)")
+                        if tempUser.state == CurrentUser.user.state || tempUser.city == CurrentUser.user.state {
+                            self.userList.append(tempUser)
+                        }
                     }
                 }
+                
+                self.updateView()
+                // ...
+            }) { (error) in
+                print(error.localizedDescription)
             }
-            
-            self.updateView()
-            // ...
-        }) { (error) in
-            print(error.localizedDescription)
-        }
 
+        }
+        
+        
     }
     
 //    fileprivate func createAndLoadInterstitial() {
@@ -272,6 +279,9 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                 })
             }
         } else {
+            
+            
+            
             self.viewDidLayoutSubviews()
         }
     }
@@ -367,56 +377,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                             }
                         }
                     }
-                    
-                    
-//                    // Get a reference to the storage service, using the default Firebase App
-//                    let storage = FIRStorage.storage()
-//                    
-//                    // This is equivalent to creating the full reference
-//                    let storageRef = storage.reference(forURL: "gs://bunkem-4799f.appspot.com")
-//                    
-//                    let downloadFilePath = "\(loadedUser.identifier)-pimg-\(0)"
-//                    let filePath = "images/profile/\(downloadFilePath)"
-//                    let spaceRef = storageRef.child(filePath)
-//                    // d4jEUAaToFNmRvFnTXjXf4fDK612/
-//                    // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-//                    
-//                    if let imageFilePath = SFDImageUploadDownloadService.initiateDownloadImage(fileName: filePath, downloadedFilePath: downloadFilePath) {
-//                        let downloadedImage = UIImage(contentsOfFile: imageFilePath.path)
-//
-//                        if let imageView = contentView.viewWithTag(200) as? UIImageView {
-//                            imageView.image = downloadedImage
-//                        }
-//                    } else {
-//                        spaceRef.data(withMaxSize: 1024 * 1024 * 1024) { (data, error) -> Void in
-//                            if (error != nil) {
-//                                // Uh-oh, an error occurred!
-//                                
-//                                print("error \(error)")
-//                                
-//                                if let loadingLabel = contentView.viewWithTag(60) as? UILabel {
-//                                    loadingLabel.text = "No image found"
-//                                }
-//                            } else {
-//                                
-//                                
-//                                
-//                                print("Successful download \(filePath)")
-//                                // Data for "images/island.jpg" is returned
-//                                
-//                                if let data = data, let downloadedImage = UIImage(data: data) {
-//                                    
-//                                    let _ = SFDImageUploadDownloadService.saveImageLocally(image: downloadedImage, fileName: filePath)
-//
-//                                    if let imageView = contentView.viewWithTag(200) as? UIImageView {
-//                                        imageView.image = downloadedImage
-//                                    }
-//                                }
-//                            }
-//                        }
-//                    }
-                    
-                    
                 } else {
                     if let loadingLabel = contentView.viewWithTag(60) as? UILabel {
                         loadingLabel.text = ""
