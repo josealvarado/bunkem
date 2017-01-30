@@ -14,13 +14,16 @@ import FirebaseDatabase
 import FirebaseAuth
 import FirebaseStorage
 import FirebaseMessaging
+import GoogleMobileAds
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, GADInterstitialDelegate {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cityAndStateLabel: UILabel!
     
-    
+    var interstitial: GADInterstitial!
+
     var swipeableView: ZLSwipeableView!
     
     var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
@@ -35,6 +38,8 @@ class ViewController: UIViewController {
     var usersLoaded = 0
     
     override func viewDidLoad() {
+        interstitial = createAndLoadInterstitial()
+        
         let defaults = UserDefaults.standard
         let today = NSDate()
         if let matchesTodayDate = defaults.value(forKey: "matchesTodayDate") as? NSDate {
@@ -89,12 +94,23 @@ class ViewController: UIViewController {
                 if matchesToday + 1 == Matching.maximumMatchesPerDay {
                     self.swipeableView.isUserInteractionEnabled = false
                     self.displayFailedUpdateAlert(title: "You've reached the maximum number of matches for the day. Please come again tomorrow")
+                } else {
+                    
+                    if matchesToday > 1 && matchesToday % Matching.addsAfterMatches == 0 {
+                        if self.interstitial.isReady {
+                            self.interstitial.present(fromRootViewController: self)
+                        } else {
+                            print("Ad wasn't ready")
+                        }
+                    }
                 }
             }
             else {
                 defaults.setValue(1, forKey: "matchesToday")
                 defaults.setValue(NSDate(), forKey: "matchesTodayDate")
             }
+            
+            
             
             
             guard self.userIndex < self.userList.count else { return }
@@ -204,6 +220,29 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
 
+    }
+    
+//    fileprivate func createAndLoadInterstitial() {
+//        interstitial = GADInterstitial(adUnitID: "ca-app-pub-1894426762965055/7602399921")
+//        let request = GADRequest()
+//        // Request test ads on devices you specify. Your test device ID is printed to the console when
+//        // an ad request is made.
+//        request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
+//        interstitial.load(request)
+//    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-1894426762965055/7602399921")
+        interstitial.delegate = self
+        let request = GADRequest()
+        //TODO: Remove this before submitting to apple
+        request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
+        interstitial.load(request)
+        return interstitial
+    }
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
     }
     
     override func didReceiveMemoryWarning() {

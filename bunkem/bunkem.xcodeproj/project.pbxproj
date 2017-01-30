@@ -30,6 +30,8 @@
 		CB3D66B51E275E6E0031571E /* BKMDetailMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */; };
 		CB3E43441E12F7D4000D403E /* defaultProfileImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */; };
 		CB3EAF451E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */; };
+		CB4063F81E3ED7760062B8D6 /* MoneyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4063F71E3ED7760062B8D6 /* MoneyIcon.png */; };
+		CB4063FA1E3ED7A10062B8D6 /* BKMBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4063F91E3ED7A10062B8D6 /* BKMBudgetViewController.swift */; };
 		CB4325741E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */; };
 		CB44BA651E3B208D005A9975 /* BKMFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
@@ -103,6 +105,8 @@
 		CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMDetailMessageViewController.swift; sourceTree = "<group>"; };
 		CB3E43431E12F7D4000D403E /* defaultProfileImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultProfileImage.jpeg; sourceTree = "<group>"; };
 		CB3EAF441E07B1CE003A01B0 /* BKMChangeProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangeProfileImageViewController.swift; sourceTree = "<group>"; };
+		CB4063F71E3ED7760062B8D6 /* MoneyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoneyIcon.png; sourceTree = "<group>"; };
+		CB4063F91E3ED7A10062B8D6 /* BKMBudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMBudgetViewController.swift; sourceTree = "<group>"; };
 		CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePhoneNumberViewController.swift; sourceTree = "<group>"; };
 		CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMFAQViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 				CB54EC901E39B16A00A5D933 /* BKMSmokesDrinksViewController.swift */,
 				CB54EC921E39B17E00A5D933 /* BKMMultiRoommateViewController.swift */,
 				CB54EC941E39B18E00A5D933 /* BKMDistanceViewController.swift */,
+				CB4063F91E3ED7A10062B8D6 /* BKMBudgetViewController.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 		CB5974941DF6946000359912 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CB4063F71E3ED7760062B8D6 /* MoneyIcon.png */,
 				CB54EC7F1E39AA4E00A5D933 /* Age preference.png */,
 				CB54EC801E39AA4E00A5D933 /* Multi Roommate Icon.png */,
 				CB54EC811E39AA4E00A5D933 /* Pet Paw.png */,
@@ -431,6 +437,7 @@
 				CB2A952D1E373B1D00F11028 /* Camera.png in Resources */,
 				CB2A95221E373A5E00F11028 /* Hand Swipe Left.png in Resources */,
 				CB59749A1DF6999100359912 /* Back Arrow.png in Resources */,
+				CB4063F81E3ED7760062B8D6 /* MoneyIcon.png in Resources */,
 				CBF9B3E21DFFBCFC00AA8311 /* CardContentView.xib in Resources */,
 				CB2A951F1E373A4000F11028 /* Notifications.png in Resources */,
 				CBFCEBD31DEEAD06008445C8 /* Login.storyboard in Resources */,
@@ -545,6 +552,7 @@
 				CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */,
 				CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */,
 				CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */,
+				CB4063FA1E3ED7A10062B8D6 /* BKMBudgetViewController.swift in Sources */,
 				CBA3D8DE1DE03357001DACB7 /* ForgotPasswordViewController.swift in Sources */,
 				CBF9B3E11DFFBCFC00AA8311 /* CardView.swift in Sources */,
 				CB59D3571DF3B6050053A2F4 /* BKMPrivacySettingsViewController.swift in Sources */,

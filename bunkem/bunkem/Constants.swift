@@ -25,6 +25,6 @@ struct Profile {
 }
 
 struct Matching {
-    static var maximumMatchesPerDay = 3
-    static var addsAfterMatches = 5
+    static var maximumMatchesPerDay = 25
+    static var addsAfterMatches = 3
 }
