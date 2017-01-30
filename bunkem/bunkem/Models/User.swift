@@ -48,6 +48,8 @@ class User: NSObject {
     var ref: FIRDatabaseReference?
     var user: FIRUser!
 
+    var potentialMatches = [String]()
+    
     override init() {
         super.init()
     }
@@ -244,7 +246,7 @@ class User: NSObject {
             ref?.child("users").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
 
                 if let value = snapshot.value as? [String : AnyObject] {
-                    self.update(userJSON: value)
+                    CurrentUser.user.update(userJSON: value)
                 }
                 success()
             })
@@ -255,17 +257,41 @@ class User: NSObject {
             ref?.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
                 // Get user value
                 if let value = snapshot.value as? [String : AnyObject] {
-                    self.update(userJSON: value)
+                    CurrentUser.user.update(userJSON: value)
+                    CurrentUser.user.identifier = userID!
                 }
                 success()
             }) { (error) in
+                success()
                 print(error.localizedDescription)
             }
 
+        } else {
+            success()
         }
     }
     
-    func updateME(userJSON: [String: AnyObject]) {
-        self.update(userJSON: userJSON)
+    func loadPotentialMatches(success:@escaping () -> Void) -> Void {
+        
+        if FIRAuth.auth()?.currentUser != nil {
+            var ref: FIRDatabaseReference = FIRDatabase.database().reference()
+            let userID = FIRAuth.auth()?.currentUser?.uid
+            ref = FIRDatabase.database().reference()
+            ref.child("potentialMatch").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                if let value = snapshot.value as? NSDictionary {
+                    if let allKeys = value.allKeys as? [String] {
+                        CurrentUser.user.potentialMatches = allKeys
+                    }
+                }
+                success()
+            }) { (error) in
+                success()
+                print(error.localizedDescription)
+            }
+            
+        } else{
+            success()
+        }
     }
 }

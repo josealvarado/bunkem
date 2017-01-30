@@ -26,8 +26,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
 
     var swipeableView: ZLSwipeableView!
     
-    var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
-    var colorIndex = 0
+//    var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
+//    var colorIndex = 0
     var loadCardsFromXib = false
     
     var ref: FIRDatabaseReference!
@@ -176,54 +176,58 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         
         CurrentUser.user.reLoaduser {
-            print("CurrentUser \(CurrentUser.user)")
-            self.ref = FIRDatabase.database().reference()
-            self.userList = [User]()
-            self.ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
-                
-                self.loadCardsFromXib = true
-                self.userIndex = 0
-                self.usersLoaded = 0
-                self.swipeableView.reloadInputViews()
-                self.swipeableView.discardViews()
-                //            self.viewDidLayoutSubviews()
-                //            self.swipeableView.nextView = {
-                //                return self.nextCardView()
-                //            }
-                
-                // Get user value
-                guard let allUsers = snapshot.value as? NSDictionary else {
-                    print("NO USERS FOUND")
-                    return
-                }
-                
-                print("value \(allUsers)")
-                let allKeys = allUsers.allKeys
-                for userId in allKeys {
-                    if let otherUser = allUsers[userId] as? [String: AnyObject] {
-                        print("email \(otherUser["email"])")
-                        
-                        let tempUser = User(userJSON: otherUser)
-                        tempUser.identifier = userId as! String
-                        
-                        guard tempUser.identifier != CurrentUser.user.identifier else { continue }
-                        
-                        print("tempUser \(tempUser)")
-                        
-                        // CITY/STATE FILTER
-                        print("CU \(CurrentUser.user.cityAndState) TU \(tempUser.cityAndState)")
-                        if tempUser.state == CurrentUser.user.state || tempUser.city == CurrentUser.user.state {
-                            self.userList.append(tempUser)
+            CurrentUser.user.loadPotentialMatches {
+                print("CurrentUser \(CurrentUser.user)")
+                self.ref = FIRDatabase.database().reference()
+                self.userList = [User]()
+                self.ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+                    
+                    self.loadCardsFromXib = true
+                    self.userIndex = 0
+                    self.usersLoaded = 0
+                    self.swipeableView.reloadInputViews()
+                    self.swipeableView.discardViews()
+                    //            self.viewDidLayoutSubviews()
+                    //            self.swipeableView.nextView = {
+                    //                return self.nextCardView()
+                    //            }
+                    
+                    // Get user value
+                    guard let allUsers = snapshot.value as? NSDictionary else {
+                        print("NO USERS FOUND")
+                        return
+                    }
+                    
+                    print("value \(allUsers)")
+                    let allKeys = allUsers.allKeys
+                    for userId in allKeys {
+                        guard !CurrentUser.user.potentialMatches.contains(userId as! String) else { continue }
+                        if let otherUser = allUsers[userId] as? [String: AnyObject] {
+                            print("email \(otherUser["email"])")
+                            
+                            let tempUser = User(userJSON: otherUser)
+                            tempUser.identifier = userId as! String
+                            
+                            guard tempUser.identifier != CurrentUser.user.identifier else { continue }
+                            
+                            print("tempUser \(tempUser)")
+                            
+                            // CITY/STATE FILTER
+                            print("CU \(CurrentUser.user.cityAndState) TU \(tempUser.cityAndState)")
+                            if tempUser.state == CurrentUser.user.state || tempUser.city == CurrentUser.user.state {
+                                self.userList.append(tempUser)
+                            }
                         }
                     }
+                    
+                    print("NUMBER OF USERS \(self.userList.count)")
+                    
+                    self.updateView()
+                    // ...
+                }) { (error) in
+                    print(error.localizedDescription)
                 }
-                
-                self.updateView()
-                // ...
-            }) { (error) in
-                print(error.localizedDescription)
             }
-
         }
         
         
@@ -290,7 +294,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     
     func updateView() {
         guard userIndex < userList.count else {
-            nameLabel.text = "M"
+            nameLabel.text = ""
             cityAndStateLabel.text = ""
             return
         }
@@ -314,7 +318,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         let ProgrammaticallyAction = UIAlertAction(title: "Programmatically", style: .default) { (action) in
             self.loadCardsFromXib = false
-            self.colorIndex = 0
+//            self.colorIndex = 0
             self.swipeableView.discardViews()
             self.swipeableView.loadViews()
         }
@@ -322,7 +326,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         let XibAction = UIAlertAction(title: "From Xib", style: .default) { (action) in
             self.loadCardsFromXib = true
-            self.colorIndex = 0
+//            self.colorIndex = 0
             self.swipeableView.discardViews()
             self.swipeableView.loadViews()
         }
@@ -334,13 +338,13 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     // MARK: ()
     func nextCardView() -> UIView? {
         print("nextCardView \(self.userIndex) \(loadCardsFromXib)")
-        if colorIndex + 1 > colors.count {
-            colorIndex = 0
-        }
+//        if colorIndex + 1 > colors.count {
+//            colorIndex = 0
+//        }
         
         let cardView = CardView(frame: swipeableView.bounds)
 //        cardView.backgroundColor = colorForName(colors[colorIndex])
-        colorIndex += 1
+//        colorIndex += 1
         
         if loadCardsFromXib {
             let contentView = Bundle.main.loadNibNamed("CardContentView", owner: self, options: nil)?.first! as! UIView
@@ -348,7 +352,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
 //            contentView.backgroundColor = cardView.backgroundColor
             
             if let label = contentView.viewWithTag(100) as? UILabel {
-                label.text = colors[colorIndex]
+                label.text = ""
                 label.textColor = UIColor.green
                 
                 print("USER INDEX \(self.usersLoaded) userList.count \(userList.count)")
@@ -379,7 +383,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                     }
                 } else {
                     if let loadingLabel = contentView.viewWithTag(60) as? UILabel {
-                        loadingLabel.text = ""
+                        loadingLabel.text = "You've run out ot people to match with today. Please come back tomorrow!!"
                     }
                 }
                 
@@ -427,12 +431,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     }
     
     @IBAction func messageButtonPressed(_ sender: UIButton) {
-        guard self.userIndex < self.userList.count else {
-            return
-        }
-        
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMMessageViewController") as? BKMMessageViewController {
-//            vc.activeUser = self.userList[self.userIndex]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

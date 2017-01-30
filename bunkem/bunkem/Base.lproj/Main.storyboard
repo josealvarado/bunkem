@@ -1464,7 +1464,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMI-dL-bDb">
-                                <rect key="frame" x="0.0" y="20" width="375" height="997"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="953"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuC-9c-75S">
                                         <rect key="frame" x="0.0" y="-56" width="375" height="950"/>
@@ -3943,6 +3943,6 @@ We thank you for using our services and your continued interactions with our app
         <image name="defaultProfileImage.jpeg" width="225" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sQW-qT-4Bd"/>
+        <segue reference="FBL-ac-o1c"/>
     </inferredMetricsTieBreakers>
 </document>
