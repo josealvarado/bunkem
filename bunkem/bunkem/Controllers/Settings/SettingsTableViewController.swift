@@ -97,6 +97,8 @@ class SettingsTableViewController: UITableViewController {
             
         } else if indexPath.row == 4 {
             CurrentUser.user.email = ""
+            let defaults = UserDefaults.standard
+            defaults.removeObject(forKey: "password")
             let _ = self.navigationController?.popViewController(animated: true)
             
             do {

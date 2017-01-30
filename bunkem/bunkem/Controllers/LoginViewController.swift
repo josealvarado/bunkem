@@ -30,6 +30,12 @@ class LoginViewController: UIViewController {
         let defaults = UserDefaults.standard
         if let email = defaults.object(forKey: "email") as? String {
             usernameTextField.text = email
+            
+            if let password = defaults.object(forKey: "password") as? String {
+                
+                signInWithEmail(email, password: password)
+                
+            }
         }
     }
     
@@ -49,27 +55,34 @@ class LoginViewController: UIViewController {
         
         if let email = usernameTextField.text, let password = passwordTextField.text {
             
-            FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
-                if let user = user {
-                    let defaults = UserDefaults.standard
-
-                    if self.rememberSwitch.isOn {
-                        defaults.set(email, forKey: "email")
-                    } else {
-                        defaults.removeObject(forKey: "email")
-                    }
-                    
-                    CurrentUser.user = User(userFirebase: user)
-                    self.dismiss(animated: true, completion: nil)
-                } else if let error = error {
-                    let alertController = UIAlertController(title: "Authentication Failed", message: error.localizedDescription, preferredStyle: .alert)
-                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                    alertController.addAction(defaultAction)
-                    self.present(alertController, animated: true, completion: nil)
-                }
-            }
+            signInWithEmail(email, password: password)
         }
+        
     }
     
 
+    func signInWithEmail(_ email: String, password: String) {
+        FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
+            if let user = user {
+                let defaults = UserDefaults.standard
+                
+                if self.rememberSwitch.isOn {
+                    defaults.set(email, forKey: "email")
+                    defaults.set(password, forKey: "password")
+                } else {
+                    defaults.removeObject(forKey: "email")
+                }
+                
+                defaults.set(user.refreshToken, forKey: "token")
+                
+                CurrentUser.user = User(userFirebase: user)
+                self.dismiss(animated: true, completion: nil)
+            } else if let error = error {
+                let alertController = UIAlertController(title: "Authentication Failed", message: error.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
 }
