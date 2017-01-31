@@ -179,7 +179,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="crw-zh-PB5" id="7mx-Wx-qKb">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gOA-VO-efD">
@@ -273,7 +273,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ytB-x6-9Xs" id="BZ4-ID-ers">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nMq-p6-3zw">
@@ -302,7 +302,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjP-Us-gWu" id="eFq-dL-hIp">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter.png" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-G3-grW">
@@ -334,7 +334,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1On-WZ-8Yw" id="aPb-7Z-phh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-cm-kuN">
@@ -366,7 +366,7 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FuU-AL-oPp" id="ZdG-eP-1YB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-CO-jJA">
@@ -420,7 +420,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D8m-SN-mbm" id="mZ7-jh-KcO">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoneyIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nbc-rL-wRc">
@@ -455,7 +455,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uro-Ir-OIJ" id="pmv-md-qf5">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Age preference.png" translatesAutoresizingMaskIntoConstraints="NO" id="mg8-e8-4Ys">
@@ -490,7 +490,7 @@
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4O-bB-ROj" id="xHT-WC-ABa">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pet Paw.png" translatesAutoresizingMaskIntoConstraints="NO" id="rSf-cL-tMo">
@@ -525,7 +525,7 @@
                                         <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qmm-te-iIf" id="2Yp-vH-3tf">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Smoke cigarrette.png" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-pR-DR2">
@@ -560,7 +560,7 @@
                                         <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YpJ-mH-EoM" id="4JT-zW-VPo">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multi Roommate Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="SFB-ep-MxK">
@@ -595,7 +595,7 @@
                                         <rect key="frame" x="0.0" y="248" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qqr-0S-fSP" id="MjJ-k0-I10">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Road.png" translatesAutoresizingMaskIntoConstraints="NO" id="aXj-6B-aRa">
@@ -630,7 +630,7 @@
                                         <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G0I-4D-h3g" id="xEC-1i-JH1">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="K0U-JN-aPm">
@@ -1792,7 +1792,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQz-wC-1Pd" id="HCQ-ud-FmB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notifications.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-Ld-3mG">
@@ -1824,7 +1824,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="od3-dO-2Kr" id="LSP-KZ-DTy">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tell a Friend.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-8N-4KL">
@@ -1856,7 +1856,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fph-C6-CAd" id="9Pj-4x-inl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Account Settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHv-Wc-Q7D">
@@ -1891,7 +1891,7 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ya-fc-YJ3" id="2hx-HS-jn7">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About Dashboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-lC-URz">
@@ -1926,7 +1926,7 @@
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyq-xx-Rs2" id="Zoi-ZX-8Mv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logout.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuK-Pr-jwi">
@@ -1986,13 +1986,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-eN-2Kf">
                                 <rect key="frame" x="15" y="79" width="345" height="573"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Bunk’em Inc.
+                                <mutableString key="text">Bunk’em Inc.
 
-The future is always bringing us closer together as people. Many of us are in pursuit of finding roommates, friends, or those who we can call family.
+Bunk’em believes in creating a simple, safe, and reliable site where anyone can find their perfect roommate. Many of us are in pursuit of finding roommates, friends, or those who we can call family. Our mission is to provide you with the resources needed in order to connect with your potential roommate.
 
-Bunk’em believes in creating a cutting edge, simple, and reliable site where people can find a person whom they would like to share a home together. We like to dream of the future where any individual can share and live together.
+The future is always bringing us closer together as people. We like to dream of a future where any individual can share their life experiences and live together. 
 
-Our product brings us closer to what we cannot reach solely as individuals. We are transforming the way the world connects with each other. Join us on this journey and we will surely learn more about one another.</string>
+We are transforming the way the world connects with each other. Join us on this journey as we connect you with your future roommate.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -2275,11 +2275,11 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5jH-hu-PNS" id="TS6-6i-JJN">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TQ4-cD-fD6">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2296,11 +2296,11 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u0l-5i-i4U" id="3TC-rP-FkB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4lL-ei-VSA">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2318,11 +2318,11 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f8Y-jY-wHM" id="9AH-Vx-HJK">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7kW-Af-H26">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2339,11 +2339,11 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZ5-R6-0vw" id="og9-3s-rAl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re4-ZX-fzW">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2360,11 +2360,11 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hZm-PN-ZG5" id="hnr-KJ-SzF">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Blocking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BEr-FV-UbJ">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2378,11 +2378,11 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UbJ-DG-5wv" id="gr0-Gn-7Rh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Delete my account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PHL-0a-9GW">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2514,7 +2514,7 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YIx-he-mfd" id="C1G-rO-k0N">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frY-f4-Hhb">
@@ -2539,7 +2539,7 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hFi-cK-sdg" id="yng-SU-wOw">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckW-UY-BUT">
@@ -2564,7 +2564,7 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="skK-vd-Pb6" id="Rkg-cR-6Nh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-Eg-d6d">
@@ -2586,10 +2586,10 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="us5-x0-EiB" id="nGF-4Z-4wY">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy &amp; Terms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-zE-Qgd">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-zE-Qgd">
                                                     <rect key="frame" x="8" y="11" width="334" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2605,6 +2605,81 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="xMC-lx-YAO" kind="show" id="R6M-Nw-QvK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="D45-Uc-Ly9">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D45-Uc-Ly9" id="c4V-rV-ipX">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbX-oY-eBo">
+                                                    <rect key="frame" x="8" y="11" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EbX-oY-eBo" firstAttribute="leading" secondItem="c4V-rV-ipX" secondAttribute="leading" constant="8" id="AaZ-JZ-nTn"/>
+                                                <constraint firstItem="EbX-oY-eBo" firstAttribute="top" secondItem="c4V-rV-ipX" secondAttribute="top" constant="11" id="GHY-e2-oSB"/>
+                                                <constraint firstAttribute="trailing" secondItem="EbX-oY-eBo" secondAttribute="trailing" id="YGl-9k-xci"/>
+                                                <constraint firstAttribute="bottom" secondItem="EbX-oY-eBo" secondAttribute="bottom" constant="11" id="vNO-cK-8yP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1cX-IM-AL6" kind="show" id="bcH-3A-5Ta"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6eW-kk-HCr">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6eW-kk-HCr" id="A47-pz-LuZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5b-x6-Flp">
+                                                    <rect key="frame" x="8" y="11" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="L5b-x6-Flp" secondAttribute="bottom" constant="11" id="8eA-J7-rSW"/>
+                                                <constraint firstAttribute="trailing" secondItem="L5b-x6-Flp" secondAttribute="trailing" id="F9F-My-lej"/>
+                                                <constraint firstItem="L5b-x6-Flp" firstAttribute="top" secondItem="A47-pz-LuZ" secondAttribute="top" constant="11" id="Lvg-c0-eKC"/>
+                                                <constraint firstItem="L5b-x6-Flp" firstAttribute="leading" secondItem="A47-pz-LuZ" secondAttribute="leading" constant="8" id="nY9-ww-GP5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VT8-25-dbc" kind="show" id="PJ7-hP-dCr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="4Ow-y6-uPt">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Ow-y6-uPt" id="wLJ-LK-oWa">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright Act Compliance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L85-5A-8Ei">
+                                                    <rect key="frame" x="8" y="11" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="L85-5A-8Ei" secondAttribute="trailing" id="ZoG-3S-TUw"/>
+                                                <constraint firstItem="L85-5A-8Ei" firstAttribute="top" secondItem="wLJ-LK-oWa" secondAttribute="top" constant="11" id="dZf-dm-uPc"/>
+                                                <constraint firstItem="L85-5A-8Ei" firstAttribute="leading" secondItem="wLJ-LK-oWa" secondAttribute="leading" constant="8" id="drS-r0-fkb"/>
+                                                <constraint firstAttribute="bottom" secondItem="L85-5A-8Ei" secondAttribute="bottom" constant="11" id="tbV-YW-tms"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="k2q-fi-wPG" kind="show" id="DTs-xN-8ct"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -2623,7 +2698,7 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
             </objects>
             <point key="canvasLocation" x="3249" y="-1259"/>
         </scene>
-        <!--Privacy Policy & Terms-->
+        <!--Privacy Policy-->
         <scene sceneID="C2x-OV-yHf">
             <objects>
                 <viewController id="xMC-lx-YAO" sceneMemberID="viewController">
@@ -2636,66 +2711,41 @@ Our product brings us closer to what we cannot reach solely as individuals. We a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F16-4W-ywD">
-                                <rect key="frame" x="15" y="79" width="345" height="573"/>
+                                <rect key="frame" x="15" y="49" width="345" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Privacy Policy of Bunk’em
-Last Modified: November 27, 2016 
-
-Bunk’em is revolutionizing how people meet by creating a safe friendly environment through a push of a button. By a single swipe you can choose to touch base with the future roommate or not. Bunk’em gives you the choice to meet in person or keep it social through a phone conversation. Whether you are taking a break from work or on the go Bunk’em can find a roommate within minutes. You can also filter out what you seek in a potential roommate so both members can happily find their perfect match. 
-Our privacy policy is short and direct in that we do not want to give you a bunch of excessive information as other programs. We did our best to clear up as much information as we could. If you have any questions or concerns about our privacy policy please contact us as bunkemapp@gmail.com. 
-This Application collects some Personal Data from its Users.
-Types of Information collected 
-The types of Personal Data that this Application collects, by itself or through third parties include but not limited: first name, last name, gender, date of birth, phone number, state, email address, city, geographic position, username, password, picture and language. Essentially, most of our services require you to set up a basic Bunk’em account that is why we ask details about you. This is also needed for others to find you by your profile picture, city, and state you provide to Bunk’em. 
-Other Personal information collected may be described in other sections of this privacy policy. The User may freely provide the Personal Data. Personal data may be collected automatically when using this Application. Any use of Cookies or other tracking tools by this Application or by the owners of third party services used by this Application, unless stated otherwise, serves to identify Users and remember their preferences, for the sole purpose of providing the service required by the User. If you do not provide all data then this application will not be able to provide it’s best services. If you contact us about concerns we are happy to assist. The information you provide to use is at your discretion and you are volunteering to provide us with that information.  
-Users are responsible for any Personal Data of third parties obtained, published or shared through this Application. You must confirm that they have the third party's consent. 
-Data Controller contact bunkemapp@gmail.com
-Processing the Information
-
-Methods of processing
-We process the information of Users in a proper manner and shall take appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the. Our data processing is supported out by computers or IT aided tools. To be noted that in some cases the information may be accessible to certain individuals or persons in charge. For example: system administration, administration, legal council, marketing and/or external parties (e.g., third party IT services, hosting providers, IT companies, or technical service) appointed if only it is deemed necessary by the data owner. The updated list of these parties may be requested from the Data Controller at any moment.
-Location Information
-When you are using Bunk’em services we may collect information about your location. With your consent we may seek where you are when you are using our application through cell towers, Wi-Fi access points and/or other sensors. 
-Preservation time
-Information is kept for the time necessary to provide the service requested by the User, or stated by the purposes outlined in this document. At any time the User can request that the data suspend or remove the data if stated so. Please allow some time for this request to be made since their may be many request at once and the data will be processed in the order at which it was requested. 
-Usage of the collected Data
-The Data concerning the User is collected to allow the Owner to provide its services without any restraints. This allows for the following to be perpetrated: contacting the user, location-based interactions and registration and authentication. 
-Additional information 
-Photos and Camera roll
-Since we ask our users to provide a few pictures for the users profile we may require to collect images and other information pertaining from your device’s camera and photos taken. For instance, you will not be able to upload pictures from your camera roll unless we can access your camera or photos. You must grant us permission to access your camera roll so that any picture can be uploaded on the application. 
-Legal action
-The User's Personal Data may be used for legal purposes. If we reasonable believe that some if not all information is needed to comply with court orders, governmental requests, rule, and, investigation We want to comply with city, state, and federal regulations to protect the rights and property of others and users. Information may also be disclosed to a judge or Court leading to possible legal action arising from improper use of this Application or the related services. The User declares to be aware that the we may be required to reveal personal data upon request of public authorities. This is to resolve any security concerns. We want everyone to have a great experience using our application with a peace of mind. 
-
-Information Shared
-We may share information to other roommate finders such as:
-Your name and the city and/or state you live in. This is usually asked during the first pages of the application of Bunk’em when you are creating an account. 
-Information about your likes or dislikes if you provide that information
-Information about places you’ve lived and places you would like to visit
-Information Shared to the general public
-We may share the following information to the general public as stated below.
-Your profile picture(s)
-Your name
-Information about your likes or dislikes if you provide that information
-With third parties
-We may share some pertinent information with some third party parties. Such as service providers and partners. This would allow service providers who might perform services on our behalf and allow partners to provide their services. 
-With our associates
-We may share information with entities within the Bunk’em personal. 
-Logs and maintenance
-For operation and maintenance purposes, this Application and any third party services may collect documents that record interaction with this Application. Or the uses for this purpose other Personal Data (such as IP Address). It’s solely purpose is for operation and maintenance purposes. 
-Additional information for the User 
-Your rights as the Users
-Users have the right, at any time, to know whether their Personal Data has been stored and can consult the data controller to learn about their contents. Users may verify their accuracy or ask for them to be cancelled, updated or corrected. Users may request to block a particular individual or block certain information at their request. Requests should be sent to the Data Controller (email) at the contact information set out above of this privacy policy.  
-
-Access
-We want everyone to feel comfortable with the information you provide to us. There are limits, however; we will accommodate. For example, legal requests if there is concerns about improper use of the application. You can access your information at any time you are using the application. You can change or alter once you have created your account with Bunk’em. Everything can be found in profile or settings page. Your privacy is important to us and that is why we want to see everyone have access to their account. Updates needed might come to this application in which we will do our best to update you information for free unless if it would require an unbalanced effort on our part, we may charge a fee. We will disclose the fee before we move forward with anything. 
-Age Requirements
-Our services are intended for anyone over the age of 18+. If you are below the age requirement of 18 then that is outside of our services and a guardian must approve of that action to be taken. We do not have any control over that action. That is why we do not knowingly collect personal information from anyone under 18 years of age.
-Cookies
-When you are interacting with our services, we want you to have the best experience you possibly can. Cookies are used on many applications and are essentially needed because they can be used to remember when you return to the platform or track information about your use of the application. We provided some cookies and some were set by third parties. Typically most mobile device browsers automatically accept cookies. If you have questions about cookies please visit http://www.allaboutcookies.org. This site provides you with useful information on cookies and how they are placed and needed. Please note that in some cases if you block cookies used on this application, you may not be able to take full benefit of the services that can be provided.  
-Changes/ Revisions to the privacy policy
-We reserve the right to make changes to this privacy policy at any time. We will absolutely be giving you notice about the changes we produce in a form by which you will have access to. Bunk’em reserves the right to update or modify this privacy policy. We will either notify you by a notification with an in-app notification. This privacy policy will also notify it’s users on the website if the user is using the website feature. If at any time you disagree with our revisions to the privacy policy, you the User must discontinue the use of our services at Bunk’em. At any time you can request to be deleted or removed from our services. The current and ever changing privacy policy applies to all of its users. Thank you for staying committed to our services. This privacy policy was created in the United States, however if the user is using this application in a different country then this privacy policy would still apply with some possible changes if needed to follow the countries laws and rules. 
+                                <mutableString key="text">Our Privacy Policy was last updated and posted on January 20, 2017. It governs the privacy terms of our Website located at (www.bunkem.com), IOS, and Google play (Android), sub-domains, and any associated web-based and mobile applications as owned and operated by Bunk'em Inc.. Any capitalized terms not defined in our Privacy Policy, have the meaning as specified in our Terms of Service.
+Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. We use your Personal Information only for providing and improving the website. By using the website, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at www.bunkem.com. The following outlines our privacy policy.
+Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
+We will collect and use personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.
+We will only retain personal information as long as necessary for the fulfillment of those purposes.
+We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.
+Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.
+We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
+We will make readily available to customers information about our policies and practices relating to the management of personal information.
+Your Privacy Bunk'em Inc. follows all legal requirements to protect your privacy. Our Privacy Policy is a legal statement that explains how we may collect information from you, how we may share your information, and how you can limit our sharing of your information. We utilize the Personal Data you offer in a way that is consistent with this Personal privacy Policy. If you provide Personal Data for a particular reason, we could make use of the Personal Data in connection with the reason for which it was provided. For example, registration info sent when developing your account, might be used to suggest products to you based on past acquisitions. We might use your Personal Data to offer access to services on the Website and monitor your use of such services. Bunk'em Inc. may also utilize your Personal Data and various other personally non-identifiable info gathered through the Website to assist us with improving the material and functionality of the Website, to much better comprehend our users, and to improve our services. You will see terms in our Privacy Policy that are capitalized. These terms have meanings as described in the Definitions section below.
+Definitions "Non Personal Information" is information that is not personally identifiable to you and that we automatically collect when you access our Website with a web browser. It may also include publicly available information that is shared between you and others.
+"Personally Identifiable Information" is non-public information that is personally identifiable to you and obtained in order for us to provide you within our Website. Personally Identifiable Information may include information such as your name, email address, and other related information that you provide to us or that we obtain about you.
+Information We Collect Generally, you control the amount and type of information you provide to us when using our Website.
+As a Visitor, you can browse our website to find out more about our Website. You are not required to provide us with any Personally Identifiable Information as a Visitor.
+Computer Information Collected When you use our Website, we automatically collect certain computer information by the interaction of your mobile phone or web browser with our Website. Such information is typically considered Non Personal Information. We also collect the following:
+Cookies Our Website uses "Cookies" to identify the areas of our Website that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to personalize the Content that you see on our Website. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our Website correctly or at all. We never place Personally Identifiable Information in Cookies.
+Geographical Information When you use the mobile application, we may use GPS technology (or other similar technology) to determine your current location in order to determine the city you are located in and display information with relevant data or advertisements. We will not share your current location with other users or partners. If you do not want us to use your location for the purposes set forth above, you should turn off the location services for the mobile application located in your account settings or in your mobile phone settings and/or within the mobile application.
+Automatic Information We automatically receive information from your web browser or mobile device. This information includes the name of the website from which you entered our Website, if any, as well as the name of the website to which you're headed when you leave our website. This information also includes the IP address of your computer/proxy server that you use to access the Internet, your Internet Website provider name, web browser type, type of mobile device, and computer operating system. We use all of this information to analyze trends among our Users to help improve our Website. 
+Log Data Like many Website operators, we collect information that your browser sends whenever you visit our Website ("Log Data"). This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Website that you visit, the time and date of your visit, the time spent on those pages and other statistics.
+Under the Child's Online Privacy Security Act, no Website operator can require, as a condition to involvement in an activity, that a child younger than 13 years of age divulge more details than is reasonably required. Bunk'em Inc. abides by this demand. Bunk'em Inc. just collects information willingly offered; no information is gathered passively. children under 13 can submit only their email address when sending us an email in our "Contact Us" area. Bunk'em Inc. makes use of the email address to respond to a one-time demand from a child under 13 and afterwards deletes the email address. In case Bunk'em Inc. collects and maintains personal information relating to a child under 13, the parent may send out an email to us to review, alter and/or erase such info as well as to decline to enable any additional collection or use of the child's information.
+How We Use Your Information We use the information we receive from you as follows:
+Customizing Our Website We may use the Personally Identifiable information you provide to us along with any computer information we receive to customize our Website.
+Sharing Information with Affiliates and Other Third Parties We do not sell, rent, or otherwise provide your Personally Identifiable Information to third parties for marketing purposes. We may provide your Personally Identifiable Information to affiliates that provide services to us with regards to our Website (i.e. payment processors, Website hosting companies, etc.); such affiliates will only receive information necessary to provide the respective services and will be bound by confidentiality agreements limiting the use of such information.
+Data Aggregation We retain the right to collect and use any Non Personal Information collected from your use of our Website and aggregate such data for internal analytics that improve our Website and Service as well as for use or resale to others. At no time is your Personally Identifiable Information included in such data aggregations.
+Legally Required Releases of Information We may be legally required to disclose your Personally Identifiable Information, if such disclosure is (a) required by subpoena, law, or other legal process; (b) necessary to assist law enforcement officials or government enforcement agencies; (c) necessary to investigate violations of or otherwise enforce our Legal Terms; (d) necessary to protect us from legal action or claims from third parties including you and/or other Members; and/or (e) necessary to protect the legal rights, personal/real property, or personal safety of Bunk'em Inc., our Users, employees, and affiliates.
+Opt-Out We offer you the chance to "opt-out" from having your personally identifiable information used for particular functions, when we ask you for this detail. When you register for the website, if you do not want to receive any additional material or notifications from us, you can show your preference on our registration form.
+Links to Other Websites Our Website may contain links to other websites that are not under our direct control. These websites may have their own policies regarding privacy. We have no control of or responsibility for linked websites and provide these links solely for the convenience and information of our visitors. You access such linked Websites at your own risk. These websites are not subject to this Privacy Policy. You should check the privacy policies, if any, of those individual websites to see how the operators of those third-party websites will utilize your personal information. In addition, these websites may contain a link to Websites of our affiliates. The websites of our affiliates are not subject to this Privacy Policy, and you should check their individual privacy policies to see how the operators of such websites will utilize your personal information.
+Security The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security. We utilize practical protection measures to safeguard against the loss, abuse, and modification of the individual Data under our control. Personal Data is kept in a secured database and always sent out by means of an encrypted SSL method when supported by your web browser. No Web or email transmission is ever totally protected or mistake cost-free. For example, email sent out to or from the Website may not be protected. You must take unique care in deciding what info you send to us by means of email.
+Privacy Policy Updates We reserve the right to modify this Privacy Policy at any time. You should review this Privacy Policy frequently. If we make material changes to this policy, we may notify you on our Website, by a blog post, by email, or by any method we determine. The method we chose is at our sole discretion. We will also change the "Last Updated" date at the beginning of this Privacy Policy. Any changes we make to our Privacy Policy are effective as of this Last Updated date and replace any prior Privacy Policies.
+Questions About Our Privacy Practices or This Privacy Policy We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. If you have any questions about our Privacy Practices or this Policy, please contact us.
 Gratitude
-We thank you for using our services and your continued interactions with our applications. We strive to give you the best possible services we offer and our continued excellence. Thank you again we appreciate your business with Bunk’em.
-© Bunk'em 2016 All Rights ReservedLatest update: November 27, 2016 </string>
+We thank you for using our services and your continued interactions with our applications. We strive to give you the best possible services we offer and our continued excellence. Thank you again we appreciate your business with Bunk’em Inc. 
+© Bunk'em 2016 All Rights Reserved</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -2704,11 +2754,11 @@ We thank you for using our services and your continued interactions with our app
                         <constraints>
                             <constraint firstItem="7w0-Jg-mcw" firstAttribute="top" secondItem="F16-4W-ywD" secondAttribute="bottom" constant="15" id="LH7-1h-nNV"/>
                             <constraint firstAttribute="trailing" secondItem="F16-4W-ywD" secondAttribute="trailing" constant="15" id="gmi-Gx-NOE"/>
-                            <constraint firstItem="F16-4W-ywD" firstAttribute="top" secondItem="u0L-eD-zl4" secondAttribute="bottom" constant="15" id="w2e-7C-p6x"/>
+                            <constraint firstItem="F16-4W-ywD" firstAttribute="top" secondItem="u0L-eD-zl4" secondAttribute="bottom" constant="-15" id="w2e-7C-p6x"/>
                             <constraint firstItem="F16-4W-ywD" firstAttribute="leading" secondItem="lul-mN-388" secondAttribute="leading" constant="15" id="y8v-On-Poj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Privacy Policy &amp; Terms" id="wEI-P5-5rk"/>
+                    <navigationItem key="navigationItem" title="Privacy Policy" id="wEI-P5-5rk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="et8-lr-GhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3092,7 +3142,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfh-ve-niG" id="rIL-OS-zTw">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9W-kq-pBU">
@@ -3132,7 +3182,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="73" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zhu-CT-soa" id="6z7-zb-zVR">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-5T-2tg">
@@ -3172,7 +3222,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="146" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5dY-r1-o8c" id="OVD-Oy-w8d">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-bI-OZW">
@@ -3212,7 +3262,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="219" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mml-L1-gXE" id="6uo-Kh-2DA">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mez-aH-e0V">
@@ -3264,7 +3314,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="304" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MuY-dm-BcN" id="pHi-IA-ELT">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxd-Oe-nmC">
@@ -3292,7 +3342,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="349" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hat-9n-xYH" id="fDu-7a-ZXe">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6K-J1-BNw">
@@ -3918,6 +3968,229 @@ We thank you for using our services and your continued interactions with our app
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uR7-dm-2IN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7041" y="-2633"/>
+        </scene>
+        <!--Terms of Use-->
+        <scene sceneID="t4G-SD-X5e">
+            <objects>
+                <viewController id="1cX-IM-AL6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lp4-s3-eCC"/>
+                        <viewControllerLayoutGuide type="bottom" id="u2B-4G-dt0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwT-vy-wHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hmz-VE-ej0">
+                                <rect key="frame" x="15" y="49" width="345" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Effective as of January 20, 2017.
+Welcome to the Bunk'em Inc. (the "Service"). The following Terms of Use apply when you view or use the Service located at: www.bunkem.com, or IOS, Google Play (Android) applications. Please review the following terms carefully. By accessing or using the Service, you signify your agreement to these Terms of Use. If you do not agree to these Terms of Use, you may not access or use the Service.
+PRIVACY POLICY
+The company respects the privacy of its Service users. Please refer to the Company's Privacy Policy which explains how we collect, use, and disclose information that pertains to your privacy. When you access or use the Service, you signify your agreement to this Privacy Policy.
+REGISTRATION; RULES FOR USER CONDUCT AND USE OF THE SERVICE
+You need to be at least 17 years old to register for and use the Service.
+If you are a user who signs up for the Service, will create a personalized account, which includes a unique username and a password to access the Service and to receive messages from the Company. You agree to notify us immediately of any unauthorized use of your password and/or account. The Company will not be responsible for any liabilities, losses, or damages arising out of the unauthorized use of your member name, password and/or account.
+USE RESTRICTIONS.
+Your permission to use the Site is conditioned upon the following Use Restrictions and Conduct Restrictions: You agree that you will not under any circumstances:
+post any information that is abusive, threatening, obscene, defamatory, libelous, or racially, sexually, religiously, or otherwise objectionable and offensive;
+use the service for any unlawful purpose or for the promotion of illegal activities;
+attempt to, or harass, abuse or harm another person or group;
+use another user's account without permission;
+provide false or inaccurate information when registering an account;
+interfere or attempt to interfere with the proper functioning of the Service;
+make any automated use of the system, or take any action that we deem to impose or to potentially impose an unreasonable or disproportionately large load on our servers or network infrastructure;
+bypass any robot exclusion headers or other measures we take to restrict access to the Service or use any software, technology, or device to scrape, spider, or crawl the Service or harvest or manipulate data; or
+publish or link to malicious content intended to damage or disrupt another user's browser or computer.
+POSTING AND CONDUCT RESTRICTIONS.
+When you create your own personalized account, you may be able to provide ("User Content"). You are solely responsible for the User Content that you post, upload, link to or otherwise make available via the Service. You agree that we are only acting as a passive conduit for your online distribution and publication of your User Content. The Company, however, reserves the right to remove any User Content from the Service at its discretion.
+The following rules pertain to User Content. By transmitting and submitting any User Content while using the Service, you agree as follows:
+You are solely responsible for your account and the activity that occurs while signed in to or while using your account;
+You will not post information that is malicious, false or inaccurate;
+You will not submit content that is copyrighted or subject to third party proprietary rights, including privacy, publicity, trade secret, etc., unless you are the owner of such rights or have the appropriate permission from their rightful owner to specifically submit such content; and
+You hereby affirm we have the right to determine whether any of your User Content submissions are appropriate and comply with these Terms of Service, remove any and/or all of your submissions, and terminate your account with or without prior notice.
+You understand and agree that any liability, loss or damage that occurs as a result of the use of any User Content that you make available or access through your use of the Service is solely your responsibility. The Company is not responsible for any public display or misuse of your User Content. The Company does not, and cannot, pre-screen or monitor all User Content. However, at our discretion, we, or the technology we employ, may monitor and/or record your interactions with the Service.
+ONLINE CONTENT DISCLAIMER
+Opinions, advice, statements, offers, or other information or content made available through the Service, but not directly by the Company, are those of their respective authors, and should not necessarily be relied upon. Such authors are solely responsible for such content. The Company does not guarantee the accuracy, completeness, or usefulness of any information on the Service and neither does the Company adopt nor endorse, nor is the Company responsible for the accuracy or reliability of any opinion, advice, or statement made by parties other than the Company. The Company takes no responsibility and assumes no liability for any User Content that you or any other user or third party posts or sends over the Service. Under no circumstances will the Company be responsible for any loss or damage resulting from anyone's reliance on information or other content posted on the Service, or transmitted to users.
+Though the Company strives to enforce these Terms of Use, you may be exposed to User Content that is inaccurate or objectionable. The Company reserves the right, but has no obligation, to monitor the materials posted in the public areas of the service or to limit or deny a user's access to the Service or take other appropriate action if a user violates these Terms of Use or engages in any activity that violates the rights of any person or entity or which we deem unlawful, offensive, abusive, harmful or malicious. The Company shall have the right to remove any such material that in its sole opinion violates, or is alleged to violate, the law or this agreement or which might be offensive, or that might violate the rights, harm, or threaten the safety of users or others. Unauthorized use may result in criminal and/or civil prosecution under the law. If you become aware of misuse of our Service, please contact us at http://bunkemapp.wixsite.com/roomie.
+LINKS TO OTHER SITES AND/OR MATERIALS
+As part of the Service, the Company may provide you with convenient links to third party web site(s) ("Third Party Sites") as well as content or items belonging to or originating from third parties (the “Third Party Applications, Software or Content"). These links are provided as a courtesy to Service subscribers. The Company has no control over Third Party Sites and Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content. Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness by the Company, and the Company is not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply approval or endorsement thereof by the Company. If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any site to which you navigate from the Site or relating to any applications you use or install from the site.
+COPYRIGHT COMPLAINTS AND COPYRIGHT AGENT
+(a) Termination of Repeat Infringe Accounts. The Company respects the intellectual property rights of others and requests that the users do the same. The Company has adopted and implemented a policy that provides for the termination in appropriate circumstances of users of the Service who are repeat infringers The Company may terminate access for participants or users who are found repeatedly to provide or post protected third party content without necessary rights and permissions.
+(b) Take-Down Notices. If you are a copyright owner or an agent thereof and believe, in good faith, that any materials provided on the Service infringe upon your copyrights, you may submit a notification pursuant by sending the following information in writing to the Company's designated copyright agent at Bunk'em Inc.:
+The date of your notification;
+A Physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;
+A description of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are recovered by a single notification, a representative list of such works at that site;
+A description of the material that is claimed to be infringing or to be the subject of infringing activity and information sufficient to enable us to locate such work;
+Information reasonably sufficient to permit the service provider to contact you, such as an address, telephone number, and/or email address;
+A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and
+A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+(c) Counter-Notices. If you believe that your User Content that has been removed from the Site is not infringing, or that you have the authorization from the copyright owner, the copyright owner's agent, or pursuant to the law, to post and use the content in your User Content, you may send a counter-notice containing the following information to our copyright agent using the contact information set forth above:
+Your physical or electronic signature;
+A description of the content that has been removed and the location at which the content appeared before it was removed;
+A statement that you have a good faith belief that the content was removed as a result of mistake or a misidentification of the content; and
+Your name, address, telephone number, and email address, a statement that you consent to the laws of Oregon and a statement that you will accept service of process from the person who provided notification of the alleged infringement.
+If a counter-notice is received by the Company copyright agent, the Company may send a copy of the counter-notice to the original complaining party informing such person that it may reinstate the removed content in 10 business days. Unless the copyright owner files an action seeking a court order against the content provider, member or user, the removed content may (in the Company's discretion) be reinstated on the Site in 10 to 14 business days or more after receipt of the counter-notice.
+LICENSE GRANT
+By posting any User Content via the Service, you expressly grant, and you represent and warrant that you have a right to grant, to the Company a royalty-free, sub licensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, reproduce, modify, publish, list information regarding, edit, translate, distribute, publicly perform, publicly display, and make derivative works of all such User Content and your name, voice, and/or likeness as contained in your User Content, if applicable, in whole or impart, and in any form, media or technology, whether now known or hereafter developed, for use in connection with the Service.
+INTELLECTUAL PROPERTY
+You acknowledge and agree that we and our licensors retain ownership of all intellectual property rights of any kind related to the Service, including applicable copyrights, trademarks and other proprietary rights. Other product and business names that are mentioned on the Service may be trademarks of their respective owners. We reserve all rights that are not expressly granted to you under this Agreement.
+EMAIL MAY NOT BE USED TO PROVIDE NOTICE
+Communications made through the Service's e-mail and messaging system, will not constitute legal notice to the Company or any of its officers, employees, agents or representatives in any situation where notice to the Company is required by contract or any law or regulation.
+USER CONSENT TO RECEIVE COMMUNICATIONS IN ELECTRONIC FORM
+For contractual purposes, you (a) consent to receive communications from the Company in an electronic form via the email address you have submitted; and (b) agree that all Terms of Use, agreements, notices, disclosures, and other communications that the Company provides to you electronically satisfy any legal requirement that such communications would satisfy if it were in writing. The foregoing does not affect your non-waivable rights.
+We may also use your email address, to send you other messages, including information about the Company and special offers. You may opt out of such email by changing your account settings or sending an email to Bunk'em Inc..
+Opting out may prevent you from receiving messages regarding the Company or Special Offers.
+WARRANTY
+THE SERVICE, IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, THE COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, REGARDING THE SERVICE INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, SECURITY, ACCURACY AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, THE COMPANY MAKES NO WARRANTY OR REPRESENTATION THAT ACCESS TO OR OPERATION OF THE SERVICE WILL BE UNINTERRUPTED OR ERROR FREE. YOU ASSUME FULL RESPONSIBILITY AND RISK OF LOSS RESULTING FROM YOUR DOWNLOADING AND/OR USE OF FILES, INFORMATION, CONTENT OR OTHER MATERIAL OBTAINED FROM THE SERVICE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF WARRANTY, SO THIS PROVISION MAY NOT APPLY TO YOU.
+LIMITATION OF DAMAGES; RELEASE
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, DIRECTORS, OR EMPLOYEES, OR ITS LICENSORS OR PARTNERS, BE LIABLE TO YOU FOR ANY LOSS OF PROFITS, USE, OR DATA, OR FOR ANY INCIDENTAL, INDIRECT, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, HOWEVER ARISING, THAT RESULT FROM (A) THE USE, DISCLOSURE, OR DISPLAY OF YOUR USER CONTENT; (B) YOUR USE OR INABILITY TO USE THE SERVICE; (C) THE SERVICE GENERALLY OR THE SOFTWARE OR SYSTEMS THAT MAKE THE SERVICE AVAILABLE; OR (D) ANY OTHER INTERACTIONS WITH THE COMPANY OR ANY OTHER USER OF THE SERVICE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUD INGNEGLIGENCE) OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE COMPANY HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF LIABILITY, SO THIS PROVISION MAY NOT APPLY TO YOU.
+If you have a dispute with one or more users or a merchant of a product or service that you review using the Service, you release us (and our officers, directors, agents, subsidiaries, joint ventures and employees) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with such disputes.
+MODIFICATION OF TERMS OF USE
+We can amend these Terms of Use at any time and will update these Terms of Use in the event of any such amendments. It is your sole responsibility to check the Site from time to time to view any such changes in the Agreement. If you continue to use the Site, you signify your agreement to our revisions to these Terms of Use. However, we will notify you of material changes to the terms by posting a notice on our homepage and/or sending an email to the email address you provided to us upon registration. For this additional reason, you should keep your contact and profile information current. Any changes to these Terms or waiver of the Company's rights hereunder shall not be valid or effective except in a written agreement bearing the physical signature of an officer of the Company. No purported waiver or modification of this Agreement by the Company via telephonic or email communications shall be valid.
+GENERAL TERMS
+If any part of this Agreement is held invalid or unenforceable, that portion of the Agreement will be construed consistent with applicable law. The remaining portions will remain in full force and effect. Any failure on the part of the Company to enforce any provision of this Agreement will not be considered a waiver of our right to enforce such provision. Our rights under this Agreement will survive any termination of this Agreement.
+You agree that any cause of action related to or arising out of your relationship with the Company must commence within ONE year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
+These Terms of Use and your use of the Site are governed by the laws of Oregon, without regard to conflict of law provisions.
+The Company may assign or delegate these Terms of Service and/or the Company's Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Policy without the Company's prior written consent, and any unauthorized assignment and delegation by you is void.
+YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THE TERMS OF USE, AND WILL BE BOUND BY THESE TERMS AND CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS OF USE TOGETHER WITH THE PRIVACY POLICY AT http://bunkemapp.wixsite.com/roomie REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hmz-VE-ej0" firstAttribute="leading" secondItem="mwT-vy-wHJ" secondAttribute="leading" constant="15" id="9co-h2-tIB"/>
+                            <constraint firstAttribute="trailing" secondItem="Hmz-VE-ej0" secondAttribute="trailing" constant="15" id="F22-01-37J"/>
+                            <constraint firstItem="u2B-4G-dt0" firstAttribute="top" secondItem="Hmz-VE-ej0" secondAttribute="bottom" constant="15" id="f9K-bv-GES"/>
+                            <constraint firstItem="Hmz-VE-ej0" firstAttribute="top" secondItem="Lp4-s3-eCC" secondAttribute="bottom" constant="-15" id="gGu-00-zgS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms of Use" id="7SA-Zr-Ucg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSg-DD-aX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6058" y="-1260"/>
+        </scene>
+        <!--Terms of Service-->
+        <scene sceneID="Xkx-Yv-1WN">
+            <objects>
+                <viewController id="VT8-25-dbc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="60T-0i-Rjx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rra-w1-WJg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yth-8f-a9M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vCF-RS-Y4K">
+                                <rect key="frame" x="15" y="49" width="345" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">This web page represents a legal document that serves as our Terms of Service and it governs the legal terms of our website, www.bunkem.com, sub-domains, and any associated web-based and mobile applications (IOS, Google play (Android)) (collectively, "Website &amp; Mobile applications"), as owned and operated by Bunk'em Inc..
+Capitalized terms, unless otherwise defined, have the meaning specified within the Definitions section below. This Terms of Service, along with our Privacy Policy, any mobile license agreement, and other posted guidelines within our Website, collectively "Legal Terms", constitute the entire and only agreement between you and Bunk'em Inc., and supersede all other agreements, representations, warranties and understandings with respect to our Website and the subject matter contained herein. We may amend our Legal Terms at any time without specific notice to you. The latest copies of our Legal Terms will be posted on our Website, and you should review all Legal Terms prior to using our Website. After any revisions to our Legal Terms are posted, you agree to be bound to any such changes to them. Therefore, it is important for you to periodically review our Legal Terms to make sure you still agree to them.
+By accessing this website, you are agreeing to be bound by these Website Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this Website, IOS, Google Play (Android) are protected by applicable copyright and trademark law.
+The last update to our Terms of Service was posted on January 20, 2017.
+Definitions The terms "us" or "we" or "our" refers to Bunk'em Inc., the owner of the Website.
+A "Visitor" is someone who merely browses our Website, but has not registered as Member.
+A "Member" is an individual that has registered with us to use our Service.
+Our "Service" represents the collective functionality and features as offered through our Website to our Members.
+A "User" is a collective identifier that refers to either a Visitor or a Member.
+All text, information, graphics, audio, video, and data offered through our Website are collectively known as our "Content".
+Use License
+Permission is granted to temporarily download one copy of the materials (information or software) on Bunk'em Inc.’s Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+modify or copy the materials;
+use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+attempt to decompile or reverse engineer any software contained on Bunk'em Inc.’s website;
+remove any copyright or other proprietary notations from the materials; or
+transfer the materials to another person or “mirror” the materials on any other server.
+This license shall automatically terminate if you violate any of these restrictions and may be terminated by Bunk'em Inc. at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+Restricted Uses Listing of offered products on the Website could be used only for lawful purposes by Users of the Website. You could not frame or utilize framing techniques to enclose any hallmark, logo, copyrighted image, or most proprietary details (consisting of images, text, page layout, or type) of Bunk'em Inc. without express composed consent. You might not use any meta tags or any various other "unseen text" utilizing Bunk'em Inc.'s name or trademarks without the express written consent of Bunk'em Inc.. You agree not to offer or modify any content found on the Website consisting of, however not limited to, names of Users and Content, or to recreate, display, openly perform, distribute, or otherwise make use of the Material, in any way for any public function, in connection with services or products that are not those of Bunk'em Inc., in other way that is likely to trigger confusion among consumers, that disparages or challenges Bunk'em Inc. or its licensors, that dilutes the strength of Bunk'em Inc.'s or its licensor's residential property, or that otherwise infringes Bunk'em Inc.'s or its licensor's copyright rights. You also agree to abstain from abusing any of the material that appears on the Site. The use of the Material on any other website or in a networked computer system environment for any purpose is prohibited. Any code that Bunk'em Inc. develops to generate or show any Material of the pages making up the Website is likewise secured by Bunk'em Inc.'s copyright, and you may not copy or adjust such code.
+Bunk'em Inc. has no duty to keep track of any products published, transferred, or connected to or with the Site. If you think that something on the Website breaches these Terms please contact our marked representative as set forth below.
+If alerted by a User of any products which allegedly do not conform to these Terms, Bunk'em Inc. could in its single discernment explore the allegation and figure out whether to take other actions or ask for the removal or get rid of the Content. Bunk'em Inc. has no liability or duty to Individuals for efficiency or nonperformance of such activities.
+Electronic Communication You are connecting with us electronically when you go to the Website or send out emails to us. You consent to get interactions from us online. We will connect with you by email or by uploading notifications on the Site. You concur that all contracts notifications, disclosure, and various other communications that we provide to you digitally please any legal requirements that such communications be in writing.
+Your Account If you utilize the Website, you are accountable for maintaining the confidentiality of your account and password and you accept responsibility for all activities that happen under your account and password. You also accept not to reveal any personally identifiable information, consisting of, however not limited to, first and last names, credentials, or various other details of a personal nature ("Personal Data") from the Site. Your disclosure of any Personal Data on the website might result in the immediate termination of your account. Bunk'em Inc. additionally reserves the right to refuse service, terminate accounts, and remove or edit Content at its sole discernment.
+Bunk'em Inc. does not guarantee the truthfulness, precision, or dependability of Content on the site, consisting of Personal Data. Each Individual is accountable for upgrading and changing any pertinent account info when essential to preserve the truthfulness, precision, or reliability of the details.
+Reviews, Comments, and Other Material Registered Users of the Website might post evaluations and remarks of a product and services purchased by means of the Website, so long as the Material is not unlawful, profane, threatening, defamatory, an invasive of privacy, infringing of intellectual property rights, or otherwise injurious to third parties or objectionable and does not include industrial solicitation, mass mailings, or any type of "spam." You may not use another User's account to impersonate a User or entity, or otherwise deceive as to the origin of the opinions. Bunk'em Inc. reserves the right (however is not bound) to eliminate or modify such Material, but does not regularly examine posted Material.
+If you post an evaluation or send comments, and unless Bunk'em Inc. suggests otherwise, you grant Bunk'em Inc. a nonexclusive, royalty-free, permanent, irrevocable, and completely sublicensable right to utilize, recreate, modify, adjust, release, equate, create derivative works from, distribute, and screen such content throughout the world, in any media. You grant Bunk'em Inc. and sublicenses the right to utilize your name in connection with such Material, if they choose. You represent and require that You own or otherwise control all the rights to the content that You post; that the content is accurate; that use of the content You supply does not violate this policy and will not trigger injury to anyone or entity; which You will indemnify Bunk'em Inc. for all claims resulting from Content You supply. Bunk'em Inc. has the right but not the commitment to edit and keep track of or eliminate any task or Material. Bunk'em Inc. takes no duty and assumes no liability for any content published by You or any 3rd party.
+Legal Compliance You agree to comply with all applicable domestic and international laws, statutes, ordinances, and regulations regarding your use of our Website. Bunk'em Inc. reserves the right to investigate complaints or reported violations of our Legal Terms and to take any action we deem appropriate, including but not limited to canceling your Member account, reporting any suspected unlawful activity to law enforcement officials, regulators, or other third parties and disclosing any information necessary or appropriate to such persons or entities relating to your profile, email addresses, usage history, posted materials, IP addresses and traffic information, as allowed under our Privacy Policy.
+Intellectual Property Our Website may contain our service marks or trademarks as well as those of our affiliates or other companies, in the form of words, graphics, and logos. Your use of our Website does not constitute any right or license for you to use such service marks/trademarks, without the prior written permission of the corresponding service mark/trademark owner. Our Website is also protected under international copyright laws. The copying, redistribution, use or publication by you of any portion of our Website is strictly prohibited. Your use of our Website does not grant you ownership rights of any kind in our Website.
+Revisions and Errata The materials appearing on Bunk'em Inc.’s Website could include technical, typographical, or photographic errors. Bunk'em Inc. does not warrant that any of the materials on its Website are accurate, complete, or current. Bunk'em Inc. may make changes to the materials contained on its Website at any time without notice. Bunk'em Inc. does not, however, make any commitment to update the materials.
+Disclaimer The materials on Bunk'em Inc.'s Website are provided "as is" Bunk'em Inc. makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Furthermore, Bunk'em Inc. does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet Website or otherwise relating to such materials or on any sites linked to this site. The Website serves as a venue for Individuals to purchase distinct service or products. Neither Bunk'em Inc. nor the Website has control over the quality or fitness for a particular function of a product. Bunk'em Inc. likewise has no control over the accuracy, reliability, completeness, or timeliness of the User-submitted details and makes no representations or warranties about any info on the Site.
+THE WEBSITE AND ALL DETAILS, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE APPLICATION) AND SERVICES LISTED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THIS WEBSITE ARE PROVIDED BY Bunk'em Inc. ON AN "AS IS" AND "AS AVAILABLE" BASIS, UNLESS OTHERWISE SPECIFIED IN WRITING. Bunk'em Inc. MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ABOUT THE OPERATION OF THIS Website OR THE INFO, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR SERVICES LISTED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THIS SITE, UNLESS OTHERWISE POINTED OUT IN WRITING. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEBSITE IS AT YOUR OWN RISK.
+TO THE COMPLETE EXTENT PERMISSIBLE BY APPLICABLE LAW, Bunk'em Inc. DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND PHYSICAL FITNESS FOR A PARTICULAR PURPOSE. Bunk'em Inc. DOES NOT WARRANT THAT THIS WEBSITE; DETAILS, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE APPLICATION) OR SERVICES CONSISTED OF ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SITE; ITS SERVERS; OR EMAIL SENT FROM Bunk'em Inc. ARE WITHOUT VIRUSES OR OTHER HARMFUL ELEMENTS. Bunk'em Inc. WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF THE WEBSITE OR FROM ANY DETAILS, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE APPLICATION) OR SERVICES LISTED ON OR OTHERWISE MADE AVAILABLE TO YOU WITH THIS SITE, INCLUDING, BUT NOT LIMITED TO DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND CONSEQUENTIAL DAMAGES, UNLESS OTHERWISE POINTED OUT IN WRITING. UNDER NO SCENARIO SHALL Bunk'em Inc.'S LIABILITY DEVELOPING FROM OR IN CONNECTION WITH THE WEBSITE OR YOUR USE OF THE WEBSITE, DESPITE THE REASON FOR ACTION (WHETHER IN AGREEMENT, TORT, BREACH OF SERVICE WARRANTY OR OTHERWISE), GO BEYOND $100.
+Links to Other Websites Our Website may contain links to third party websites. These links are provided solely as a convenience to you. By linking to these websites, we do not create or have an affiliation with, or sponsor such third party websites. The inclusion of links within our Website does not constitute any endorsement, guarantee, warranty, or recommendation of such third party websites. Bunk'em Inc. has no control over the legal documents and privacy practices of third party websites; as such, you access any such third party websites at your own risk.
+Site Terms of Service Modifications Bunk'em Inc. may revise these Terms of Service for its Website at any time without notice. By using this Website you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+Governing Law Any claim relating to Bunk'em Inc.’s Website shall be governed by the laws of Oregon without regard to its conflict of law provisions, and You consent to exclusive jurisdiction and venue in such courts.
+Indemnity You accept defend, indemnify, and hold safe Bunk'em Inc., its affiliates, and their corresponding officers, directors, agents and workers, from and against any claims, actions or demands, including without limitation affordable legal, accounting, and other provider charges, affirming or resulting from (i) any Content of most material You offer to the Site, (ii) Your use of any Content, or (iii) Your breach of the terms of these Terms. Bunk'em Inc. will provide notice to You promptly of any such claim, match, or case.
+General Terms Our Legal Terms shall be treated as though it were executed and performed in Oregon, United States and shall be governed by and construed in accordance with the laws of Oregon, United States without regard to conflict of law principles. In addition, you agree to submit to the personal jurisdiction and venue of such courts. Any cause of action by you with respect to our Website, must be instituted within one (1) year after the cause of action arose or be forever waived and barred. Should any part of our Legal Terms be held invalid or unenforceable, that portion shall be construed consistent with applicable law and the remaining portions shall remain in full force and effect. To the extent that any Content in our Website conflicts or is inconsistent with our Legal Terms, our Legal Terms shall take precedence. Our failure to enforce any provision of our Legal Terms shall not be deemed a waiver of such provision nor of the right to enforce such provision. The rights of Bunk'em Inc. under our Legal Terms shall survive the termination of our Legal Terms.
+© Bunk'em 2016 All Rights Reserved</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vCF-RS-Y4K" firstAttribute="top" secondItem="60T-0i-Rjx" secondAttribute="bottom" constant="-15" id="0ak-Rs-yCw"/>
+                            <constraint firstItem="rra-w1-WJg" firstAttribute="top" secondItem="vCF-RS-Y4K" secondAttribute="bottom" constant="15" id="810-DI-wHL"/>
+                            <constraint firstItem="vCF-RS-Y4K" firstAttribute="leading" secondItem="Yth-8f-a9M" secondAttribute="leading" constant="15" id="LTf-EB-S5l"/>
+                            <constraint firstAttribute="trailing" secondItem="vCF-RS-Y4K" secondAttribute="trailing" constant="15" id="YHP-Gw-ujZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms of Service" id="Y5S-kW-3w9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmp-AG-e2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6766" y="-1262"/>
+        </scene>
+        <!--Copyright Act Compliance-->
+        <scene sceneID="2Nf-ul-rqe">
+            <objects>
+                <viewController id="k2q-fi-wPG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="czU-jc-Tbb"/>
+                        <viewControllerLayoutGuide type="bottom" id="aa8-g7-ycO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qsF-Nk-GWP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rgv-AQ-ao6">
+                                <rect key="frame" x="15" y="49" width="345" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Digital Millennium Copyright Act (DMCA) Compliance
+Bunk'em Inc. abides by the federal Digital Millennium Copyright Act (DMCA) by responding to notices of alleged infringement that comply with the DMCA and other applicable laws. As part of our response, we may remove or disable access to material residing on a site that is controlled or operated by Bunk'em Inc. (such as www.bunkem.com, IOS, Google play “Android”) that is claimed to be infringing, in which case we will make a good-faith attempt to contact the person who submitted the affected material so that they may make a counter notification, also in accordance with the DMCA.
+Bunk'em Inc. does not control content hosted on third party websites, and cannot remove content from sites it does not own or control. If you are the copyright owner of content hosted on a third party site, and you have not authorized the use of your content, please contact the administrator of that website directly to have the content removed.
+Before serving either a Notice of Infringing Material or Counter-Notification, you may wish to contact a lawyer to better understand your rights and obligations under the DMCA and other applicable laws. The following notice requirements are intended to comply with Bunk'em Inc.’s rights and obligations under the DMCA and, in particular, section 512(c), and do not constitute legal advice.
+NOTICE TO COPYRIGHT OWNERS:  If you believe material posted on or linked to or from this site is infringing, please provide a written, signed notice of infringement (a "DMCA Notice") to the designated agent at the Bunk'em Inc., by fax or mail, at the address provided on our contact page. Such DMCA Notice should be in the form set forth below, which is consistent with the form suggested by the United States Digital Millennium Copyright Act (the "DMCA").
+Pursuant to federal law you may be held liable for damages and attorneys' fees if you make any material misrepresentations in a Notification. Thus, if you are not sure whether content located on or accessible via a link from the Website infringes your copyright, you should contact an attorney.
+All Notifications should include the following:
+A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site.
+Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit the service provider to locate the material.
+Information reasonably sufficient to permit the service provider to contact the complaining party, such as an address, telephone number, and, if available, an electronic mail address at which the complaining party may be contacted.
+A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law. A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+Notifications should be sent to the address shown on our contact page.
+Please note: The DMCA provides that you may be liable for damages (including costs and attorneys' fees) if you make a false or bad faith allegation of copyright infringement by using this process. If you are not sure what your rights are, or whether a copyright has been infringed, you should check with a legal advisor first.
+© Bunk'em 2016 All Rights Reserved</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rgv-AQ-ao6" secondAttribute="trailing" constant="15" id="6DW-t4-XAv"/>
+                            <constraint firstItem="aa8-g7-ycO" firstAttribute="top" secondItem="rgv-AQ-ao6" secondAttribute="bottom" constant="15" id="E0U-cZ-0xx"/>
+                            <constraint firstItem="rgv-AQ-ao6" firstAttribute="top" secondItem="czU-jc-Tbb" secondAttribute="bottom" constant="-15" id="GHz-PZ-MNy"/>
+                            <constraint firstItem="rgv-AQ-ao6" firstAttribute="leading" secondItem="qsF-Nk-GWP" secondAttribute="leading" constant="15" id="lgO-n7-1nM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Copyright Act Compliance" id="NY3-1y-u7W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCA-DM-DE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7503" y="-1260"/>
         </scene>
     </scenes>
     <resources>

@@ -62,7 +62,9 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             }
             
         } else {
-            self.swipeableView.isUserInteractionEnabled = true
+            if self.swipeableView != nil {
+                self.swipeableView.isUserInteractionEnabled = true
+            }
             defaults.setValue(0, forKey: "matchesToday")
             defaults.setValue(NSDate(), forKey: "matchesTodayDate")
         }
