@@ -34,8 +34,10 @@ class BKMPetPreferenceViewController: UIViewController {
         ref?.child("users").child(CurrentUser.user.user.uid).observeSingleEvent(of: .value, with: { snapshot in
             if let userInfo = snapshot.value as? Dictionary<String, AnyObject> {
                 
-                if let petsAllowd = userInfo["petsAllowd"] as? Bool, petsAllowd {
+                if let petsAllowd = userInfo["petsAllowed"] as? Bool, petsAllowd {
                     self.petSwitch.setOn(true, animated: false)
+                } else {
+                    self.petSwitch.setOn(false, animated: false)
                 }
     
                 if let petType = userInfo["petType"] as? String {

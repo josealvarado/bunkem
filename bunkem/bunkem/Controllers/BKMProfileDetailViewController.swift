@@ -54,7 +54,7 @@ class BKMProfileDetailViewController: UIViewController, UICollectionViewDelegate
         aboutYouTextView.text = activeUser.aboutYou
         thingsYouEnjoyTextView.text = activeUser.enjoy
         livedTextView.text = activeUser.seekInARoommate
-        visitTextView.text = activeUser.visit
+        visitTextView.text = activeUser.dontWantInARoommate
         
         if activeUser.photoURL != "" {
             let storageRef = FIRStorage.storage().reference(forURL: activeUser.photoURL)

@@ -39,7 +39,7 @@ class User: NSObject {
     var aboutYou = ""
     var enjoy = ""
     var seekInARoommate = ""
-    var visit = ""
+    var dontWantInARoommate = ""
     
     var photoURL = ""
     var images = [[String: AnyObject]]()
@@ -188,8 +188,8 @@ class User: NSObject {
             self.seekInARoommate = seekInARoommate
         }
         
-        if let visit = userJSON["visit"] as? String {
-            self.visit = visit
+        if let dontWantInARoommate = userJSON["dontWantInARoommate"] as? String {
+            self.dontWantInARoommate = dontWantInARoommate
         }
         
         if let photoURL = userJSON["photoURL"] as? String {

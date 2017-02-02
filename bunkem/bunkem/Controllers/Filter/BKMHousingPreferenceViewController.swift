@@ -15,6 +15,7 @@ class BKMHousingPreferenceViewController: UIViewController {
     @IBOutlet weak var duplexView: UIView!
     @IBOutlet weak var apartmentView: UIView!
     @IBOutlet weak var condoView: UIView!
+    @IBOutlet weak var otherView: UIView!
     
     var ref: FIRDatabaseReference?
     
@@ -22,6 +23,7 @@ class BKMHousingPreferenceViewController: UIViewController {
     var duplexSelected = false
     var apartmentSelected = false
     var condoSelected = false
+    var otherSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +63,9 @@ class BKMHousingPreferenceViewController: UIViewController {
                         } else if houseingPreference == "condo" {
                             self.condoView.backgroundColor = UIColor.green
                             self.condoSelected = true
+                        } else if houseingPreference == "other" {
+                            self.otherView.backgroundColor = UIColor.green
+                            self.otherSelected = true
                         }
                         
                     }
@@ -123,6 +128,15 @@ class BKMHousingPreferenceViewController: UIViewController {
         }
     }
     
+    @IBAction func otherButtonPressed(_ sender: UIButton) {
+        if otherSelected {
+            otherSelected = false
+            otherView.backgroundColor = UIColor.white
+        }else {
+            otherSelected = true
+            otherView.backgroundColor = UIColor.green
+        }
+    }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         
@@ -139,6 +153,9 @@ class BKMHousingPreferenceViewController: UIViewController {
         }
         if condoSelected {
             housingPreferences.append("condo")
+        }
+        if otherSelected {
+            housingPreferences.append("other")
         }
         
         print("housingPreferences \(housingPreferences)")

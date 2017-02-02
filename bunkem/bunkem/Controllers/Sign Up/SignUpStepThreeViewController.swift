@@ -156,8 +156,8 @@ class SignUpStepThreeViewController: UIViewController, UIImagePickerControllerDe
                 self.data["seekInARoommate"] = seekInARoommate as AnyObject?
             }
             
-            if let visit = self.visitTextView.text {
-                self.data["visit"] = visit as AnyObject?
+            if let dontWantInARoommate = self.visitTextView.text {
+                self.data["dontWantInARoommate"] = dontWantInARoommate as AnyObject?
             }
             
             self.ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(self.data as [NSObject : AnyObject])

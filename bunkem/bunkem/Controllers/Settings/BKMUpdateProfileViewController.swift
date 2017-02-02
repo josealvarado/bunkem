@@ -51,8 +51,8 @@ class BKMUpdateProfileViewController: UIViewController {
                     self.livedTextView.text = seekInARoommate
                 }
                 
-                if let visit = userInfo["visit"] as? String {
-                    self.visitTextView.text = visit
+                if let dontWantInARoommate = userInfo["dontWantInARoommate"] as? String {
+                    self.visitTextView.text = dontWantInARoommate
                 }
             }
         })
@@ -82,7 +82,7 @@ class BKMUpdateProfileViewController: UIViewController {
             userInfo["seekInARoommate"] = lastName
         }
         if let lastName = visitTextView.text {
-            userInfo["visit"] = lastName
+            userInfo["dontWantInARoommate"] = lastName
         }
         
         ref?.child("users").child(CurrentUser.user.user.uid).updateChildValues(userInfo as [NSObject : AnyObject])

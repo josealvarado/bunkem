@@ -261,6 +261,27 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
         return nil
     }
     
+    override func collectionView(_ collectionView: JSQMessagesCollectionView!, didTapMessageBubbleAt indexPath: IndexPath!) {
+        let message = messages[indexPath.item] // 1
+        
+        print("message \(message)")
+        
+        if message.isMediaMessage {
+            let mediaIteam = message.media
+            
+//            if (mediaIteam?.isKind(of: JSQPhotoMediaItem.))! {
+//                
+//            }
+            
+            if let photoItem = mediaIteam as? JSQPhotoMediaItem {
+                let image = photoItem.image
+                
+                
+            }
+        }
+
+    }
+    
     // Other
     
     private func addMessage(withId id: String, name: String, text: String) {

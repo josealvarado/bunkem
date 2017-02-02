@@ -179,7 +179,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="crw-zh-PB5" id="7mx-Wx-qKb">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gOA-VO-efD">
@@ -269,40 +269,11 @@
                         <sections>
                             <tableViewSection id="SDH-wh-0sh">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ytB-x6-9Xs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="kjP-Us-gWu">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ytB-x6-9Xs" id="BZ4-ID-ers">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nMq-p6-3zw">
-                                                    <rect key="frame" x="15" y="6" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="NNw-4T-nuc"/>
-                                                        <constraint firstAttribute="width" constant="30" id="O3B-be-olg"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b48-CS-5IE">
-                                                    <rect key="frame" x="53" y="11" width="236" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="nMq-p6-3zw" firstAttribute="leading" secondItem="BZ4-ID-ers" secondAttribute="leading" constant="15" id="Fbo-hi-VjL"/>
-                                                <constraint firstItem="nMq-p6-3zw" firstAttribute="centerY" secondItem="BZ4-ID-ers" secondAttribute="centerY" id="iQp-L4-iAh"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="kjP-Us-gWu">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjP-Us-gWu" id="eFq-dL-hIp">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter.png" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-G3-grW">
@@ -331,10 +302,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1On-WZ-8Yw">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1On-WZ-8Yw" id="aPb-7Z-phh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-cm-kuN">
@@ -363,10 +334,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="FuU-AL-oPp">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FuU-AL-oPp" id="ZdG-eP-1YB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-CO-jJA">
@@ -420,7 +391,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D8m-SN-mbm" id="mZ7-jh-KcO">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoneyIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nbc-rL-wRc">
@@ -455,7 +426,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uro-Ir-OIJ" id="pmv-md-qf5">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Age preference.png" translatesAutoresizingMaskIntoConstraints="NO" id="mg8-e8-4Ys">
@@ -490,7 +461,7 @@
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4O-bB-ROj" id="xHT-WC-ABa">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pet Paw.png" translatesAutoresizingMaskIntoConstraints="NO" id="rSf-cL-tMo">
@@ -525,7 +496,7 @@
                                         <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qmm-te-iIf" id="2Yp-vH-3tf">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Smoke cigarrette.png" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-pR-DR2">
@@ -560,7 +531,7 @@
                                         <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YpJ-mH-EoM" id="4JT-zW-VPo">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multi Roommate Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="SFB-ep-MxK">
@@ -595,7 +566,7 @@
                                         <rect key="frame" x="0.0" y="248" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qqr-0S-fSP" id="MjJ-k0-I10">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Road.png" translatesAutoresizingMaskIntoConstraints="NO" id="aXj-6B-aRa">
@@ -630,7 +601,7 @@
                                         <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G0I-4D-h3g" id="xEC-1i-JH1">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="K0U-JN-aPm">
@@ -1369,6 +1340,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKL-if-Y4G">
+                                <rect key="frame" x="50" y="294" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0kj-Dh-GDc"/>
+                                    <constraint firstAttribute="width" constant="30" id="MmZ-37-lPW"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLw-0i-mte">
                                 <rect key="frame" x="13" y="251" width="345" height="35"/>
                                 <constraints>
@@ -1378,8 +1357,27 @@
                                     <action selector="condoButtonPressed:" destination="BdI-vv-FHG" eventType="touchUpInside" id="6dv-8h-enN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy0-zX-dWT">
+                                <rect key="frame" x="105" y="299" width="254" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qLs-wi-sLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBB-Hg-n4T">
+                                <rect key="frame" x="16" y="294" width="345" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="w2z-HP-m2g"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="condoButtonPressed:" destination="BdI-vv-FHG" eventType="touchUpInside" id="sSL-Z3-8BT"/>
+                                    <action selector="otherButtonPressed:" destination="BdI-vv-FHG" eventType="touchUpInside" id="Wjr-Gq-xNT"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqO-WR-Ug0">
-                                <rect key="frame" x="137.5" y="311" width="100" height="40"/>
+                                <rect key="frame" x="137" y="354" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="0hR-X0-dND"/>
@@ -1399,9 +1397,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JBB-Hg-n4T" secondAttribute="trailing" constant="14" id="1AI-Zi-ETy"/>
                             <constraint firstItem="G8X-PK-22E" firstAttribute="top" secondItem="fFU-9Z-ygK" secondAttribute="bottom" constant="35" id="1qT-Px-79O"/>
+                            <constraint firstItem="DqO-WR-Ug0" firstAttribute="top" secondItem="JBB-Hg-n4T" secondAttribute="bottom" constant="25" id="2XH-Ul-xG3"/>
+                            <constraint firstItem="iKL-if-Y4G" firstAttribute="top" secondItem="nLw-0i-mte" secondAttribute="bottom" constant="8" id="3aD-yk-nNT"/>
                             <constraint firstAttribute="trailing" secondItem="nLw-0i-mte" secondAttribute="trailing" constant="17" id="3ic-A0-sL4"/>
                             <constraint firstAttribute="trailing" secondItem="Kn7-5Q-LZ6" secondAttribute="trailing" constant="15" id="6lj-NW-FxC"/>
+                            <constraint firstAttribute="trailing" secondItem="Iy0-zX-dWT" secondAttribute="trailing" constant="16" id="8K6-OV-CTF"/>
                             <constraint firstItem="Kn7-5Q-LZ6" firstAttribute="top" secondItem="KYw-aK-QXQ" secondAttribute="bottom" constant="13" id="9vP-K2-ysK"/>
                             <constraint firstItem="DqO-WR-Ug0" firstAttribute="centerX" secondItem="3aL-xD-QnA" secondAttribute="centerX" id="BuR-gI-0w0"/>
                             <constraint firstItem="G8X-PK-22E" firstAttribute="leading" secondItem="J1j-KZ-wbM" secondAttribute="trailing" constant="25" id="DJn-4b-hjs"/>
@@ -1421,6 +1423,7 @@
                             <constraint firstItem="xKJ-Rs-BOb" firstAttribute="top" secondItem="S69-Rb-TaQ" secondAttribute="bottom" constant="13" id="RrX-tH-FfC"/>
                             <constraint firstAttribute="trailing" secondItem="S69-Rb-TaQ" secondAttribute="trailing" constant="15" id="SQ4-2Q-HbL"/>
                             <constraint firstItem="OUw-ye-nNv" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="50" id="Sqk-cv-MIm"/>
+                            <constraint firstItem="Iy0-zX-dWT" firstAttribute="top" secondItem="nLw-0i-mte" secondAttribute="bottom" constant="13" id="VCK-FF-7Y3"/>
                             <constraint firstItem="Lwg-6K-VLV" firstAttribute="top" secondItem="i2B-SP-Tfa" secondAttribute="bottom" constant="13" id="Xtj-GT-CKg"/>
                             <constraint firstItem="Lwg-6K-VLV" firstAttribute="leading" secondItem="TLj-4K-cpO" secondAttribute="trailing" constant="25" id="Ylc-wc-8Uh"/>
                             <constraint firstItem="wmR-4V-6zU" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="50" id="ZQl-3C-d0H"/>
@@ -1429,14 +1432,17 @@
                             <constraint firstAttribute="trailing" secondItem="xKJ-Rs-BOb" secondAttribute="trailing" constant="15" id="mDF-hB-HGf"/>
                             <constraint firstAttribute="trailing" secondItem="fFU-9Z-ygK" secondAttribute="trailing" constant="15" id="n4l-Na-lV7"/>
                             <constraint firstAttribute="trailing" secondItem="Lwg-6K-VLV" secondAttribute="trailing" constant="16" id="nDc-5u-XOb"/>
+                            <constraint firstItem="iKL-if-Y4G" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="50" id="omv-88-hrf"/>
                             <constraint firstItem="TLj-4K-cpO" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="50" id="paX-cV-3Ts"/>
+                            <constraint firstItem="JBB-Hg-n4T" firstAttribute="top" secondItem="nLw-0i-mte" secondAttribute="bottom" constant="8" id="pzJ-yP-rnA"/>
                             <constraint firstItem="S69-Rb-TaQ" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="15" id="rWU-Wp-sc6"/>
                             <constraint firstItem="xKJ-Rs-BOb" firstAttribute="leading" secondItem="OUw-ye-nNv" secondAttribute="trailing" constant="25" id="rY1-Kq-dEa"/>
                             <constraint firstItem="KYw-aK-QXQ" firstAttribute="top" secondItem="S69-Rb-TaQ" secondAttribute="bottom" constant="8" id="sao-1V-me6"/>
                             <constraint firstItem="i2B-SP-Tfa" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="14" id="she-8f-kjW"/>
-                            <constraint firstItem="DqO-WR-Ug0" firstAttribute="top" secondItem="nLw-0i-mte" secondAttribute="bottom" constant="25" id="uRL-E7-7zW"/>
                             <constraint firstItem="i2B-SP-Tfa" firstAttribute="top" secondItem="KYw-aK-QXQ" secondAttribute="bottom" constant="8" id="wkJ-zm-2O6"/>
                             <constraint firstAttribute="trailing" secondItem="i2B-SP-Tfa" secondAttribute="trailing" constant="16" id="xdT-gf-tEY"/>
+                            <constraint firstItem="Iy0-zX-dWT" firstAttribute="leading" secondItem="iKL-if-Y4G" secondAttribute="trailing" constant="25" id="xh8-Ta-wbU"/>
+                            <constraint firstItem="JBB-Hg-n4T" firstAttribute="leading" secondItem="3aL-xD-QnA" secondAttribute="leading" constant="16" id="xky-fU-YWu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Housing Preference" id="Xds-D5-C4g"/>
@@ -1445,6 +1451,7 @@
                         <outlet property="condoView" destination="TLj-4K-cpO" id="ldL-uU-RYW"/>
                         <outlet property="duplexView" destination="OUw-ye-nNv" id="J1J-FK-Mes"/>
                         <outlet property="houseView" destination="J1j-KZ-wbM" id="foc-BP-wdx"/>
+                        <outlet property="otherView" destination="iKL-if-Y4G" id="U8z-hi-M8N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEG-k3-MlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1680,7 +1687,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9M-46-I2U">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places I want to visit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-Za-w5a">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What I DON'T want in a roommate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-Za-w5a">
                                                                 <rect key="frame" x="8" y="8" width="359" height="44"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -1792,7 +1799,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQz-wC-1Pd" id="HCQ-ud-FmB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notifications.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-Ld-3mG">
@@ -1824,7 +1831,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="od3-dO-2Kr" id="LSP-KZ-DTy">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tell a Friend.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-8N-4KL">
@@ -1856,7 +1863,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fph-C6-CAd" id="9Pj-4x-inl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Account Settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHv-Wc-Q7D">
@@ -1891,7 +1898,7 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ya-fc-YJ3" id="2hx-HS-jn7">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About Dashboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-lC-URz">
@@ -1926,7 +1933,7 @@
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyq-xx-Rs2" id="Zoi-ZX-8Mv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logout.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuK-Pr-jwi">
@@ -1986,13 +1993,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-eN-2Kf">
                                 <rect key="frame" x="15" y="79" width="345" height="573"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Bunk’em Inc.
+                                <string key="text">Bunk’em Inc.
 
 Bunk’em believes in creating a simple, safe, and reliable site where anyone can find their perfect roommate. Many of us are in pursuit of finding roommates, friends, or those who we can call family. Our mission is to provide you with the resources needed in order to connect with your potential roommate.
 
 The future is always bringing us closer together as people. We like to dream of a future where any individual can share their life experiences and live together. 
 
-We are transforming the way the world connects with each other. Join us on this journey as we connect you with your future roommate.</mutableString>
+We are transforming the way the world connects with each other. Join us on this journey as we connect you with your future roommate.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -2275,11 +2282,11 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5jH-hu-PNS" id="TS6-6i-JJN">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TQ4-cD-fD6">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2296,11 +2303,11 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u0l-5i-i4U" id="3TC-rP-FkB">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4lL-ei-VSA">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2318,11 +2325,11 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f8Y-jY-wHM" id="9AH-Vx-HJK">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7kW-Af-H26">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2339,11 +2346,11 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZ5-R6-0vw" id="og9-3s-rAl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re4-ZX-fzW">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2360,11 +2367,11 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hZm-PN-ZG5" id="hnr-KJ-SzF">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Blocking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BEr-FV-UbJ">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2378,11 +2385,11 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UbJ-DG-5wv" id="gr0-Gn-7Rh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Delete my account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PHL-0a-9GW">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2514,7 +2521,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YIx-he-mfd" id="C1G-rO-k0N">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frY-f4-Hhb">
@@ -2539,7 +2546,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hFi-cK-sdg" id="yng-SU-wOw">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckW-UY-BUT">
@@ -2564,7 +2571,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="skK-vd-Pb6" id="Rkg-cR-6Nh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-Eg-d6d">
@@ -2586,7 +2593,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="us5-x0-EiB" id="nGF-4Z-4wY">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-zE-Qgd">
@@ -2611,7 +2618,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D45-Uc-Ly9" id="c4V-rV-ipX">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbX-oY-eBo">
@@ -2636,7 +2643,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6eW-kk-HCr" id="A47-pz-LuZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5b-x6-Flp">
@@ -2661,7 +2668,7 @@ We are transforming the way the world connects with each other. Join us on this 
                                         <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Ow-y6-uPt" id="wLJ-LK-oWa">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright Act Compliance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L85-5A-8Ei">
@@ -2713,7 +2720,7 @@ We are transforming the way the world connects with each other. Join us on this 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F16-4W-ywD">
                                 <rect key="frame" x="15" y="49" width="345" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Our Privacy Policy was last updated and posted on January 20, 2017. It governs the privacy terms of our Website located at (www.bunkem.com), IOS, and Google play (Android), sub-domains, and any associated web-based and mobile applications as owned and operated by Bunk'em Inc.. Any capitalized terms not defined in our Privacy Policy, have the meaning as specified in our Terms of Service.
+                                <string key="text">Our Privacy Policy was last updated and posted on January 20, 2017. It governs the privacy terms of our Website located at (www.bunkem.com), IOS, and Google play (Android), sub-domains, and any associated web-based and mobile applications as owned and operated by Bunk'em Inc.. Any capitalized terms not defined in our Privacy Policy, have the meaning as specified in our Terms of Service.
 Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. We use your Personal Information only for providing and improving the website. By using the website, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at www.bunkem.com. The following outlines our privacy policy.
 Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
 We will collect and use personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.
@@ -2745,7 +2752,7 @@ Privacy Policy Updates We reserve the right to modify this Privacy Policy at a
 Questions About Our Privacy Practices or This Privacy Policy We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. If you have any questions about our Privacy Practices or this Policy, please contact us.
 Gratitude
 We thank you for using our services and your continued interactions with our applications. We strive to give you the best possible services we offer and our continued excellence. Thank you again we appreciate your business with Bunk’em Inc. 
-© Bunk'em 2016 All Rights Reserved</mutableString>
+© Bunk'em 2016 All Rights Reserved</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -3036,7 +3043,7 @@ We thank you for using our services and your continued interactions with our app
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOy-SC-S7M">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places I want to visit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="328-4d-pOS">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What I DON'T want in a roommate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="328-4d-pOS">
                                                                 <rect key="frame" x="8" y="8" width="359" height="44"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -3142,7 +3149,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfh-ve-niG" id="rIL-OS-zTw">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9W-kq-pBU">
@@ -3182,7 +3189,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="73" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zhu-CT-soa" id="6z7-zb-zVR">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-5T-2tg">
@@ -3222,7 +3229,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="146" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5dY-r1-o8c" id="OVD-Oy-w8d">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-bI-OZW">
@@ -3262,7 +3269,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="219" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mml-L1-gXE" id="6uo-Kh-2DA">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mez-aH-e0V">
@@ -3314,7 +3321,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="304" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MuY-dm-BcN" id="pHi-IA-ELT">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxd-Oe-nmC">
@@ -3342,7 +3349,7 @@ We thank you for using our services and your continued interactions with our app
                                         <rect key="frame" x="0.0" y="349" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hat-9n-xYH" id="fDu-7a-ZXe">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6K-J1-BNw">
@@ -3984,7 +3991,7 @@ We thank you for using our services and your continued interactions with our app
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hmz-VE-ej0">
                                 <rect key="frame" x="15" y="49" width="345" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Effective as of January 20, 2017.
+                                <string key="text">Effective as of January 20, 2017.
 Welcome to the Bunk'em Inc. (the "Service"). The following Terms of Use apply when you view or use the Service located at: www.bunkem.com, or IOS, Google Play (Android) applications. Please review the following terms carefully. By accessing or using the Service, you signify your agreement to these Terms of Use. If you do not agree to these Terms of Use, you may not access or use the Service.
 PRIVACY POLICY
 The company respects the privacy of its Service users. Please refer to the Company's Privacy Policy which explains how we collect, use, and disclose information that pertains to your privacy. When you access or use the Service, you signify your agreement to this Privacy Policy.
@@ -4054,7 +4061,7 @@ You agree that any cause of action related to or arising out of your relationshi
 These Terms of Use and your use of the Site are governed by the laws of Oregon, without regard to conflict of law provisions.
 The Company may assign or delegate these Terms of Service and/or the Company's Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Policy without the Company's prior written consent, and any unauthorized assignment and delegation by you is void.
 YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THE TERMS OF USE, AND WILL BE BOUND BY THESE TERMS AND CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS OF USE TOGETHER WITH THE PRIVACY POLICY AT http://bunkemapp.wixsite.com/roomie REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -4088,7 +4095,7 @@ YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THE TERMS OF U
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vCF-RS-Y4K">
                                 <rect key="frame" x="15" y="49" width="345" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">This web page represents a legal document that serves as our Terms of Service and it governs the legal terms of our website, www.bunkem.com, sub-domains, and any associated web-based and mobile applications (IOS, Google play (Android)) (collectively, "Website &amp; Mobile applications"), as owned and operated by Bunk'em Inc..
+                                <string key="text">This web page represents a legal document that serves as our Terms of Service and it governs the legal terms of our website, www.bunkem.com, sub-domains, and any associated web-based and mobile applications (IOS, Google play (Android)) (collectively, "Website &amp; Mobile applications"), as owned and operated by Bunk'em Inc..
 Capitalized terms, unless otherwise defined, have the meaning specified within the Definitions section below. This Terms of Service, along with our Privacy Policy, any mobile license agreement, and other posted guidelines within our Website, collectively "Legal Terms", constitute the entire and only agreement between you and Bunk'em Inc., and supersede all other agreements, representations, warranties and understandings with respect to our Website and the subject matter contained herein. We may amend our Legal Terms at any time without specific notice to you. The latest copies of our Legal Terms will be posted on our Website, and you should review all Legal Terms prior to using our Website. After any revisions to our Legal Terms are posted, you agree to be bound to any such changes to them. Therefore, it is important for you to periodically review our Legal Terms to make sure you still agree to them.
 By accessing this website, you are agreeing to be bound by these Website Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this Website, IOS, Google Play (Android) are protected by applicable copyright and trademark law.
 The last update to our Terms of Service was posted on January 20, 2017.
@@ -4125,7 +4132,7 @@ Site Terms of Service Modifications Bunk'em Inc. may revise these Terms of Ser
 Governing Law Any claim relating to Bunk'em Inc.’s Website shall be governed by the laws of Oregon without regard to its conflict of law provisions, and You consent to exclusive jurisdiction and venue in such courts.
 Indemnity You accept defend, indemnify, and hold safe Bunk'em Inc., its affiliates, and their corresponding officers, directors, agents and workers, from and against any claims, actions or demands, including without limitation affordable legal, accounting, and other provider charges, affirming or resulting from (i) any Content of most material You offer to the Site, (ii) Your use of any Content, or (iii) Your breach of the terms of these Terms. Bunk'em Inc. will provide notice to You promptly of any such claim, match, or case.
 General Terms Our Legal Terms shall be treated as though it were executed and performed in Oregon, United States and shall be governed by and construed in accordance with the laws of Oregon, United States without regard to conflict of law principles. In addition, you agree to submit to the personal jurisdiction and venue of such courts. Any cause of action by you with respect to our Website, must be instituted within one (1) year after the cause of action arose or be forever waived and barred. Should any part of our Legal Terms be held invalid or unenforceable, that portion shall be construed consistent with applicable law and the remaining portions shall remain in full force and effect. To the extent that any Content in our Website conflicts or is inconsistent with our Legal Terms, our Legal Terms shall take precedence. Our failure to enforce any provision of our Legal Terms shall not be deemed a waiver of such provision nor of the right to enforce such provision. The rights of Bunk'em Inc. under our Legal Terms shall survive the termination of our Legal Terms.
-© Bunk'em 2016 All Rights Reserved</mutableString>
+© Bunk'em 2016 All Rights Reserved</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -4159,7 +4166,7 @@ General Terms Our Legal Terms shall be treated as though it were executed and 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rgv-AQ-ao6">
                                 <rect key="frame" x="15" y="49" width="345" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Digital Millennium Copyright Act (DMCA) Compliance
+                                <string key="text">Digital Millennium Copyright Act (DMCA) Compliance
 Bunk'em Inc. abides by the federal Digital Millennium Copyright Act (DMCA) by responding to notices of alleged infringement that comply with the DMCA and other applicable laws. As part of our response, we may remove or disable access to material residing on a site that is controlled or operated by Bunk'em Inc. (such as www.bunkem.com, IOS, Google play “Android”) that is claimed to be infringing, in which case we will make a good-faith attempt to contact the person who submitted the affected material so that they may make a counter notification, also in accordance with the DMCA.
 Bunk'em Inc. does not control content hosted on third party websites, and cannot remove content from sites it does not own or control. If you are the copyright owner of content hosted on a third party site, and you have not authorized the use of your content, please contact the administrator of that website directly to have the content removed.
 Before serving either a Notice of Infringing Material or Counter-Notification, you may wish to contact a lawyer to better understand your rights and obligations under the DMCA and other applicable laws. The following notice requirements are intended to comply with Bunk'em Inc.’s rights and obligations under the DMCA and, in particular, section 512(c), and do not constitute legal advice.
@@ -4173,7 +4180,7 @@ Information reasonably sufficient to permit the service provider to contact the 
 A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law. A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
 Notifications should be sent to the address shown on our contact page.
 Please note: The DMCA provides that you may be liable for damages (including costs and attorneys' fees) if you make a false or bad faith allegation of copyright infringement by using this process. If you are not sure what your rights are, or whether a copyright has been infringed, you should check with a legal advisor first.
-© Bunk'em 2016 All Rights Reserved</mutableString>
+© Bunk'em 2016 All Rights Reserved</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
