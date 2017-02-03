@@ -50,6 +50,11 @@ class User: NSObject {
 
     var potentialMatches = [String]()
     
+    var preferredCityAndState = ""
+    var preferredCity = ""
+    var preferredState = ""
+    var preferredZipCode = ""
+    
     override init() {
         super.init()
     }
@@ -205,6 +210,25 @@ class User: NSObject {
             for (_, dict) in images {
                 self.images.append(dict as! [String : AnyObject])
             }
+        }
+        
+        if let preferredCityAndState = userJSON["preferredCityAndState"] as? String {
+            self.preferredCityAndState = preferredCityAndState
+            
+            let CUList = preferredCityAndState.components(separatedBy: ",")
+            
+            if CUList.count == 2 {
+                self.preferredCity = CUList.first ?? ""
+                self.preferredState = CUList[1]
+            }
+            
+            if CUList.count == 1 {
+                self.preferredCity = CUList.first ?? ""
+            }
+        }
+        
+        if let preferredZipCode = userJSON["preferredZipCode"] as? String {
+            self.preferredZipCode = preferredZipCode
         }
     }
     

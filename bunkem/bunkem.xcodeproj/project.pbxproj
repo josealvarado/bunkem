@@ -34,6 +34,8 @@
 		CB4063FA1E3ED7A10062B8D6 /* BKMBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4063F91E3ED7A10062B8D6 /* BKMBudgetViewController.swift */; };
 		CB4325741E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */; };
 		CB44BA651E3B208D005A9975 /* BKMFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */; };
+		CB4694D11E42FF5F00A4E8D5 /* BKMImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4694D01E42FF5F00A4E8D5 /* BKMImageZoomViewController.swift */; };
+		CB4694D31E430C4500A4E8D5 /* BKMPreferredLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4694D21E430C4500A4E8D5 /* BKMPreferredLocationViewController.swift */; };
 		CB479FD11DED0DD700C73B83 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */; };
 		CB479FD51DED22FE00C73B83 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD31DED22FE00C73B83 /* Fabric.framework */; };
 		CB479FD61DED22FE00C73B83 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB479FD41DED22FE00C73B83 /* Crashlytics.framework */; };
@@ -109,6 +111,8 @@
 		CB4063F91E3ED7A10062B8D6 /* BKMBudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMBudgetViewController.swift; sourceTree = "<group>"; };
 		CB4325731E2C908D00508F46 /* BKMChangePhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMChangePhoneNumberViewController.swift; sourceTree = "<group>"; };
 		CB44BA641E3B208D005A9975 /* BKMFAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMFAQViewController.swift; sourceTree = "<group>"; };
+		CB4694D01E42FF5F00A4E8D5 /* BKMImageZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMImageZoomViewController.swift; sourceTree = "<group>"; };
+		CB4694D21E430C4500A4E8D5 /* BKMPreferredLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BKMPreferredLocationViewController.swift; sourceTree = "<group>"; };
 		CB479FD01DED0DD700C73B83 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB479FD31DED22FE00C73B83 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CB479FD41DED22FE00C73B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				CB54EC921E39B17E00A5D933 /* BKMMultiRoommateViewController.swift */,
 				CB54EC941E39B18E00A5D933 /* BKMDistanceViewController.swift */,
 				CB4063F91E3ED7A10062B8D6 /* BKMBudgetViewController.swift */,
+				CB4694D21E430C4500A4E8D5 /* BKMPreferredLocationViewController.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				CBA3D8DD1DE03357001DACB7 /* ForgotPasswordViewController.swift */,
 				CBBA45291E07465800CB9CC8 /* BKMMessageViewController.swift */,
 				CB3D66B41E275E6E0031571E /* BKMDetailMessageViewController.swift */,
+				CB4694D01E42FF5F00A4E8D5 /* BKMImageZoomViewController.swift */,
 				CB54EC891E39AF8100A5D933 /* Filter */,
 				CBA3D8E11DE0C4E6001DACB7 /* Sign Up */,
 				CBA3D8DF1DE03568001DACB7 /* LoginViewController.swift */,
@@ -538,6 +544,7 @@
 				CBBA452C1E07479300CB9CC8 /* BKMFilterTableViewController.swift in Sources */,
 				CBAE21201E2DE9D900B2C371 /* BKMUpdateProfileViewController.swift in Sources */,
 				CB3B6A4E1E3A65E100FECD14 /* BKMSupportTableViewController.swift in Sources */,
+				CB4694D11E42FF5F00A4E8D5 /* BKMImageZoomViewController.swift in Sources */,
 				CBA3D8E01DE03568001DACB7 /* LoginViewController.swift in Sources */,
 				CB94FF771DE01ADE009772EA /* ViewController.swift in Sources */,
 				CB31F5141DF2934600223ACA /* BKMChangeNameViewController.swift in Sources */,
@@ -551,6 +558,7 @@
 				CB3D66B51E275E6E0031571E /* BKMDetailMessageViewController.swift in Sources */,
 				CBA3D8E71DE0C535001DACB7 /* SignUpStepThreeViewController.swift in Sources */,
 				CB59D3551DF37E890053A2F4 /* BKMChangePasswordViewController.swift in Sources */,
+				CB4694D31E430C4500A4E8D5 /* BKMPreferredLocationViewController.swift in Sources */,
 				CBA3D8E51DE0C529001DACB7 /* SignUpStepTwoViewController.swift in Sources */,
 				CB4063FA1E3ED7A10062B8D6 /* BKMBudgetViewController.swift in Sources */,
 				CBA3D8DE1DE03357001DACB7 /* ForgotPasswordViewController.swift in Sources */,
@@ -740,7 +748,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bunkem.bunkem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4ed81082-79b1-455d-88b4-594be0cc3bc7";
+				PROVISIONING_PROFILE = "8b03604f-1458-4194-a13f-7919d3bda054";
 				PROVISIONING_PROFILE_SPECIFIER = "Bunk'Em Development Provisioning Profile";
 				SWIFT_VERSION = 3.0;
 			};

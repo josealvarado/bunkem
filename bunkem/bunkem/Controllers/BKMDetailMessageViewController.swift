@@ -12,7 +12,7 @@ import JSQMessagesViewController
 import Photos
 
 class BKMDetailMessageViewController: JSQMessagesViewController {
-
+    
     var matchObject: [String: AnyObject]?
     var channelRef: FIRDatabaseReference?
 //    var channel: Channel? {
@@ -97,7 +97,6 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func didPressRightBarButtonItem(button: UIBarButtonItem)  {
         print("TOP RIGHT")
@@ -276,7 +275,10 @@ class BKMDetailMessageViewController: JSQMessagesViewController {
             if let photoItem = mediaIteam as? JSQPhotoMediaItem {
                 let image = photoItem.image
                 
-                
+                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "BKMImageZoomViewController") as? BKMImageZoomViewController {
+                    vc.image = image
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
         }
 

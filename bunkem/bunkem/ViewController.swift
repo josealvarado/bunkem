@@ -216,9 +216,11 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                             
                             // CITY/STATE FILTER
                             print("CU \(CurrentUser.user.cityAndState) TU \(tempUser.cityAndState)")
-                            if tempUser.state == CurrentUser.user.state || tempUser.city == CurrentUser.user.state {
+                            if tempUser.state == CurrentUser.user.state || tempUser.city == CurrentUser.user.city || tempUser.state == CurrentUser.user.preferredState || tempUser.city == CurrentUser.user.preferredCity {
                                 self.userList.append(tempUser)
                             }
+                            
+                            
                         }
                     }
                     
