@@ -250,8 +250,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         let interstitial = GADInterstitial(adUnitID: "ca-app-pub-1894426762965055/7602399921")
         interstitial.delegate = self
         let request = GADRequest()
-        //TODO: Remove this before submitting to apple
-        request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
+//        //TODO: Remove this before submitting to apple
+//        request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
         interstitial.load(request)
         return interstitial
     }

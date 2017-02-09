@@ -12,8 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0OZ-nL-vqD">
             <objects>
-                <navigationController storyboardIdentifier="Login" navigationBarHidden="YES" id="iZB-4U-tDN" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="Login" id="iZB-4U-tDN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EPR-dg-lQi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -247,30 +246,53 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-ln-bfd">
+                                <rect key="frame" x="15" y="629" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ehB-Rf-zPR"/>
+                                    <constraint firstAttribute="width" constant="101" id="oxb-b4-GRC"/>
+                                </constraints>
+                                <state key="normal" title="Privacy Policy"/>
+                                <connections>
+                                    <segue destination="SfZ-QF-hnZ" kind="show" id="lxY-Jj-Xjk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iv-f7-Czt">
+                                <rect key="frame" x="244" y="629" width="116" height="30"/>
+                                <state key="normal" title="Terms of Service"/>
+                                <connections>
+                                    <segue destination="vlT-sU-IoY" kind="show" id="fEP-og-GFf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="top" secondItem="dVd-No-ACm" secondAttribute="bottom" constant="8" id="1bL-TN-YKh"/>
                             <constraint firstItem="KtG-sC-sAD" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="30" id="5je-Pq-cM3"/>
                             <constraint firstItem="9tJ-Em-ebP" firstAttribute="top" secondItem="KtG-sC-sAD" secondAttribute="bottom" constant="50" id="6zf-0f-RhN"/>
+                            <constraint firstAttribute="trailing" secondItem="9iv-f7-Czt" secondAttribute="trailing" constant="15" id="7QW-mX-5BE"/>
                             <constraint firstItem="0uG-dM-uVw" firstAttribute="top" secondItem="9tJ-Em-ebP" secondAttribute="bottom" constant="15" id="CgR-QK-1H7"/>
                             <constraint firstAttribute="trailing" secondItem="Zt2-k5-K28" secondAttribute="trailing" constant="43" id="Cst-6D-eFI"/>
                             <constraint firstItem="Zt2-k5-K28" firstAttribute="top" secondItem="BwK-fu-qF1" secondAttribute="bottom" constant="50" id="JF2-JV-6mK"/>
+                            <constraint firstItem="6d2-8q-GZ3" firstAttribute="top" secondItem="Sba-ln-bfd" secondAttribute="bottom" constant="8" id="MO2-bh-Lrb"/>
                             <constraint firstAttribute="trailing" secondItem="BwK-fu-qF1" secondAttribute="trailing" constant="15" id="Sh0-KK-LZY"/>
                             <constraint firstItem="BwK-fu-qF1" firstAttribute="top" secondItem="FSU-NI-mPc" secondAttribute="bottom" constant="15" id="TAh-8N-YfL"/>
                             <constraint firstItem="dVd-No-ACm" firstAttribute="top" secondItem="BwK-fu-qF1" secondAttribute="bottom" constant="20" id="TpP-0X-Aqp"/>
                             <constraint firstAttribute="trailing" secondItem="0uG-dM-uVw" secondAttribute="trailing" constant="16" id="WKJ-7B-XJU"/>
                             <constraint firstItem="BwK-fu-qF1" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="15" id="caN-S2-6l2"/>
+                            <constraint firstItem="6d2-8q-GZ3" firstAttribute="top" secondItem="9iv-f7-Czt" secondAttribute="bottom" constant="8" id="d5K-cQ-UND"/>
                             <constraint firstAttribute="trailing" secondItem="FSU-NI-mPc" secondAttribute="trailing" id="eYm-F8-4wp"/>
                             <constraint firstItem="0uG-dM-uVw" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="16" id="j4z-oF-X1J"/>
                             <constraint firstItem="9tJ-Em-ebP" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="16" id="oD8-ga-sLx"/>
                             <constraint firstItem="dVd-No-ACm" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" id="qeG-V0-lGA"/>
                             <constraint firstAttribute="trailing" secondItem="9tJ-Em-ebP" secondAttribute="trailing" constant="16" id="r9W-iF-jUX"/>
+                            <constraint firstItem="Sba-ln-bfd" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" constant="15" id="rcU-7Q-zB7"/>
                             <constraint firstItem="FSU-NI-mPc" firstAttribute="top" secondItem="sNh-5X-apf" secondAttribute="top" id="zN0-cM-Qmd"/>
                             <constraint firstItem="FSU-NI-mPc" firstAttribute="leading" secondItem="sNh-5X-apf" secondAttribute="leading" id="zT0-Vr-p2g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rJ2-Dm-TIQ"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="passwordTextField" destination="FSE-wl-w7I" id="QI1-sW-oWg"/>
                         <outlet property="rememberSwitch" destination="KtG-sC-sAD" id="fiE-NW-CfM"/>
@@ -1179,7 +1201,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="signUpImage" id="eZz-ha-TGE">
-                                                                <rect key="frame" x="0.0" y="22" width="100" height="100"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="100" height="100"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -1594,6 +1616,145 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFh-0Z-pWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1138" y="1614"/>
+        </scene>
+        <!--Privacy Policy-->
+        <scene sceneID="MIA-Qp-OgJ">
+            <objects>
+                <viewController id="SfZ-QF-hnZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ycw-nn-n1J"/>
+                        <viewControllerLayoutGuide type="bottom" id="owJ-pA-19e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NxZ-rp-Vvk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p4L-lB-oC2">
+                                <rect key="frame" x="15" y="49" width="345" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Our Privacy Policy was last updated and posted on January 20, 2017. It governs the privacy terms of our Website located at (www.bunkem.com), IOS, and Google play (Android), sub-domains, and any associated web-based and mobile applications as owned and operated by Bunk'em Inc.. Any capitalized terms not defined in our Privacy Policy, have the meaning as specified in our Terms of Service.
+Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. We use your Personal Information only for providing and improving the website. By using the website, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at www.bunkem.com. The following outlines our privacy policy.
+Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
+We will collect and use personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.
+We will only retain personal information as long as necessary for the fulfillment of those purposes.
+We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.
+Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.
+We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
+We will make readily available to customers information about our policies and practices relating to the management of personal information.
+Your Privacy Bunk'em Inc. follows all legal requirements to protect your privacy. Our Privacy Policy is a legal statement that explains how we may collect information from you, how we may share your information, and how you can limit our sharing of your information. We utilize the Personal Data you offer in a way that is consistent with this Personal privacy Policy. If you provide Personal Data for a particular reason, we could make use of the Personal Data in connection with the reason for which it was provided. For example, registration info sent when developing your account, might be used to suggest products to you based on past acquisitions. We might use your Personal Data to offer access to services on the Website and monitor your use of such services. Bunk'em Inc. may also utilize your Personal Data and various other personally non-identifiable info gathered through the Website to assist us with improving the material and functionality of the Website, to much better comprehend our users, and to improve our services. You will see terms in our Privacy Policy that are capitalized. These terms have meanings as described in the Definitions section below.
+Definitions "Non Personal Information" is information that is not personally identifiable to you and that we automatically collect when you access our Website with a web browser. It may also include publicly available information that is shared between you and others.
+"Personally Identifiable Information" is non-public information that is personally identifiable to you and obtained in order for us to provide you within our Website. Personally Identifiable Information may include information such as your name, email address, and other related information that you provide to us or that we obtain about you.
+Information We Collect Generally, you control the amount and type of information you provide to us when using our Website.
+As a Visitor, you can browse our website to find out more about our Website. You are not required to provide us with any Personally Identifiable Information as a Visitor.
+Computer Information Collected When you use our Website, we automatically collect certain computer information by the interaction of your mobile phone or web browser with our Website. Such information is typically considered Non Personal Information. We also collect the following:
+Cookies Our Website uses "Cookies" to identify the areas of our Website that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to personalize the Content that you see on our Website. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our Website correctly or at all. We never place Personally Identifiable Information in Cookies.
+Geographical Information When you use the mobile application, we may use GPS technology (or other similar technology) to determine your current location in order to determine the city you are located in and display information with relevant data or advertisements. We will not share your current location with other users or partners. If you do not want us to use your location for the purposes set forth above, you should turn off the location services for the mobile application located in your account settings or in your mobile phone settings and/or within the mobile application.
+Automatic Information We automatically receive information from your web browser or mobile device. This information includes the name of the website from which you entered our Website, if any, as well as the name of the website to which you're headed when you leave our website. This information also includes the IP address of your computer/proxy server that you use to access the Internet, your Internet Website provider name, web browser type, type of mobile device, and computer operating system. We use all of this information to analyze trends among our Users to help improve our Website. 
+Log Data Like many Website operators, we collect information that your browser sends whenever you visit our Website ("Log Data"). This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Website that you visit, the time and date of your visit, the time spent on those pages and other statistics.
+Under the Child's Online Privacy Security Act, no Website operator can require, as a condition to involvement in an activity, that a child younger than 13 years of age divulge more details than is reasonably required. Bunk'em Inc. abides by this demand. Bunk'em Inc. just collects information willingly offered; no information is gathered passively. children under 13 can submit only their email address when sending us an email in our "Contact Us" area. Bunk'em Inc. makes use of the email address to respond to a one-time demand from a child under 13 and afterwards deletes the email address. In case Bunk'em Inc. collects and maintains personal information relating to a child under 13, the parent may send out an email to us to review, alter and/or erase such info as well as to decline to enable any additional collection or use of the child's information.
+How We Use Your Information We use the information we receive from you as follows:
+Customizing Our Website We may use the Personally Identifiable information you provide to us along with any computer information we receive to customize our Website.
+Sharing Information with Affiliates and Other Third Parties We do not sell, rent, or otherwise provide your Personally Identifiable Information to third parties for marketing purposes. We may provide your Personally Identifiable Information to affiliates that provide services to us with regards to our Website (i.e. payment processors, Website hosting companies, etc.); such affiliates will only receive information necessary to provide the respective services and will be bound by confidentiality agreements limiting the use of such information.
+Data Aggregation We retain the right to collect and use any Non Personal Information collected from your use of our Website and aggregate such data for internal analytics that improve our Website and Service as well as for use or resale to others. At no time is your Personally Identifiable Information included in such data aggregations.
+Legally Required Releases of Information We may be legally required to disclose your Personally Identifiable Information, if such disclosure is (a) required by subpoena, law, or other legal process; (b) necessary to assist law enforcement officials or government enforcement agencies; (c) necessary to investigate violations of or otherwise enforce our Legal Terms; (d) necessary to protect us from legal action or claims from third parties including you and/or other Members; and/or (e) necessary to protect the legal rights, personal/real property, or personal safety of Bunk'em Inc., our Users, employees, and affiliates.
+Opt-Out We offer you the chance to "opt-out" from having your personally identifiable information used for particular functions, when we ask you for this detail. When you register for the website, if you do not want to receive any additional material or notifications from us, you can show your preference on our registration form.
+Links to Other Websites Our Website may contain links to other websites that are not under our direct control. These websites may have their own policies regarding privacy. We have no control of or responsibility for linked websites and provide these links solely for the convenience and information of our visitors. You access such linked Websites at your own risk. These websites are not subject to this Privacy Policy. You should check the privacy policies, if any, of those individual websites to see how the operators of those third-party websites will utilize your personal information. In addition, these websites may contain a link to Websites of our affiliates. The websites of our affiliates are not subject to this Privacy Policy, and you should check their individual privacy policies to see how the operators of such websites will utilize your personal information.
+Security The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security. We utilize practical protection measures to safeguard against the loss, abuse, and modification of the individual Data under our control. Personal Data is kept in a secured database and always sent out by means of an encrypted SSL method when supported by your web browser. No Web or email transmission is ever totally protected or mistake cost-free. For example, email sent out to or from the Website may not be protected. You must take unique care in deciding what info you send to us by means of email.
+Privacy Policy Updates We reserve the right to modify this Privacy Policy at any time. You should review this Privacy Policy frequently. If we make material changes to this policy, we may notify you on our Website, by a blog post, by email, or by any method we determine. The method we chose is at our sole discretion. We will also change the "Last Updated" date at the beginning of this Privacy Policy. Any changes we make to our Privacy Policy are effective as of this Last Updated date and replace any prior Privacy Policies.
+Questions About Our Privacy Practices or This Privacy Policy We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. If you have any questions about our Privacy Practices or this Policy, please contact us.
+Gratitude
+We thank you for using our services and your continued interactions with our applications. We strive to give you the best possible services we offer and our continued excellence. Thank you again we appreciate your business with Bunk’em Inc. 
+© Bunk'em 2016 All Rights Reserved</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p4L-lB-oC2" firstAttribute="top" secondItem="Ycw-nn-n1J" secondAttribute="bottom" constant="-15" id="ZlS-J4-odp"/>
+                            <constraint firstItem="p4L-lB-oC2" firstAttribute="leading" secondItem="NxZ-rp-Vvk" secondAttribute="leading" constant="15" id="aMy-TF-nvA"/>
+                            <constraint firstItem="owJ-pA-19e" firstAttribute="top" secondItem="p4L-lB-oC2" secondAttribute="bottom" constant="15" id="d7R-PT-GNu"/>
+                            <constraint firstAttribute="trailing" secondItem="p4L-lB-oC2" secondAttribute="trailing" constant="15" id="ozz-hu-e7i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Privacy Policy" id="9cf-7n-3hd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jke-uk-m4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="1882"/>
+        </scene>
+        <!--Terms of Service-->
+        <scene sceneID="KwH-5w-Wf3">
+            <objects>
+                <viewController id="vlT-sU-IoY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hEk-SY-oca"/>
+                        <viewControllerLayoutGuide type="bottom" id="fen-Mz-meZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="INd-B0-r0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-Rp-z04">
+                                <rect key="frame" x="15" y="49" width="345" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">This web page represents a legal document that serves as our Terms of Service and it governs the legal terms of our website, www.bunkem.com, sub-domains, and any associated web-based and mobile applications (IOS, Google play (Android)) (collectively, "Website &amp; Mobile applications"), as owned and operated by Bunk'em Inc..
+Capitalized terms, unless otherwise defined, have the meaning specified within the Definitions section below. This Terms of Service, along with our Privacy Policy, any mobile license agreement, and other posted guidelines within our Website, collectively "Legal Terms", constitute the entire and only agreement between you and Bunk'em Inc., and supersede all other agreements, representations, warranties and understandings with respect to our Website and the subject matter contained herein. We may amend our Legal Terms at any time without specific notice to you. The latest copies of our Legal Terms will be posted on our Website, and you should review all Legal Terms prior to using our Website. After any revisions to our Legal Terms are posted, you agree to be bound to any such changes to them. Therefore, it is important for you to periodically review our Legal Terms to make sure you still agree to them.
+By accessing this website, you are agreeing to be bound by these Website Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this Website, IOS, Google Play (Android) are protected by applicable copyright and trademark law.
+The last update to our Terms of Service was posted on January 20, 2017.
+Definitions The terms "us" or "we" or "our" refers to Bunk'em Inc., the owner of the Website.
+A "Visitor" is someone who merely browses our Website, but has not registered as Member.
+A "Member" is an individual that has registered with us to use our Service.
+Our "Service" represents the collective functionality and features as offered through our Website to our Members.
+A "User" is a collective identifier that refers to either a Visitor or a Member.
+All text, information, graphics, audio, video, and data offered through our Website are collectively known as our "Content".
+Use License
+Permission is granted to temporarily download one copy of the materials (information or software) on Bunk'em Inc.’s Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+modify or copy the materials;
+use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+attempt to decompile or reverse engineer any software contained on Bunk'em Inc.’s website;
+remove any copyright or other proprietary notations from the materials; or
+transfer the materials to another person or “mirror” the materials on any other server.
+This license shall automatically terminate if you violate any of these restrictions and may be terminated by Bunk'em Inc. at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+Restricted Uses Listing of offered products on the Website could be used only for lawful purposes by Users of the Website. You could not frame or utilize framing techniques to enclose any hallmark, logo, copyrighted image, or most proprietary details (consisting of images, text, page layout, or type) of Bunk'em Inc. without express composed consent. You might not use any meta tags or any various other "unseen text" utilizing Bunk'em Inc.'s name or trademarks without the express written consent of Bunk'em Inc.. You agree not to offer or modify any content found on the Website consisting of, however not limited to, names of Users and Content, or to recreate, display, openly perform, distribute, or otherwise make use of the Material, in any way for any public function, in connection with services or products that are not those of Bunk'em Inc., in other way that is likely to trigger confusion among consumers, that disparages or challenges Bunk'em Inc. or its licensors, that dilutes the strength of Bunk'em Inc.'s or its licensor's residential property, or that otherwise infringes Bunk'em Inc.'s or its licensor's copyright rights. You also agree to abstain from abusing any of the material that appears on the Site. The use of the Material on any other website or in a networked computer system environment for any purpose is prohibited. Any code that Bunk'em Inc. develops to generate or show any Material of the pages making up the Website is likewise secured by Bunk'em Inc.'s copyright, and you may not copy or adjust such code.
+Bunk'em Inc. has no duty to keep track of any products published, transferred, or connected to or with the Site. If you think that something on the Website breaches these Terms please contact our marked representative as set forth below.
+If alerted by a User of any products which allegedly do not conform to these Terms, Bunk'em Inc. could in its single discernment explore the allegation and figure out whether to take other actions or ask for the removal or get rid of the Content. Bunk'em Inc. has no liability or duty to Individuals for efficiency or nonperformance of such activities.
+Electronic Communication You are connecting with us electronically when you go to the Website or send out emails to us. You consent to get interactions from us online. We will connect with you by email or by uploading notifications on the Site. You concur that all contracts notifications, disclosure, and various other communications that we provide to you digitally please any legal requirements that such communications be in writing.
+Your Account If you utilize the Website, you are accountable for maintaining the confidentiality of your account and password and you accept responsibility for all activities that happen under your account and password. You also accept not to reveal any personally identifiable information, consisting of, however not limited to, first and last names, credentials, or various other details of a personal nature ("Personal Data") from the Site. Your disclosure of any Personal Data on the website might result in the immediate termination of your account. Bunk'em Inc. additionally reserves the right to refuse service, terminate accounts, and remove or edit Content at its sole discernment.
+Bunk'em Inc. does not guarantee the truthfulness, precision, or dependability of Content on the site, consisting of Personal Data. Each Individual is accountable for upgrading and changing any pertinent account info when essential to preserve the truthfulness, precision, or reliability of the details.
+Reviews, Comments, and Other Material Registered Users of the Website might post evaluations and remarks of a product and services purchased by means of the Website, so long as the Material is not unlawful, profane, threatening, defamatory, an invasive of privacy, infringing of intellectual property rights, or otherwise injurious to third parties or objectionable and does not include industrial solicitation, mass mailings, or any type of "spam." You may not use another User's account to impersonate a User or entity, or otherwise deceive as to the origin of the opinions. Bunk'em Inc. reserves the right (however is not bound) to eliminate or modify such Material, but does not regularly examine posted Material.
+If you post an evaluation or send comments, and unless Bunk'em Inc. suggests otherwise, you grant Bunk'em Inc. a nonexclusive, royalty-free, permanent, irrevocable, and completely sublicensable right to utilize, recreate, modify, adjust, release, equate, create derivative works from, distribute, and screen such content throughout the world, in any media. You grant Bunk'em Inc. and sublicenses the right to utilize your name in connection with such Material, if they choose. You represent and require that You own or otherwise control all the rights to the content that You post; that the content is accurate; that use of the content You supply does not violate this policy and will not trigger injury to anyone or entity; which You will indemnify Bunk'em Inc. for all claims resulting from Content You supply. Bunk'em Inc. has the right but not the commitment to edit and keep track of or eliminate any task or Material. Bunk'em Inc. takes no duty and assumes no liability for any content published by You or any 3rd party.
+Legal Compliance You agree to comply with all applicable domestic and international laws, statutes, ordinances, and regulations regarding your use of our Website. Bunk'em Inc. reserves the right to investigate complaints or reported violations of our Legal Terms and to take any action we deem appropriate, including but not limited to canceling your Member account, reporting any suspected unlawful activity to law enforcement officials, regulators, or other third parties and disclosing any information necessary or appropriate to such persons or entities relating to your profile, email addresses, usage history, posted materials, IP addresses and traffic information, as allowed under our Privacy Policy.
+Intellectual Property Our Website may contain our service marks or trademarks as well as those of our affiliates or other companies, in the form of words, graphics, and logos. Your use of our Website does not constitute any right or license for you to use such service marks/trademarks, without the prior written permission of the corresponding service mark/trademark owner. Our Website is also protected under international copyright laws. The copying, redistribution, use or publication by you of any portion of our Website is strictly prohibited. Your use of our Website does not grant you ownership rights of any kind in our Website.
+Revisions and Errata The materials appearing on Bunk'em Inc.’s Website could include technical, typographical, or photographic errors. Bunk'em Inc. does not warrant that any of the materials on its Website are accurate, complete, or current. Bunk'em Inc. may make changes to the materials contained on its Website at any time without notice. Bunk'em Inc. does not, however, make any commitment to update the materials.
+Disclaimer The materials on Bunk'em Inc.'s Website are provided "as is" Bunk'em Inc. makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Furthermore, Bunk'em Inc. does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet Website or otherwise relating to such materials or on any sites linked to this site. The Website serves as a venue for Individuals to purchase distinct service or products. Neither Bunk'em Inc. nor the Website has control over the quality or fitness for a particular function of a product. Bunk'em Inc. likewise has no control over the accuracy, reliability, completeness, or timeliness of the User-submitted details and makes no representations or warranties about any info on the Site.
+THE WEBSITE AND ALL DETAILS, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE APPLICATION) AND SERVICES LISTED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THIS WEBSITE ARE PROVIDED BY Bunk'em Inc. ON AN "AS IS" AND "AS AVAILABLE" BASIS, UNLESS OTHERWISE SPECIFIED IN WRITING. Bunk'em Inc. MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ABOUT THE OPERATION OF THIS Website OR THE INFO, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR SERVICES LISTED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THIS SITE, UNLESS OTHERWISE POINTED OUT IN WRITING. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS WEBSITE IS AT YOUR OWN RISK.
+TO THE COMPLETE EXTENT PERMISSIBLE BY APPLICABLE LAW, Bunk'em Inc. DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND PHYSICAL FITNESS FOR A PARTICULAR PURPOSE. Bunk'em Inc. DOES NOT WARRANT THAT THIS WEBSITE; DETAILS, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE APPLICATION) OR SERVICES CONSISTED OF ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SITE; ITS SERVERS; OR EMAIL SENT FROM Bunk'em Inc. ARE WITHOUT VIRUSES OR OTHER HARMFUL ELEMENTS. Bunk'em Inc. WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF THE WEBSITE OR FROM ANY DETAILS, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE APPLICATION) OR SERVICES LISTED ON OR OTHERWISE MADE AVAILABLE TO YOU WITH THIS SITE, INCLUDING, BUT NOT LIMITED TO DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND CONSEQUENTIAL DAMAGES, UNLESS OTHERWISE POINTED OUT IN WRITING. UNDER NO SCENARIO SHALL Bunk'em Inc.'S LIABILITY DEVELOPING FROM OR IN CONNECTION WITH THE WEBSITE OR YOUR USE OF THE WEBSITE, DESPITE THE REASON FOR ACTION (WHETHER IN AGREEMENT, TORT, BREACH OF SERVICE WARRANTY OR OTHERWISE), GO BEYOND $100.
+Links to Other Websites Our Website may contain links to third party websites. These links are provided solely as a convenience to you. By linking to these websites, we do not create or have an affiliation with, or sponsor such third party websites. The inclusion of links within our Website does not constitute any endorsement, guarantee, warranty, or recommendation of such third party websites. Bunk'em Inc. has no control over the legal documents and privacy practices of third party websites; as such, you access any such third party websites at your own risk.
+Site Terms of Service Modifications Bunk'em Inc. may revise these Terms of Service for its Website at any time without notice. By using this Website you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+Governing Law Any claim relating to Bunk'em Inc.’s Website shall be governed by the laws of Oregon without regard to its conflict of law provisions, and You consent to exclusive jurisdiction and venue in such courts.
+Indemnity You accept defend, indemnify, and hold safe Bunk'em Inc., its affiliates, and their corresponding officers, directors, agents and workers, from and against any claims, actions or demands, including without limitation affordable legal, accounting, and other provider charges, affirming or resulting from (i) any Content of most material You offer to the Site, (ii) Your use of any Content, or (iii) Your breach of the terms of these Terms. Bunk'em Inc. will provide notice to You promptly of any such claim, match, or case.
+General Terms Our Legal Terms shall be treated as though it were executed and performed in Oregon, United States and shall be governed by and construed in accordance with the laws of Oregon, United States without regard to conflict of law principles. In addition, you agree to submit to the personal jurisdiction and venue of such courts. Any cause of action by you with respect to our Website, must be instituted within one (1) year after the cause of action arose or be forever waived and barred. Should any part of our Legal Terms be held invalid or unenforceable, that portion shall be construed consistent with applicable law and the remaining portions shall remain in full force and effect. To the extent that any Content in our Website conflicts or is inconsistent with our Legal Terms, our Legal Terms shall take precedence. Our failure to enforce any provision of our Legal Terms shall not be deemed a waiver of such provision nor of the right to enforce such provision. The rights of Bunk'em Inc. under our Legal Terms shall survive the termination of our Legal Terms.
+© Bunk'em 2016 All Rights Reserved</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GxS-Rp-z04" firstAttribute="leading" secondItem="INd-B0-r0J" secondAttribute="leading" constant="15" id="AMb-Db-Jsv"/>
+                            <constraint firstItem="fen-Mz-meZ" firstAttribute="top" secondItem="GxS-Rp-z04" secondAttribute="bottom" constant="15" id="GPa-1h-mH6"/>
+                            <constraint firstAttribute="trailing" secondItem="GxS-Rp-z04" secondAttribute="trailing" constant="15" id="O8G-Lt-q73"/>
+                            <constraint firstItem="GxS-Rp-z04" firstAttribute="top" secondItem="hEk-SY-oca" secondAttribute="bottom" constant="-15" id="wL9-A2-MXJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms of Service" id="phD-bj-daK"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPX-d0-UEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="1881"/>
         </scene>
     </scenes>
     <resources>

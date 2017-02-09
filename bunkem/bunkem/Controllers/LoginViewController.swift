@@ -27,6 +27,9 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+
         let defaults = UserDefaults.standard
         if let email = defaults.object(forKey: "email") as? String {
             usernameTextField.text = email
@@ -37,6 +40,13 @@ class LoginViewController: UIViewController {
                 
             }
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     /*
